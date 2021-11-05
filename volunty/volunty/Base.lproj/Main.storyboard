@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rkj-3m-aZR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -141,28 +141,81 @@
             </objects>
             <point key="canvasLocation" x="781" y="777"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Seconde Page-->
         <scene sceneID="a1J-Fv-i3I">
             <objects>
-                <viewController id="Rkj-3m-aZR" sceneMemberID="viewController">
+                <viewController id="Rkj-3m-aZR" customClass="ViewControllerSecondePage" customModule="volunty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rfJ-x4-P90">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0K-8O-RBG">
-                                <rect key="frame" x="220" y="705" width="49" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 18" translatesAutoresizingMaskIntoConstraints="NO" id="O3K-KU-yGu">
+                                <rect key="frame" x="0.0" y="-28" width="414" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wfh_9-1" translatesAutoresizingMaskIntoConstraints="NO" id="yUb-Bm-Qu4">
+                                <rect key="frame" x="0.0" y="126" width="414" height="312"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGI-5r-CeG">
+                                <rect key="frame" x="158" y="59" width="99" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Join the move and give hand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQk-7o-DYb">
+                                <rect key="frame" x="63" y="469" width="294" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="âPngtreeâcreative color hands up_3853489-1" translatesAutoresizingMaskIntoConstraints="NO" id="HKT-uq-gXH">
+                                <rect key="frame" x="0.0" y="602" width="414" height="294"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geK-Xd-227">
+                                <rect key="frame" x="114" y="684" width="186" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="button1"/>
+                                <connections>
+                                    <action selector="BtnNext:" destination="Rkj-3m-aZR" eventType="touchUpInside" id="SQZ-mU-pXA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYw-WG-tRt">
+                                <rect key="frame" x="234" y="708" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Icon feather-arrow-left"/>
+                                <connections>
+                                    <action selector="BtnNextArrow:" destination="Rkj-3m-aZR" eventType="touchUpInside" id="vmH-dl-Z2M"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njq-jW-jJ0">
+                                <rect key="frame" x="147" y="707" width="52" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JNo-aB-hrU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="ImgBg" destination="yUb-Bm-Qu4" id="oog-je-uTw"/>
+                        <outlet property="ImgBg2" destination="HKT-uq-gXH" id="Qv5-pX-yKb"/>
+                        <outlet property="ImgRectangle" destination="O3K-KU-yGu" id="PLO-tN-KvW"/>
+                        <outlet property="LabelDesc" destination="XQk-7o-DYb" id="hhW-0f-Dak"/>
+                        <outlet property="LabelNext" destination="njq-jW-jJ0" id="M8S-cZ-xlY"/>
+                        <outlet property="LabelWelcome" destination="sGI-5r-CeG" id="cgb-KW-xuq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2SP-Cb-tsf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="82"/>
+            <point key="canvasLocation" x="779.71014492753625" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>
@@ -171,6 +224,7 @@
         <image name="âPngtreeâcreative color hands up_3853489-1" width="456" height="436"/>
         <image name="button1" width="203" height="56"/>
         <image name="kisspng-volunteering-community-job-clip-art-volunteer-5ac64dd5000a22.8542386115229454930002" width="412" height="268"/>
+        <image name="wfh_9-1" width="413" height="299"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
