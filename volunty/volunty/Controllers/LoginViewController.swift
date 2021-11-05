@@ -15,15 +15,16 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    @IBOutlet weak var image: UIImageView!
+    
+    @IBOutlet weak var passP: UIImageView!
+    @IBOutlet weak var password: UILabel!
+    
+    @IBOutlet weak var loginButton: UIImageView!
+    @IBOutlet weak var emailP: UIImageView!
+    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var your: UILabel!
+    @IBOutlet weak var create: UILabel!
+    @IBOutlet weak var rectangleblanc: UIImageView!
+    
 }
