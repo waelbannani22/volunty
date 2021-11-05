@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rkj-3m-aZR">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Djc-Dr-Bxk">
+>>>>>>> Stashed changes
 =======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Djc-Dr-Bxk">
 >>>>>>> Stashed changes
@@ -234,6 +238,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 18" translatesAutoresizingMaskIntoConstraints="NO" id="O3K-KU-yGu">
                                 <rect key="frame" x="0.0" y="-28" width="414" height="166"/>
@@ -289,6 +294,8 @@
                         </subviews>
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
                         <viewLayoutGuide key="safeArea" id="JNo-aB-hrU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -315,7 +322,11 @@
         <image name="button1" width="203" height="56"/>
         <image name="kisspng-volunteering-community-job-clip-art-volunteer-5ac64dd5000a22.8542386115229454930002" width="412" height="268"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <image name="wfh_9-1" width="413" height="299"/>
+=======
+        <image name="palecholder" width="427" height="88"/>
+>>>>>>> Stashed changes
 =======
         <image name="palecholder" width="427" height="88"/>
 >>>>>>> Stashed changes
