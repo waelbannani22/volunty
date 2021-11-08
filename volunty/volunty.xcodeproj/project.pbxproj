@@ -15,6 +15,9 @@
 		397381F027357BAF008D8A66 /* volunty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 397381EE27357BAF008D8A66 /* volunty.xcdatamodeld */; };
 		397381F227357BB0008D8A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397381F127357BB0008D8A66 /* Assets.xcassets */; };
 		397381F527357BB0008D8A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397381F327357BB0008D8A66 /* LaunchScreen.storyboard */; };
+		398D9FE1273988F700C22704 /* EmergencyCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D9FE0273988F700C22704 /* EmergencyCaseViewController.swift */; };
+		398D9FE3273993CD00C22704 /* DonationMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D9FE2273993CD00C22704 /* DonationMessageViewController.swift */; };
+		398D9FE52739994100C22704 /* PostingRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D9FE42739994100C22704 /* PostingRecruiterViewController.swift */; };
 		399B8AFF2738508200E16429 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399B8AFE2738508200E16429 /* CategoryViewController.swift */; };
 		399B8B0127388BF800E16429 /* ExperiencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399B8B0027388BF800E16429 /* ExperiencesViewController.swift */; };
 		399B8B03273895D500E16429 /* HomeVolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399B8B02273895D500E16429 /* HomeVolunteerViewController.swift */; };
@@ -32,6 +35,9 @@
 		397381F127357BB0008D8A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		397381F427357BB0008D8A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		397381F627357BB0008D8A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		398D9FE0273988F700C22704 /* EmergencyCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyCaseViewController.swift; sourceTree = "<group>"; };
+		398D9FE2273993CD00C22704 /* DonationMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationMessageViewController.swift; sourceTree = "<group>"; };
+		398D9FE42739994100C22704 /* PostingRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingRecruiterViewController.swift; sourceTree = "<group>"; };
 		399B8AFE2738508200E16429 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		399B8B0027388BF800E16429 /* ExperiencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesViewController.swift; sourceTree = "<group>"; };
 		399B8B02273895D500E16429 /* HomeVolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVolunteerViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +111,9 @@
 				399B8AFE2738508200E16429 /* CategoryViewController.swift */,
 				399B8B0027388BF800E16429 /* ExperiencesViewController.swift */,
 				399B8B02273895D500E16429 /* HomeVolunteerViewController.swift */,
+				398D9FE0273988F700C22704 /* EmergencyCaseViewController.swift */,
+				398D9FE2273993CD00C22704 /* DonationMessageViewController.swift */,
+				398D9FE42739994100C22704 /* PostingRecruiterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -182,13 +191,16 @@
 			files = (
 				397381EA27357BAF008D8A66 /* ViewController.swift in Sources */,
 				E46399E92735916E0054616B /* ViewControllerSecondePage.swift in Sources */,
+				398D9FE3273993CD00C22704 /* DonationMessageViewController.swift in Sources */,
 				399B8AFF2738508200E16429 /* CategoryViewController.swift in Sources */,
 				397381F027357BAF008D8A66 /* volunty.xcdatamodeld in Sources */,
+				398D9FE1273988F700C22704 /* EmergencyCaseViewController.swift in Sources */,
 				399B8B0127388BF800E16429 /* ExperiencesViewController.swift in Sources */,
 				397381E627357BAF008D8A66 /* AppDelegate.swift in Sources */,
 				399B8B03273895D500E16429 /* HomeVolunteerViewController.swift in Sources */,
 				393D403427358F650097D3C1 /* LoginViewController.swift in Sources */,
 				397381E827357BAF008D8A66 /* SceneDelegate.swift in Sources */,
+				398D9FE52739994100C22704 /* PostingRecruiterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
