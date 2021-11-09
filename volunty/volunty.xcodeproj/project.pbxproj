@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		393D403427358F650097D3C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393D403327358F650097D3C1 /* LoginViewController.swift */; };
+		39427876273AC97B002EBDE9 /* VolunteerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39427875273AC97B002EBDE9 /* VolunteerProfileViewController.swift */; };
+		39427878273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39427877273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift */; };
+		3942787A273ACF5D002EBDE9 /* DateSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39427879273ACF5D002EBDE9 /* DateSelectionViewController.swift */; };
+		394278A7273B269D002EBDE9 /* OpenedCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278A6273B269D002EBDE9 /* OpenedCallViewController.swift */; };
+		394278A9273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278A8273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift */; };
+		394278AB273B2F9E002EBDE9 /* WriteReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278AA273B2F9E002EBDE9 /* WriteReviewViewController.swift */; };
+		394278AD273B336D002EBDE9 /* acceptedVoluntingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278AC273B336C002EBDE9 /* acceptedVoluntingViewController.swift */; };
 		397381E627357BAF008D8A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397381E527357BAF008D8A66 /* AppDelegate.swift */; };
 		397381E827357BAF008D8A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397381E727357BAF008D8A66 /* SceneDelegate.swift */; };
 		397381EA27357BAF008D8A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397381E927357BAF008D8A66 /* ViewController.swift */; };
@@ -26,6 +33,13 @@
 
 /* Begin PBXFileReference section */
 		393D403327358F650097D3C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		39427875273AC97B002EBDE9 /* VolunteerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerProfileViewController.swift; sourceTree = "<group>"; };
+		39427877273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerEditProfileViewController.swift; sourceTree = "<group>"; };
+		39427879273ACF5D002EBDE9 /* DateSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionViewController.swift; sourceTree = "<group>"; };
+		394278A6273B269D002EBDE9 /* OpenedCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenedCallViewController.swift; sourceTree = "<group>"; };
+		394278A8273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenedCallReviewsViewController.swift; sourceTree = "<group>"; };
+		394278AA273B2F9E002EBDE9 /* WriteReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewViewController.swift; sourceTree = "<group>"; };
+		394278AC273B336C002EBDE9 /* acceptedVoluntingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acceptedVoluntingViewController.swift; sourceTree = "<group>"; };
 		397381E227357BAF008D8A66 /* volunty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = volunty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		397381E527357BAF008D8A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		397381E727357BAF008D8A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +128,13 @@
 				398D9FE0273988F700C22704 /* EmergencyCaseViewController.swift */,
 				398D9FE2273993CD00C22704 /* DonationMessageViewController.swift */,
 				398D9FE42739994100C22704 /* PostingRecruiterViewController.swift */,
+				39427875273AC97B002EBDE9 /* VolunteerProfileViewController.swift */,
+				39427877273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift */,
+				39427879273ACF5D002EBDE9 /* DateSelectionViewController.swift */,
+				394278A6273B269D002EBDE9 /* OpenedCallViewController.swift */,
+				394278A8273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift */,
+				394278AA273B2F9E002EBDE9 /* WriteReviewViewController.swift */,
+				394278AC273B336C002EBDE9 /* acceptedVoluntingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -192,15 +213,22 @@
 				397381EA27357BAF008D8A66 /* ViewController.swift in Sources */,
 				E46399E92735916E0054616B /* ViewControllerSecondePage.swift in Sources */,
 				398D9FE3273993CD00C22704 /* DonationMessageViewController.swift in Sources */,
+				3942787A273ACF5D002EBDE9 /* DateSelectionViewController.swift in Sources */,
+				39427876273AC97B002EBDE9 /* VolunteerProfileViewController.swift in Sources */,
 				399B8AFF2738508200E16429 /* CategoryViewController.swift in Sources */,
 				397381F027357BAF008D8A66 /* volunty.xcdatamodeld in Sources */,
 				398D9FE1273988F700C22704 /* EmergencyCaseViewController.swift in Sources */,
 				399B8B0127388BF800E16429 /* ExperiencesViewController.swift in Sources */,
 				397381E627357BAF008D8A66 /* AppDelegate.swift in Sources */,
+				394278A9273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift in Sources */,
+				394278AD273B336D002EBDE9 /* acceptedVoluntingViewController.swift in Sources */,
+				39427878273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift in Sources */,
 				399B8B03273895D500E16429 /* HomeVolunteerViewController.swift in Sources */,
 				393D403427358F650097D3C1 /* LoginViewController.swift in Sources */,
+				394278AB273B2F9E002EBDE9 /* WriteReviewViewController.swift in Sources */,
 				397381E827357BAF008D8A66 /* SceneDelegate.swift in Sources */,
 				398D9FE52739994100C22704 /* PostingRecruiterViewController.swift in Sources */,
+				394278A7273B269D002EBDE9 /* OpenedCallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
