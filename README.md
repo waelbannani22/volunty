@@ -1,5 +1,6 @@
 # volunty
 iOS academic project
 
-app that help people who like to volunteer finding an experience 
-and helps organisation who search for volunteering
+## Ideas
+an app that helps people who like to volunteer to find an experience 
+and helps organizations that search for volunteering
