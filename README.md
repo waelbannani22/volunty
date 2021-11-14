@@ -10,3 +10,6 @@ and helps organizations that search for volunteering
 
 * Xcode 13
 * Git
+
+### Deployment target
+* iOS 15
