@@ -11,6 +11,8 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        self.navigationItem.setHidesBackButton(true, animated: true)
 
         // Do any additional setup after loading the view.
     }

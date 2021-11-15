@@ -14,6 +14,8 @@ class HomeVolunteerViewController: UIViewController {
         imageProfile.layer.masksToBounds = true
         imageProfile.layer.cornerRadius = imageProfile.frame.size.width/2
         imageProfile.layer.borderColor = UIColor.black.cgColor
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.tabBarController?.navigationItem.hidesBackButton = true
 
         // Do any additional setup after loading the view.
     }

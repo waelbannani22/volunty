@@ -12,6 +12,7 @@ class CategoryViewController: UIViewController ,UITableViewDataSource,UITableVie
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Mcell")
         let contentView = cell?.viewWithTag(0)
+        
         return cell!
     }
     

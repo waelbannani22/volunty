@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3906821E2741561E00C242E4 /* GestionVolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906821D2741561E00C242E4 /* GestionVolunteerViewController.swift */; };
 		393D403427358F650097D3C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393D403327358F650097D3C1 /* LoginViewController.swift */; };
 		39427876273AC97B002EBDE9 /* VolunteerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39427875273AC97B002EBDE9 /* VolunteerProfileViewController.swift */; };
 		39427878273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39427877273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift */; };
@@ -15,6 +16,10 @@
 		394278A9273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278A8273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift */; };
 		394278AB273B2F9E002EBDE9 /* WriteReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278AA273B2F9E002EBDE9 /* WriteReviewViewController.swift */; };
 		394278AD273B336D002EBDE9 /* acceptedVoluntingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278AC273B336C002EBDE9 /* acceptedVoluntingViewController.swift */; };
+		395595E9274019D9001EA18B /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395595E8274019D9001EA18B /* RoleViewController.swift */; };
+		39565EBB274039C60059E37B /* MyPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39565EBA274039C60059E37B /* MyPostsViewController.swift */; };
+		396F9C9B2741C3F1007E658E /* NotificationVolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F9C9A2741C3F1007E658E /* NotificationVolunteerViewController.swift */; };
+		396F9C9D2741DBDD007E658E /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F9C9C2741DBDD007E658E /* LeaderBoardViewController.swift */; };
 		397381E627357BAF008D8A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397381E527357BAF008D8A66 /* AppDelegate.swift */; };
 		397381E827357BAF008D8A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397381E727357BAF008D8A66 /* SceneDelegate.swift */; };
 		397381EA27357BAF008D8A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397381E927357BAF008D8A66 /* ViewController.swift */; };
@@ -28,10 +33,16 @@
 		399B8AFF2738508200E16429 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399B8AFE2738508200E16429 /* CategoryViewController.swift */; };
 		399B8B0127388BF800E16429 /* ExperiencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399B8B0027388BF800E16429 /* ExperiencesViewController.swift */; };
 		399B8B03273895D500E16429 /* HomeVolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399B8B02273895D500E16429 /* HomeVolunteerViewController.swift */; };
+		39AB82ED27409055008963A5 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AB82EC27409055008963A5 /* PostDetailViewController.swift */; };
+		39B422C22741721D007819A8 /* RecruiterProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B422C12741721D007819A8 /* RecruiterProfileViewController.swift */; };
+		39DB7188274004A00010390B /* LoginRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB7187274004A00010390B /* LoginRecruiterViewController.swift */; };
+		39DB718A27400E620010390B /* SignUpRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB718927400E620010390B /* SignUpRecruiterViewController.swift */; };
+		39EDAAAF2741851800084814 /* RecruiterProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDAAAE2741851800084814 /* RecruiterProfileEditViewController.swift */; };
 		E46399E92735916E0054616B /* ViewControllerSecondePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46399E82735916E0054616B /* ViewControllerSecondePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3906821D2741561E00C242E4 /* GestionVolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestionVolunteerViewController.swift; sourceTree = "<group>"; };
 		393D403327358F650097D3C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		39427875273AC97B002EBDE9 /* VolunteerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerProfileViewController.swift; sourceTree = "<group>"; };
 		39427877273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerEditProfileViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +51,10 @@
 		394278A8273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenedCallReviewsViewController.swift; sourceTree = "<group>"; };
 		394278AA273B2F9E002EBDE9 /* WriteReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewViewController.swift; sourceTree = "<group>"; };
 		394278AC273B336C002EBDE9 /* acceptedVoluntingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acceptedVoluntingViewController.swift; sourceTree = "<group>"; };
+		395595E8274019D9001EA18B /* RoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
+		39565EBA274039C60059E37B /* MyPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsViewController.swift; sourceTree = "<group>"; };
+		396F9C9A2741C3F1007E658E /* NotificationVolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVolunteerViewController.swift; sourceTree = "<group>"; };
+		396F9C9C2741DBDD007E658E /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
 		397381E227357BAF008D8A66 /* volunty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = volunty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		397381E527357BAF008D8A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		397381E727357BAF008D8A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +70,11 @@
 		399B8AFE2738508200E16429 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		399B8B0027388BF800E16429 /* ExperiencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesViewController.swift; sourceTree = "<group>"; };
 		399B8B02273895D500E16429 /* HomeVolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVolunteerViewController.swift; sourceTree = "<group>"; };
+		39AB82EC27409055008963A5 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		39B422C12741721D007819A8 /* RecruiterProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruiterProfileViewController.swift; sourceTree = "<group>"; };
+		39DB7187274004A00010390B /* LoginRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRecruiterViewController.swift; sourceTree = "<group>"; };
+		39DB718927400E620010390B /* SignUpRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRecruiterViewController.swift; sourceTree = "<group>"; };
+		39EDAAAE2741851800084814 /* RecruiterProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruiterProfileEditViewController.swift; sourceTree = "<group>"; };
 		E46399E82735916E0054616B /* ViewControllerSecondePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSecondePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +139,7 @@
 		397381FF27357C64008D8A66 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				39DB7186274004750010390B /* recruiter */,
 				397381E927357BAF008D8A66 /* ViewController.swift */,
 				393D403327358F650097D3C1 /* LoginViewController.swift */,
 				E46399E82735916E0054616B /* ViewControllerSecondePage.swift */,
@@ -127,7 +148,6 @@
 				399B8B02273895D500E16429 /* HomeVolunteerViewController.swift */,
 				398D9FE0273988F700C22704 /* EmergencyCaseViewController.swift */,
 				398D9FE2273993CD00C22704 /* DonationMessageViewController.swift */,
-				398D9FE42739994100C22704 /* PostingRecruiterViewController.swift */,
 				39427875273AC97B002EBDE9 /* VolunteerProfileViewController.swift */,
 				39427877273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift */,
 				39427879273ACF5D002EBDE9 /* DateSelectionViewController.swift */,
@@ -135,8 +155,26 @@
 				394278A8273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift */,
 				394278AA273B2F9E002EBDE9 /* WriteReviewViewController.swift */,
 				394278AC273B336C002EBDE9 /* acceptedVoluntingViewController.swift */,
+				395595E8274019D9001EA18B /* RoleViewController.swift */,
+				396F9C9A2741C3F1007E658E /* NotificationVolunteerViewController.swift */,
+				396F9C9C2741DBDD007E658E /* LeaderBoardViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		39DB7186274004750010390B /* recruiter */ = {
+			isa = PBXGroup;
+			children = (
+				398D9FE42739994100C22704 /* PostingRecruiterViewController.swift */,
+				39DB7187274004A00010390B /* LoginRecruiterViewController.swift */,
+				39DB718927400E620010390B /* SignUpRecruiterViewController.swift */,
+				39565EBA274039C60059E37B /* MyPostsViewController.swift */,
+				39AB82EC27409055008963A5 /* PostDetailViewController.swift */,
+				3906821D2741561E00C242E4 /* GestionVolunteerViewController.swift */,
+				39B422C12741721D007819A8 /* RecruiterProfileViewController.swift */,
+				39EDAAAE2741851800084814 /* RecruiterProfileEditViewController.swift */,
+			);
+			path = recruiter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,18 +248,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395595E9274019D9001EA18B /* RoleViewController.swift in Sources */,
+				39AB82ED27409055008963A5 /* PostDetailViewController.swift in Sources */,
 				397381EA27357BAF008D8A66 /* ViewController.swift in Sources */,
 				E46399E92735916E0054616B /* ViewControllerSecondePage.swift in Sources */,
 				398D9FE3273993CD00C22704 /* DonationMessageViewController.swift in Sources */,
 				3942787A273ACF5D002EBDE9 /* DateSelectionViewController.swift in Sources */,
 				39427876273AC97B002EBDE9 /* VolunteerProfileViewController.swift in Sources */,
 				399B8AFF2738508200E16429 /* CategoryViewController.swift in Sources */,
+				39DB7188274004A00010390B /* LoginRecruiterViewController.swift in Sources */,
 				397381F027357BAF008D8A66 /* volunty.xcdatamodeld in Sources */,
+				396F9C9B2741C3F1007E658E /* NotificationVolunteerViewController.swift in Sources */,
 				398D9FE1273988F700C22704 /* EmergencyCaseViewController.swift in Sources */,
+				3906821E2741561E00C242E4 /* GestionVolunteerViewController.swift in Sources */,
+				396F9C9D2741DBDD007E658E /* LeaderBoardViewController.swift in Sources */,
 				399B8B0127388BF800E16429 /* ExperiencesViewController.swift in Sources */,
+				39565EBB274039C60059E37B /* MyPostsViewController.swift in Sources */,
 				397381E627357BAF008D8A66 /* AppDelegate.swift in Sources */,
 				394278A9273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift in Sources */,
 				394278AD273B336D002EBDE9 /* acceptedVoluntingViewController.swift in Sources */,
+				39EDAAAF2741851800084814 /* RecruiterProfileEditViewController.swift in Sources */,
+				39DB718A27400E620010390B /* SignUpRecruiterViewController.swift in Sources */,
+				39B422C22741721D007819A8 /* RecruiterProfileViewController.swift in Sources */,
 				39427878273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift in Sources */,
 				399B8B03273895D500E16429 /* HomeVolunteerViewController.swift in Sources */,
 				393D403427358F650097D3C1 /* LoginViewController.swift in Sources */,

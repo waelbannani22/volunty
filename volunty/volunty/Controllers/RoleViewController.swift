@@ -1,13 +1,13 @@
 //
-//  VolunteerProfileViewController.swift
+//  RoleViewController.swift
 //  volunty
 //
-//  Created by wael bannani on 9/11/2021.
+//  Created by wael bannani on 13/11/2021.
 //
 
 import UIKit
 
-class VolunteerProfileViewController: UIViewController {
+class RoleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
