@@ -16,4 +16,6 @@ and helps organizations that search for volunteering
 ## Deployment target
 * iOS 15
 
+## Logo
+![This is an image](https://github.com/waelbannani22/volunty/blob/main/volunty/volunty/Assets.xcassets/logo.imageset/logo.png)
 
