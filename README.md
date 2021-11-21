@@ -17,5 +17,6 @@ and helps organizations that search for volunteering
 * iOS 15
 
 ## Logo
-![This is an image](https://github.com/waelbannani22/volunty/blob/main/volunty/volunty/Assets.xcassets/logo.imageset/logo.png)
+<p align="center"> 
+<img src="https://github.com/waelbannani22/volunty/blob/main/volunty/volunty/Assets.xcassets/logo.imageset/logo.png" with="600" height="400" /></p>
 
