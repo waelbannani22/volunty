@@ -1,12 +1,9 @@
 # volunty
 - iOS academic project
 
-
-
 ## Ideas
 - an app that helps people who like to volunteer to find an experience 
 and helps organizations that search for volunteering
-
 
 ## Requirements
 
@@ -25,4 +22,8 @@ and helps organizations that search for volunteering
 <img src="https://github.com/waelbannani22/tyVolunty/blob/main/assets/signIn.png" width="230" height="577"/> <img src="https://github.com/waelbannani22/tyVolunty/blob/main/assets/category.png" width="230" height="577"/></p>
 
 <p align="center"> 
-<img src="https://github.com/waelbannani22/tyVolunty/blob/main/assets/applyForDonation.png" width="577" height="500"/> <img src="https://github.com/waelbannani22/tyVolunty/blob/main/assets/DonateAndHelp.png" width="577" height="500"/></p>
+<img src="https://github.com/waelbannani22/tyVolunty/blob/main/assets/applyForDonation.png" width="230" height="577"/> <img src="https://github.com/waelbannani22/tyVolunty/blob/main/assets/DonateAndHelp.png" width="230" height="577"/></p>
+
+## Disclaimer
+Voluny is a product designed and developed by Bannani Wael and Rihani Rami
+All photos used in the app or promotional collaterals are open-source and royalty free .
