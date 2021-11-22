@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3906821E2741561E00C242E4 /* GestionVolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906821D2741561E00C242E4 /* GestionVolunteerViewController.swift */; };
+		391EBD7927493CF0000878AD /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391EBD7827493CF0000878AD /* Volunteer.swift */; };
+		391EBD7B274942B9000878AD /* Recruiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391EBD7A274942B9000878AD /* Recruiter.swift */; };
+		391EBD7E27496511000878AD /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391EBD7D27496511000878AD /* UserAuth.swift */; };
+		391EBD8027496690000878AD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391EBD7F27496690000878AD /* LoginViewModel.swift */; };
+		391EBD852749B631000878AD /* keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391EBD842749B631000878AD /* keyboard.swift */; };
 		393D403427358F650097D3C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393D403327358F650097D3C1 /* LoginViewController.swift */; };
 		39427876273AC97B002EBDE9 /* VolunteerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39427875273AC97B002EBDE9 /* VolunteerProfileViewController.swift */; };
 		39427878273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39427877273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift */; };
@@ -18,6 +23,7 @@
 		394278AD273B336D002EBDE9 /* acceptedVoluntingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278AC273B336C002EBDE9 /* acceptedVoluntingViewController.swift */; };
 		395595E9274019D9001EA18B /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395595E8274019D9001EA18B /* RoleViewController.swift */; };
 		39565EBB274039C60059E37B /* MyPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39565EBA274039C60059E37B /* MyPostsViewController.swift */; };
+		396BD836274B069F00DB750F /* SignUpVolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396BD835274B069F00DB750F /* SignUpVolunteerViewController.swift */; };
 		396F9C9B2741C3F1007E658E /* NotificationVolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F9C9A2741C3F1007E658E /* NotificationVolunteerViewController.swift */; };
 		396F9C9D2741DBDD007E658E /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F9C9C2741DBDD007E658E /* LeaderBoardViewController.swift */; };
 		397381E627357BAF008D8A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397381E527357BAF008D8A66 /* AppDelegate.swift */; };
@@ -38,11 +44,19 @@
 		39DB7188274004A00010390B /* LoginRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB7187274004A00010390B /* LoginRecruiterViewController.swift */; };
 		39DB718A27400E620010390B /* SignUpRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB718927400E620010390B /* SignUpRecruiterViewController.swift */; };
 		39EDAAAF2741851800084814 /* RecruiterProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDAAAE2741851800084814 /* RecruiterProfileEditViewController.swift */; };
+		E0C3872709B3178379E28DE3 /* Pods_volunty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E449F3CE755E3EE0EEF11D6 /* Pods_volunty.framework */; };
 		E46399E92735916E0054616B /* ViewControllerSecondePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46399E82735916E0054616B /* ViewControllerSecondePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A486BC964F9843D16D70EF9 /* Pods-volunty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volunty.release.xcconfig"; path = "Target Support Files/Pods-volunty/Pods-volunty.release.xcconfig"; sourceTree = "<group>"; };
+		2E449F3CE755E3EE0EEF11D6 /* Pods_volunty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_volunty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3906821D2741561E00C242E4 /* GestionVolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestionVolunteerViewController.swift; sourceTree = "<group>"; };
+		391EBD7827493CF0000878AD /* Volunteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
+		391EBD7A274942B9000878AD /* Recruiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recruiter.swift; sourceTree = "<group>"; };
+		391EBD7D27496511000878AD /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
+		391EBD7F27496690000878AD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		391EBD842749B631000878AD /* keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboard.swift; sourceTree = "<group>"; };
 		393D403327358F650097D3C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		39427875273AC97B002EBDE9 /* VolunteerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerProfileViewController.swift; sourceTree = "<group>"; };
 		39427877273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerEditProfileViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +67,7 @@
 		394278AC273B336C002EBDE9 /* acceptedVoluntingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acceptedVoluntingViewController.swift; sourceTree = "<group>"; };
 		395595E8274019D9001EA18B /* RoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
 		39565EBA274039C60059E37B /* MyPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsViewController.swift; sourceTree = "<group>"; };
+		396BD835274B069F00DB750F /* SignUpVolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVolunteerViewController.swift; sourceTree = "<group>"; };
 		396F9C9A2741C3F1007E658E /* NotificationVolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVolunteerViewController.swift; sourceTree = "<group>"; };
 		396F9C9C2741DBDD007E658E /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
 		397381E227357BAF008D8A66 /* volunty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = volunty.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +91,7 @@
 		39DB718927400E620010390B /* SignUpRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRecruiterViewController.swift; sourceTree = "<group>"; };
 		39EDAAAE2741851800084814 /* RecruiterProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruiterProfileEditViewController.swift; sourceTree = "<group>"; };
 		E46399E82735916E0054616B /* ViewControllerSecondePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSecondePage.swift; sourceTree = "<group>"; };
+		EA7A4851989A73FA2D1B50A3 /* Pods-volunty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volunty.debug.xcconfig"; path = "Target Support Files/Pods-volunty/Pods-volunty.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,17 +99,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C3872709B3178379E28DE3 /* Pods_volunty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		391EBD7627493CC3000878AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				391EBD7827493CF0000878AD /* Volunteer.swift */,
+				391EBD7A274942B9000878AD /* Recruiter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		391EBD7727493CCC000878AD /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				391EBD7F27496690000878AD /* LoginViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		391EBD7C274964F8000878AD /* services */ = {
+			isa = PBXGroup;
+			children = (
+				391EBD7D27496511000878AD /* UserAuth.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		391EBD832749B618000878AD /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				391EBD842749B631000878AD /* keyboard.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		397381D927357BAF008D8A66 = {
 			isa = PBXGroup;
 			children = (
 				397381E427357BAF008D8A66 /* volunty */,
 				397381E327357BAF008D8A66 /* Products */,
+				C77A9526BBAF3150473A8508 /* Pods */,
+				B7C631BF8FF922FDBACD53F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,9 +160,11 @@
 		397381E427357BAF008D8A66 /* volunty */ = {
 			isa = PBXGroup;
 			children = (
+				391EBD832749B618000878AD /* extensions */,
+				391EBD7C274964F8000878AD /* services */,
+				391EBD7727493CCC000878AD /* View Models */,
+				391EBD7627493CC3000878AD /* Models */,
 				397381FF27357C64008D8A66 /* Controllers */,
-				397381FE27357C39008D8A66 /* ViewModels */,
-				397381FD27357C2F008D8A66 /* Models */,
 				397381E527357BAF008D8A66 /* AppDelegate.swift */,
 				397381E727357BAF008D8A66 /* SceneDelegate.swift */,
 				397381EB27357BAF008D8A66 /* Main.storyboard */,
@@ -120,20 +174,6 @@
 				397381EE27357BAF008D8A66 /* volunty.xcdatamodeld */,
 			);
 			path = volunty;
-			sourceTree = "<group>";
-		};
-		397381FD27357C2F008D8A66 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		397381FE27357C39008D8A66 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		397381FF27357C64008D8A66 /* Controllers */ = {
@@ -158,6 +198,7 @@
 				395595E8274019D9001EA18B /* RoleViewController.swift */,
 				396F9C9A2741C3F1007E658E /* NotificationVolunteerViewController.swift */,
 				396F9C9C2741DBDD007E658E /* LeaderBoardViewController.swift */,
+				396BD835274B069F00DB750F /* SignUpVolunteerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -177,6 +218,24 @@
 			path = recruiter;
 			sourceTree = "<group>";
 		};
+		B7C631BF8FF922FDBACD53F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E449F3CE755E3EE0EEF11D6 /* Pods_volunty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C77A9526BBAF3150473A8508 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA7A4851989A73FA2D1B50A3 /* Pods-volunty.debug.xcconfig */,
+				2A486BC964F9843D16D70EF9 /* Pods-volunty.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,9 +243,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 397381F927357BB0008D8A66 /* Build configuration list for PBXNativeTarget "volunty" */;
 			buildPhases = (
+				B0D77C44EFB95C60E3934004 /* [CP] Check Pods Manifest.lock */,
 				397381DE27357BAF008D8A66 /* Sources */,
 				397381DF27357BAF008D8A66 /* Frameworks */,
 				397381E027357BAF008D8A66 /* Resources */,
+				B42104407C158F135A0DAF0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,6 +304,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B0D77C44EFB95C60E3934004 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-volunty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B42104407C158F135A0DAF0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-volunty/Pods-volunty-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-volunty/Pods-volunty-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-volunty/Pods-volunty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		397381DE27357BAF008D8A66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -250,6 +353,7 @@
 			files = (
 				395595E9274019D9001EA18B /* RoleViewController.swift in Sources */,
 				39AB82ED27409055008963A5 /* PostDetailViewController.swift in Sources */,
+				391EBD8027496690000878AD /* LoginViewModel.swift in Sources */,
 				397381EA27357BAF008D8A66 /* ViewController.swift in Sources */,
 				E46399E92735916E0054616B /* ViewControllerSecondePage.swift in Sources */,
 				398D9FE3273993CD00C22704 /* DonationMessageViewController.swift in Sources */,
@@ -262,17 +366,22 @@
 				398D9FE1273988F700C22704 /* EmergencyCaseViewController.swift in Sources */,
 				3906821E2741561E00C242E4 /* GestionVolunteerViewController.swift in Sources */,
 				396F9C9D2741DBDD007E658E /* LeaderBoardViewController.swift in Sources */,
+				391EBD7927493CF0000878AD /* Volunteer.swift in Sources */,
 				399B8B0127388BF800E16429 /* ExperiencesViewController.swift in Sources */,
 				39565EBB274039C60059E37B /* MyPostsViewController.swift in Sources */,
 				397381E627357BAF008D8A66 /* AppDelegate.swift in Sources */,
 				394278A9273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift in Sources */,
 				394278AD273B336D002EBDE9 /* acceptedVoluntingViewController.swift in Sources */,
 				39EDAAAF2741851800084814 /* RecruiterProfileEditViewController.swift in Sources */,
+				391EBD7B274942B9000878AD /* Recruiter.swift in Sources */,
 				39DB718A27400E620010390B /* SignUpRecruiterViewController.swift in Sources */,
+				391EBD852749B631000878AD /* keyboard.swift in Sources */,
 				39B422C22741721D007819A8 /* RecruiterProfileViewController.swift in Sources */,
 				39427878273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift in Sources */,
 				399B8B03273895D500E16429 /* HomeVolunteerViewController.swift in Sources */,
+				391EBD7E27496511000878AD /* UserAuth.swift in Sources */,
 				393D403427358F650097D3C1 /* LoginViewController.swift in Sources */,
+				396BD836274B069F00DB750F /* SignUpVolunteerViewController.swift in Sources */,
 				394278AB273B2F9E002EBDE9 /* WriteReviewViewController.swift in Sources */,
 				397381E827357BAF008D8A66 /* SceneDelegate.swift in Sources */,
 				398D9FE52739994100C22704 /* PostingRecruiterViewController.swift in Sources */,
@@ -420,6 +529,7 @@
 		};
 		397381FA27357BB0008D8A66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7A4851989A73FA2D1B50A3 /* Pods-volunty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,6 +558,7 @@
 		};
 		397381FB27357BB0008D8A66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A486BC964F9843D16D70EF9 /* Pods-volunty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
