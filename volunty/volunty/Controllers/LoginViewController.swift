@@ -6,9 +6,17 @@
 //
 
 import UIKit
+import FacebookLogin
+import FBSDKLoginKit
+import Alamofire
 
-class LoginViewController: UIViewController ,UITextFieldDelegate{
+
+class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDelegate{
     
+   
+   
+    
+
     //widgets
     @IBOutlet weak var emailTextFiield: UITextField!
     
@@ -18,35 +26,120 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
     
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var loginbutton: FBLoginButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarController?.navigationItem.hidesBackButton = true
-        self.navigationItem.setHidesBackButton(true, animated: true)
-        self.hideKeyboardWhenTappedAround()
-        emailTextFiield.delegate = self
-       // emailTextFiield.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
-        passwordTextField.delegate = self
-      //  passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
-        indicatorStart(false)
-        signInButton.isEnabled = true
-        signInButton.alpha = 0.65
-        
-
-        // Do any additional setup after loading the view.
-    }
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == emailTextFiield{
-            passwordTextField.becomeFirstResponder()
-        }else{
-            textField.endEditing(true)
-            if checkingUserInfo(){
-                signInTapped(self)
+        if let token = AccessToken.current,
+                !token.isExpired {
+            print(token)
+            let token = token.tokenString
+            let request = FBSDKLoginKit.GraphRequest(graphPath: "me",
+                                                     parameters: ["fields" : "email , name"],
+                                                     tokenString: token,
+                                                     version: nil,
+                                                     httpMethod: .get)
+            request.start(completionHandler : { connection,result,error in
+                print("result\(result!)")
+                let info = result as! [String : AnyObject]
+                 let name = info["name"] as? String
+                 let email = info["email"] as? String
+                print (info)
+                let list = info.map{$0.value}
+                let s = list.startIndex
+                let array = [name , email]
+                print (array)
+                
+                 
+                
+                self.performSegue(withIdentifier: "HomeSegue", sender: array)
+                
+            })
+         
+            
+        }else {
+           // let loginButton = FBLoginButton()
+            //loginButton.delegate = self
+              //      loginButton.center = view.center
+                //    view.addSubview(loginButton)
+            
+            loginbutton.permissions = ["public_profile", "email"]
+            self.tabBarController?.navigationItem.hidesBackButton = true
+            self.navigationItem.setHidesBackButton(true, animated: true)
+            self.hideKeyboardWhenTappedAround()
+            emailTextFiield.delegate = self
+           // emailTextFiield.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+            passwordTextField.delegate = self
+          //  passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+            indicatorStart(false)
+            signInButton.isEnabled = true
+            signInButton.alpha = 0.65
+            let list2 = [emailTextFiield.text,passwordTextField.text]
+            print(list2)
+            if let token = AccessToken.current,
+                    token.isExpired {
+          //  self.performSegue(withIdentifier: "HomeSegue", sender: list2)
             }
+            
         }
-        return true
+       
+       
+        
+       
     }
+    
+    func loginButton(_ loginbutton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        let token = result?.token?.tokenString
+        let request = FBSDKLoginKit.GraphRequest(graphPath: "me",
+                                                 parameters: ["fields" : "email , name"],
+                                                 tokenString: token,
+                                                 version: nil,
+                                                 httpMethod: .get)
+        request.start(completionHandler : { connection,result,error in
+        
+           // let List = result!.map{$0.count}
+            print("\(result!)")
+            
+            if ((result) != nil){
+                print("result\(result!)")
+                let info = result as! [String : AnyObject]
+                 let name = info["name"] as? String
+                 let email = info["email"] as? String
+                print (info)
+                let list = info.map{$0.value}
+                print (list[0])
+                let array = [name , email]
+                self.performSegue(withIdentifier: "HomeSegue", sender: array)
+                
+                
+            }
+            
+        })
+    }
+    
+    func loginButtonDidLogOut(_ loginbutton: FBLoginButton) {
+        LoginManager().logOut()
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HomeSegue"{
+            let l = sender as! [AnyObject]
+            if let vc = segue.destination as? HomeVolunteerViewController {
+                vc.name = (l[0] as? String)
+                vc.email = l[1] as? String
+            }
+            
+           
+        }
+        if segue.identifier == "HomeSegue2"{
+            let v = segue.destination as? HomeVolunteerViewController
+        }
+        
+    }
+    
+    
+    
+
     
     @objc func textFieldDidChange(textField: UITextField){
         if checkingUserInfo(){
@@ -77,36 +170,53 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         return false
     }
 
-    @IBAction func signInTapped(_ sender: Any) {
-        //LoginViewModel.login()
-        if checkingUserInfo() == true{ // Making sure email and pass match the rules
-            indicatorStart(true)
-        UserAuth.instance.login(email: emailTextFiield.text!, password: passwordTextField.text!){ result in
+    @IBAction func signInTapped(_ sender: UIButton) {
+        let defaults = UserDefaults.standard
+        if (checkingUserInfo()){
+            guard let email = emailTextFiield.text else {return}
+            guard let password = passwordTextField.text else {return}
+            let para :[String: Any] = [
+                "email":email,
+                "password":password
+            ]
+            LoginViewModel1.instance.callingLoginAPI(email: email, password: password){
+                (result)in
                 switch result{
-                    
-                              case .success(_):
-                                  self.indicatorStart(false)
-                                  print("Successfully signed in user")
-                                NotificationCenter.default.post(name: Notification.Name("userLoggedIn"), object: true)
-                                 self.dismiss(animated: true, completion: nil)
-                              case .failure(_):
-                                    self.indicatorStart(false)
-                                   // print(self.emailTextFiield.text!,self.passwordTextField.text!)
-                                    //self.performSegue(withIdentifier: "retry", sender: "volunteer")
-                                    print("this is a recruiter account")
-                  
-                              }
-            
-                    
-        }}
-        else{
+                case .success(let json):
+                    let token = (json as AnyObject).value(forKey: "token") as! String?
+                    defaults.setValue(token, forKey: "jsonwebtoken")
+                    print(defaults.string(forKey: "jsonwebtoken"))
+                    let user = (json as AnyObject).value(forKey: "user") as! NSDictionary
+                   print(user)
+                       
+                case .failure(let json):
+                   // print(err.localizedDescription)
+                    print(json)
+                    let alert = UIAlertController(title: "failed", message: "incorrect password or email", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "retry", style: .cancel, handler:nil)
+                               alert.addAction(action)
+                               self.present(alert,animated: true)
+                    self.emailTextFiield.text?.removeAll()
+                    self.passwordTextField.text?.removeAll()
+                }
+                
+            }
+        }else{
             let alert = UIAlertController(title: "failed", message: "authentification failed", preferredStyle: .alert)
-            let action = UIAlertAction(title: "retry", style: .cancel, handler: nil)
-            alert.addAction(action)
-            self.present(alert,animated: true)
+                       let action = UIAlertAction(title: "retry", style: .cancel, handler: nil)
+                       alert.addAction(action)
+                       self.present(alert,animated: true)
         }
+       
+        
+        
+        
         
     }
+    
+    
+ 
+    
                            
                         
                             
@@ -117,3 +227,5 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
 
   
 }
+
+

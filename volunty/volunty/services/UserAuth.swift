@@ -23,11 +23,11 @@ struct LoginRequestBody: Codable {
     let password: String
 }
 
-struct LoginResponse: Codable {
-    let token: String?
-    let message: String?
-    let success: Bool?
-}
+//struct LoginResponse: Codable {
+  //  let token: String?
+    //let message: String?
+    //let success: Bool?
+//}
 
 class UserAuth {
     static let instance = UserAuth()

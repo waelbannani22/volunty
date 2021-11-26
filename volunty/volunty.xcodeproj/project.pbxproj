@@ -33,6 +33,8 @@
 		397381F027357BAF008D8A66 /* volunty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 397381EE27357BAF008D8A66 /* volunty.xcdatamodeld */; };
 		397381F227357BB0008D8A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397381F127357BB0008D8A66 /* Assets.xcassets */; };
 		397381F527357BB0008D8A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397381F327357BB0008D8A66 /* LaunchScreen.storyboard */; };
+		3981722D2750112000975199 /* loginViewModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981722C2750112000975199 /* loginViewModel1.swift */; };
+		3981722F2750299400975199 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981722E2750299400975199 /* LoginModel.swift */; };
 		398D9FE1273988F700C22704 /* EmergencyCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D9FE0273988F700C22704 /* EmergencyCaseViewController.swift */; };
 		398D9FE3273993CD00C22704 /* DonationMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D9FE2273993CD00C22704 /* DonationMessageViewController.swift */; };
 		398D9FE52739994100C22704 /* PostingRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D9FE42739994100C22704 /* PostingRecruiterViewController.swift */; };
@@ -41,6 +43,7 @@
 		399B8B03273895D500E16429 /* HomeVolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399B8B02273895D500E16429 /* HomeVolunteerViewController.swift */; };
 		39AB82ED27409055008963A5 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AB82EC27409055008963A5 /* PostDetailViewController.swift */; };
 		39B422C22741721D007819A8 /* RecruiterProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B422C12741721D007819A8 /* RecruiterProfileViewController.swift */; };
+		39C2BEF427504F330025D6B4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2BEF327504F330025D6B4 /* SignUpViewModel.swift */; };
 		39DB7188274004A00010390B /* LoginRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB7187274004A00010390B /* LoginRecruiterViewController.swift */; };
 		39DB718A27400E620010390B /* SignUpRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB718927400E620010390B /* SignUpRecruiterViewController.swift */; };
 		39EDAAAF2741851800084814 /* RecruiterProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDAAAE2741851800084814 /* RecruiterProfileEditViewController.swift */; };
@@ -79,6 +82,8 @@
 		397381F127357BB0008D8A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		397381F427357BB0008D8A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		397381F627357BB0008D8A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3981722C2750112000975199 /* loginViewModel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewModel1.swift; sourceTree = "<group>"; };
+		3981722E2750299400975199 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		398D9FE0273988F700C22704 /* EmergencyCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyCaseViewController.swift; sourceTree = "<group>"; };
 		398D9FE2273993CD00C22704 /* DonationMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationMessageViewController.swift; sourceTree = "<group>"; };
 		398D9FE42739994100C22704 /* PostingRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingRecruiterViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 		399B8B02273895D500E16429 /* HomeVolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVolunteerViewController.swift; sourceTree = "<group>"; };
 		39AB82EC27409055008963A5 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		39B422C12741721D007819A8 /* RecruiterProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruiterProfileViewController.swift; sourceTree = "<group>"; };
+		39C2BEF327504F330025D6B4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		39DB7187274004A00010390B /* LoginRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRecruiterViewController.swift; sourceTree = "<group>"; };
 		39DB718927400E620010390B /* SignUpRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRecruiterViewController.swift; sourceTree = "<group>"; };
 		39EDAAAE2741851800084814 /* RecruiterProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruiterProfileEditViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 			children = (
 				391EBD7827493CF0000878AD /* Volunteer.swift */,
 				391EBD7A274942B9000878AD /* Recruiter.swift */,
+				3981722E2750299400975199 /* LoginModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -119,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				391EBD7F27496690000878AD /* LoginViewModel.swift */,
+				3981722C2750112000975199 /* loginViewModel1.swift */,
+				39C2BEF327504F330025D6B4 /* SignUpViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -232,7 +241,6 @@
 				EA7A4851989A73FA2D1B50A3 /* Pods-volunty.debug.xcconfig */,
 				2A486BC964F9843D16D70EF9 /* Pods-volunty.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -373,7 +381,9 @@
 				394278A9273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift in Sources */,
 				394278AD273B336D002EBDE9 /* acceptedVoluntingViewController.swift in Sources */,
 				39EDAAAF2741851800084814 /* RecruiterProfileEditViewController.swift in Sources */,
+				3981722D2750112000975199 /* loginViewModel1.swift in Sources */,
 				391EBD7B274942B9000878AD /* Recruiter.swift in Sources */,
+				39C2BEF427504F330025D6B4 /* SignUpViewModel.swift in Sources */,
 				39DB718A27400E620010390B /* SignUpRecruiterViewController.swift in Sources */,
 				391EBD852749B631000878AD /* keyboard.swift in Sources */,
 				39B422C22741721D007819A8 /* RecruiterProfileViewController.swift in Sources */,
@@ -382,6 +392,7 @@
 				391EBD7E27496511000878AD /* UserAuth.swift in Sources */,
 				393D403427358F650097D3C1 /* LoginViewController.swift in Sources */,
 				396BD836274B069F00DB750F /* SignUpVolunteerViewController.swift in Sources */,
+				3981722F2750299400975199 /* LoginModel.swift in Sources */,
 				394278AB273B2F9E002EBDE9 /* WriteReviewViewController.swift in Sources */,
 				397381E827357BAF008D8A66 /* SceneDelegate.swift in Sources */,
 				398D9FE52739994100C22704 /* PostingRecruiterViewController.swift in Sources */,

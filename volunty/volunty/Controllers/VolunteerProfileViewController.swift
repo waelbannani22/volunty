@@ -6,8 +6,18 @@
 //
 
 import UIKit
+import FacebookLogin
+import FacebookCore
 
-class VolunteerProfileViewController: UIViewController {
+class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        LoginManager().logOut()
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +26,11 @@ class VolunteerProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func logout(_ sender: UIButton) {
+        LoginManager().logOut()
     }
-    */
+    
+    
+   
 
 }
