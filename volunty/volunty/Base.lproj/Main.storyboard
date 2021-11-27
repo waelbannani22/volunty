@@ -294,6 +294,7 @@
                         <outlet property="loginbutton" destination="OZA-8M-cbl" id="L11-Zd-YtL"/>
                         <outlet property="passwordTextField" destination="MnD-GO-BSZ" id="jJN-bo-nL0"/>
                         <outlet property="signInButton" destination="Y7F-pa-QPe" id="6rI-La-ih8"/>
+                        <segue destination="Pmh-TE-8tW" kind="show" id="4KF-Wc-0K5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZc-3G-bSi" sceneMemberID="firstResponder"/>
@@ -1028,10 +1029,80 @@ Visit our website at www.readingpartners.org/volunteer to sign up and learn more
             </objects>
             <point key="canvasLocation" x="9179.7101449275378" y="101.78571428571428"/>
         </scene>
+        <!--Reset Password View Controller-->
+        <scene sceneID="vNX-9d-jl1">
+            <objects>
+                <viewController storyboardIdentifier="ResetPasswordViewController" id="dV2-dr-O2q" customClass="ResetPasswordViewController" customModule="volunty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6UJ-st-EcC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ve4-Md-xK7">
+                                <rect key="frame" x="68" y="226" width="278" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="enter your new password :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKX-Um-LS8">
+                                        <rect key="frame" x="20" y="15" width="200.5" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="confirm your password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlh-ro-EkC">
+                                        <rect key="frame" x="20" y="139" width="217" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cg5-rt-I9y">
+                                        <rect key="frame" x="20" y="187" width="250" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lGm-du-mMY">
+                                        <rect key="frame" x="19" y="65" width="247" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="confirm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pU8-ks-gV9">
+                                        <rect key="frame" x="114" y="285" width="65" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" red="0.94509804249999996" green="0.93725490570000003" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxm-tQ-cau">
+                                        <rect key="frame" x="69" y="265" width="140" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="button1"/>
+                                        <connections>
+                                            <action selector="confirm:" destination="dV2-dr-O2q" eventType="touchUpInside" id="ZPX-kx-tJ1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nQk-J5-QfY"/>
+                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmlabel" destination="cg5-rt-I9y" id="BzZ-Mn-ue2"/>
+                        <outlet property="newlabel" destination="lGm-du-mMY" id="KYZ-iN-8cU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nL4-oW-vi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4671.0144927536239" y="-1320.5357142857142"/>
+        </scene>
         <!--Volunteer Profile View Controller-->
         <scene sceneID="Zf0-ZU-r6q">
             <objects>
-                <viewController id="wKx-K8-iZV" customClass="VolunteerProfileViewController" customModule="volunty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VolunteerProfileViewController" id="wKx-K8-iZV" customClass="VolunteerProfileViewController" customModule="volunty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Fb-QO-5Bl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1216,6 +1287,9 @@ Visit our website at www.readingpartners.org/volunteer to sign up and learn more
                                                                         <state key="normal" title="CHANGE PASSWORD">
                                                                             <color key="titleColor" red="0.0" green="0.86087566609999999" blue="0.79776335939999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="resetpassword:" destination="wKx-K8-iZV" eventType="touchUpInside" id="FXk-EB-g5W"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1445,6 +1519,13 @@ Visit our website at www.readingpartners.org/volunteer to sign up and learn more
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bwe-ep-dyo"/>
+                    <connections>
+                        <outlet property="datelabel" destination="lhF-Cu-fOy" id="wiB-8L-Jr8"/>
+                        <outlet property="emaillabel" destination="hEj-Oe-Z83" id="ay7-y5-EGv"/>
+                        <outlet property="firstnamelabel" destination="RBC-2x-0nr" id="IHV-M9-MCJ"/>
+                        <outlet property="lastnamelabel" destination="fHE-Qv-ylR" id="Xcg-Hk-7BZ"/>
+                        <outlet property="phonelabel" destination="GrI-k0-kfZ" id="8t8-v9-a3x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVg-t6-EUk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1943,7 +2024,7 @@ Visit our website at www.readingpartners.org/volunteer to sign up and learn more
                                     <backgroundConfiguration key="background" image="profile"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="wKx-K8-iZV" kind="show" id="pZ3-Lc-vDf"/>
+                                    <action selector="edit:" destination="zqn-lD-vvz" eventType="touchUpInside" id="ECh-5y-aPi"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emergency Case" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzP-lX-z1L">
@@ -2202,6 +2283,7 @@ Visit our website at www.readingpartners.org/volunteer to sign up and learn more
             <objects>
                 <navigationController id="Pmh-TE-8tW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" selectedImage="outline-home-24px" id="0Ao-zf-zDY"/>
+                    <navigationItem key="navigationItem" id="Unj-vL-3RC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g4i-bN-9ib">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2212,7 +2294,7 @@ Visit our website at www.readingpartners.org/volunteer to sign up and learn more
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDR-DK-Xeh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3499" y="701"/>
+            <point key="canvasLocation" x="3577" y="809"/>
         </scene>
         <!--Emergency Case View Controller-->
         <scene sceneID="AvE-Ah-KiX">
@@ -4378,7 +4460,7 @@ loremloremloremloremloremloremloremlorem</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Fpl-TW-oB7"/>
-        <segue reference="pZ3-Lc-vDf"/>
+        <segue reference="4KF-Wc-0K5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AcceptedNotifc" width="34" height="34"/>

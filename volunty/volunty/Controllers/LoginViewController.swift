@@ -46,8 +46,8 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
                  let name = info["name"] as? String
                  let email = info["email"] as? String
                 print (info)
-                let list = info.map{$0.value}
-                let s = list.startIndex
+            
+            
                 let array = [name , email]
                 print (array)
                 
@@ -121,21 +121,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
     func loginButtonDidLogOut(_ loginbutton: FBLoginButton) {
         LoginManager().logOut()
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "HomeSegue"{
-            let l = sender as! [AnyObject]
-            if let vc = segue.destination as? HomeVolunteerViewController {
-                vc.name = (l[0] as? String)
-                vc.email = l[1] as? String
-            }
-            
-           
-        }
-        if segue.identifier == "HomeSegue2"{
-            let v = segue.destination as? HomeVolunteerViewController
-        }
-        
-    }
+  
     
     
     
@@ -183,11 +169,23 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
                 (result)in
                 switch result{
                 case .success(let json):
+                    let jsonSent = json!
                     let token = (json as AnyObject).value(forKey: "token") as! String?
                     defaults.setValue(token, forKey: "jsonwebtoken")
-                    print(defaults.string(forKey: "jsonwebtoken"))
+                    //print(defaults.string(forKey: "jsonwebtoken"))
                     let user = (json as AnyObject).value(forKey: "user") as! NSDictionary
-                   print(user)
+                    let username = (  user as NSDictionary).value(forKey: "username") as! String
+                 
+                    
+                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                    let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "HomeVolunteerViewController") as! HomeVolunteerViewController
+                    objSomeViewController.email = email
+                    objSomeViewController.token = token
+                    objSomeViewController.user = user
+
+                    
+                    self.navigationController?.pushViewController(objSomeViewController, animated: true)
+                   
                        
                 case .failure(let json):
                    // print(err.localizedDescription)
@@ -207,12 +205,31 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
                        alert.addAction(action)
                        self.present(alert,animated: true)
         }
-       
-        
-        
-        
-        
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "Segue1"{
+                let l = sender as! [String?]
+                print(l)
+                if let vc = segue.destination as? HomeVolunteerViewController {
+                    vc.email = l[0]
+                    vc.token = l[1]
+                   
+                }
+                
+               
+            }
+            if segue.identifier == "HomeSegue2"{
+                let v = segue.destination as? HomeVolunteerViewController
+            }
+            
+        }
+   
+}
+        
+        
+        
+        
+    
     
     
  
@@ -226,6 +243,6 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
     
 
   
-}
+
 
 
