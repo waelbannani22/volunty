@@ -2702,7 +2702,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
         <!--Sign Up Recruiter View Controller-->
         <scene sceneID="fVL-4d-NHb">
             <objects>
-                <viewController id="QUu-oX-EVd" customClass="SignUpRecruiterViewController" customModule="volunty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpRecruiterViewController" id="QUu-oX-EVd" customClass="SignUpRecruiterViewController" customModule="volunty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QtH-TY-F4W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2800,7 +2800,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="i9m-8v-UaH" kind="show" id="rOk-UV-7j4"/>
+                                    <action selector="signupTapped:" destination="QUu-oX-EVd" eventType="touchUpInside" id="DKX-Z7-tJm"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sing-in" translatesAutoresizingMaskIntoConstraints="NO" id="Gru-fD-Khw">
@@ -2826,6 +2826,15 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                         <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="BXv-Uu-xG9"/>
+                    <connections>
+                        <outlet property="confirmpasstf" destination="sDJ-Yc-Ssa" id="CqU-6F-VrU"/>
+                        <outlet property="emailtf" destination="LMK-sU-k5V" id="FP0-fJ-L0g"/>
+                        <outlet property="nametf" destination="yGl-MC-Tk9" id="xNr-f7-N6L"/>
+                        <outlet property="organisationtf" destination="TWH-wD-a7F" id="RqV-DP-DwO"/>
+                        <outlet property="passtf" destination="Pp5-PN-efa" id="k1W-ir-V7b"/>
+                        <outlet property="phonetf" destination="15G-Kh-V1v" id="8AJ-7n-lVc"/>
+                        <outlet property="signupbutton" destination="3l2-kL-TaL" id="57F-kf-WMw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r0C-Zy-RIX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2834,7 +2843,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
         <!--Login Recruiter View Controller-->
         <scene sceneID="KXF-49-z2p">
             <objects>
-                <viewController id="kgv-uD-hqQ" customClass="LoginRecruiterViewController" customModule="volunty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginRecruiterViewController" id="kgv-uD-hqQ" customClass="LoginRecruiterViewController" customModule="volunty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RLM-QL-Hs4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2887,7 +2896,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="button1"/>
                                         <connections>
-                                            <segue destination="i9m-8v-UaH" kind="show" id="Fpl-TW-oB7"/>
+                                            <action selector="loginTapped:" destination="kgv-uD-hqQ" eventType="touchUpInside" id="ryv-wT-UDL"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRP-Z9-jg8">
@@ -2909,7 +2918,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                             <color key="baseForegroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="QUu-oX-EVd" kind="show" id="6Fq-oM-dbT"/>
+                                            <segue destination="QUu-oX-EVd" kind="show" id="4GZ-EQ-oJX"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IWt-zC-91F">
@@ -2972,6 +2981,11 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bsb-Mg-WgI"/>
+                    <connections>
+                        <outlet property="emailtf" destination="IWt-zC-91F" id="5ll-sY-91G"/>
+                        <outlet property="loginbutton" destination="AaV-w7-BsH" id="vFj-Nu-k8a"/>
+                        <outlet property="passwordtf" destination="Pgt-0n-Nws" id="9K2-Ij-lJy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F2L-hc-vB4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4639,7 +4653,6 @@ loremloremloremloremloremloremloremlorem</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fpl-TW-oB7"/>
         <segue reference="4KF-Wc-0K5"/>
     </inferredMetricsTieBreakers>
     <resources>

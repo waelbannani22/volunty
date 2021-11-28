@@ -16,7 +16,7 @@ class HomeVolunteerViewController: UIViewController {
     var user :NSDictionary?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let defaults = UserDefaults.standard
         imageProfile.layer.masksToBounds = true
         imageProfile.layer.cornerRadius = imageProfile.frame.size.width/2
         imageProfile.layer.borderColor = UIColor.black.cgColor
@@ -28,7 +28,7 @@ class HomeVolunteerViewController: UIViewController {
        // emailLabel.text = email! ?? ""
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "VolunteerProfileViewController") as! VolunteerProfileViewController
-        
+        print("default token",defaults.string(forKey: "jsonwebtoken"))
         objSomeViewController.user = user!
         
 

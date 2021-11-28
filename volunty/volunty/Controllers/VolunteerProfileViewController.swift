@@ -43,15 +43,15 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
             case .success(let json):
                 let userResponse = (  json as AnyObject).value(forKey: "username") as! String
                 let lastname = (  json as AnyObject).value(forKey: "lastname") as! String
-                let date = (  json as AnyObject).value(forKey: "memberDate") as! String
+               // let date = (  json as AnyObject).value(forKey: "memberDate") as! String
                 let email1 = (  json as AnyObject).value(forKey: "email") as! String
                 self.firstnamelabel.text = userResponse
                 self.lastnamelabel.text = lastname
-                self.datelabel.text = date
+              //  self.datelabel.text = date
                 self.emaillabel.text = email1
                 self.id = (  json as AnyObject).value(forKey: "_id") as? String
                 self.token = (  json as AnyObject).value(forKey: "token") as? String
-                print(userResponse)
+                print(token)
             case .failure(let json):
                 print("error")
                 
@@ -101,6 +101,7 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
        // let id = (  user! as NSDictionary).value(forKey: "_id") as! String
        // let token = (  user! as NSDictionary).value(forKey: "token") as! String
         objSomeViewController.id = self.id
+        print(self.token)
         objSomeViewController.token = self.token
         print(self.id)
 

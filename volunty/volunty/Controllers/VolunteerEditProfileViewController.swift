@@ -15,14 +15,20 @@ class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate{
     //var
     var token:String?
     var id :String?
+    var tokenEdit :String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         fullnamelabel.delegate = self
         usernamelabel.delegate = self
-        print(id!)
+   //     print("toekn initiale",token)
+        let defaults = UserDefaults.standard
+        self.tokenEdit = defaults.string(forKey: "jsonwebtoken")!
+        print("token edit",tokenEdit)
+        
     }
+    
     
     @IBAction func DateTapped(_ sender: Any) {
         performSegue(withIdentifier: "date", sender: nil)
@@ -33,8 +39,9 @@ class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate{
     @IBAction func saveChanges(_ sender: Any) {
         let fullname = fullnamelabel.text!
         let username = usernamelabel.text!
+        //print(self.tokenEdit)
         print(fullname," ",username)
-        HomeVolunteer.instance.updateUser(id: id!, token: token!, username: username, lastname: fullname){
+        HomeVolunteer.instance.updateUser(id: id!, token: tokenEdit!, username: username, lastname: fullname){
             result in
             print(result)
             switch result {

@@ -224,4 +224,88 @@ class LoginViewModel1 {
         
         
     }
+    func callingLoginRecruiterAPI(email :String, password: String,completionHandler: @escaping Handler){
+        let para :[String: Any] = [
+            "email":email,
+            "password":password
+        ]
+        let headers :HTTPHeaders = [
+            "Content-Type" : "application/json"
+        ]
+        Alamofire.request("http://localhost:3000/loginRecruiter", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+            response  in
+            debugPrint(response)
+            if let status =  response.response?.statusCode{
+                let data = response.data
+                print(status)
+                switch status {
+                    case 200:
+                    do {
+                        let json =  try JSONSerialization.jsonObject(with: data!, options: [])
+                        completionHandler(.success(json))
+                        
+                    } catch  {
+                        completionHandler(.failure(.custom(message: "failed")))
+                    }
+                  
+                    
+                    
+                default:
+                   
+                    completionHandler(.failure(.custom(message: "please try again")))
+                }
+                    
+                }
+            
+        }
+        
+        
+    }
+    //signuprecruiter
+    func callingSignUpRecruiterAPI(email :String, password: String, name: String, description: String
+                          , organisation: String, phone: String
+                          ,completionHandler: @escaping Handler){
+        let para :[String: Any] = [
+            "email":email,
+            "password":password,
+            "name":name,
+            "description":description,
+            "organisation":organisation,
+            "phone":phone,
+        ]
+        let headers :HTTPHeaders = [
+            "Content-Type" : "application/json"
+        ]
+        Alamofire.request("http://localhost:3000/SignupRecrruiter", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+            response  in
+           // debugPrint(response)
+            if let status =  response.response?.statusCode{
+                let data = response.data
+                print(status)
+                switch status {
+                    case 200:
+                    do {
+                       
+                        completionHandler(.success("success"))
+                    
+                       // print("success")
+                        
+                    } catch  {
+                        completionHandler(.failure(.custom(message: "failed")))
+                    }
+                  
+                    
+                    
+                default:
+                   
+                    completionHandler(.failure(.custom(message: "please try again")))
+                }
+                    
+                }
+            
+        }
+        
+        
+    }
+    
 }
