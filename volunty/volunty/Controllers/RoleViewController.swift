@@ -9,6 +9,8 @@ import UIKit
 
 class RoleViewController: UIViewController {
 
+    //widgets
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)

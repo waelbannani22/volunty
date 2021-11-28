@@ -43,6 +43,8 @@
 		399B8B03273895D500E16429 /* HomeVolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399B8B02273895D500E16429 /* HomeVolunteerViewController.swift */; };
 		39AB82ED27409055008963A5 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AB82EC27409055008963A5 /* PostDetailViewController.swift */; };
 		39B422C22741721D007819A8 /* RecruiterProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B422C12741721D007819A8 /* RecruiterProfileViewController.swift */; };
+		39B6617527530A73000F1DCD /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B6617427530A73000F1DCD /* ForgetPasswordViewController.swift */; };
+		39B66177275310B2000F1DCD /* VerifcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B66176275310B2000F1DCD /* VerifcodeViewController.swift */; };
 		39C2BEF427504F330025D6B4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2BEF327504F330025D6B4 /* SignUpViewModel.swift */; };
 		39DB7188274004A00010390B /* LoginRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB7187274004A00010390B /* LoginRecruiterViewController.swift */; };
 		39DB718A27400E620010390B /* SignUpRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB718927400E620010390B /* SignUpRecruiterViewController.swift */; };
@@ -94,6 +96,8 @@
 		399B8B02273895D500E16429 /* HomeVolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVolunteerViewController.swift; sourceTree = "<group>"; };
 		39AB82EC27409055008963A5 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		39B422C12741721D007819A8 /* RecruiterProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruiterProfileViewController.swift; sourceTree = "<group>"; };
+		39B6617427530A73000F1DCD /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		39B66176275310B2000F1DCD /* VerifcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifcodeViewController.swift; sourceTree = "<group>"; };
 		39C2BEF327504F330025D6B4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		39DB7187274004A00010390B /* LoginRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRecruiterViewController.swift; sourceTree = "<group>"; };
 		39DB718927400E620010390B /* SignUpRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRecruiterViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +218,8 @@
 				396F9C9C2741DBDD007E658E /* LeaderBoardViewController.swift */,
 				396BD835274B069F00DB750F /* SignUpVolunteerViewController.swift */,
 				39F7731C2751AFF7007FF95A /* ResetPasswordViewController.swift */,
+				39B6617427530A73000F1DCD /* ForgetPasswordViewController.swift */,
+				39B66176275310B2000F1DCD /* VerifcodeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 				3906821E2741561E00C242E4 /* GestionVolunteerViewController.swift in Sources */,
 				396F9C9D2741DBDD007E658E /* LeaderBoardViewController.swift in Sources */,
 				391EBD7927493CF0000878AD /* Volunteer.swift in Sources */,
+				39B66177275310B2000F1DCD /* VerifcodeViewController.swift in Sources */,
 				399B8B0127388BF800E16429 /* ExperiencesViewController.swift in Sources */,
 				39565EBB274039C60059E37B /* MyPostsViewController.swift in Sources */,
 				397381E627357BAF008D8A66 /* AppDelegate.swift in Sources */,
@@ -391,6 +398,7 @@
 				3981722D2750112000975199 /* loginViewModel1.swift in Sources */,
 				391EBD7B274942B9000878AD /* Recruiter.swift in Sources */,
 				39C2BEF427504F330025D6B4 /* SignUpViewModel.swift in Sources */,
+				39B6617527530A73000F1DCD /* ForgetPasswordViewController.swift in Sources */,
 				39DB718A27400E620010390B /* SignUpRecruiterViewController.swift in Sources */,
 				39F7731D2751AFF7007FF95A /* ResetPasswordViewController.swift in Sources */,
 				391EBD852749B631000878AD /* keyboard.swift in Sources */,

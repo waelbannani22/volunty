@@ -130,6 +130,45 @@ class HomeVolunteer {
         }
         
     }
+    func updateUser(id : String,token : String,username : String,lastname :String,completionHandler: @escaping HandlerHomeV){
+        let para :[String: Any] = [
+            "id":id,
+            "token":token,
+            "username":username,
+            "lastname":lastname
+          
+        ]
+        let headers :HTTPHeaders = [
+            "Content-Type" : "application/json"
+        ]
+        Alamofire.request("http://localhost:3000/update_volunteer", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+            response  in
+            debugPrint(response)
+            if let status =  response.response?.statusCode{
+                let data = response.data
+                print(status)
+                switch status {
+                    case 200:
+                    do {
+                       // let json =  try JSONSerialization.jsonObject(with: data!, options: [])
+                        completionHandler(.success(status))
+                        
+                    } catch  {
+                        completionHandler(.failure(.custom(message: "failed")))
+                    }
+                  
+                    
+                    
+                default:
+                   
+                    completionHandler(.failure(.custom(message: "please try again")))
+                }
+                    
+                }
+            
+        }
+        
+    }
    
    
 }

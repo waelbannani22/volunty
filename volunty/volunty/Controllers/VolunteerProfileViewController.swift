@@ -19,6 +19,8 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
     @IBOutlet weak var lastnamelabel: UILabel!
     @IBOutlet weak var firstnamelabel: UILabel!
     var user :NSDictionary?
+    var token:String?
+    var id :String?
   
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
         
@@ -47,6 +49,8 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
                 self.lastnamelabel.text = lastname
                 self.datelabel.text = date
                 self.emaillabel.text = email1
+                self.id = (  json as AnyObject).value(forKey: "_id") as? String
+                self.token = (  json as AnyObject).value(forKey: "token") as? String
                 print(userResponse)
             case .failure(let json):
                 print("error")
@@ -91,6 +95,18 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
         LoginManager().logOut()
     }
     
+    @IBAction func editProfile(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "VolunteerEditProfileViewController") as! VolunteerEditProfileViewController
+       // let id = (  user! as NSDictionary).value(forKey: "_id") as! String
+       // let token = (  user! as NSDictionary).value(forKey: "token") as! String
+        objSomeViewController.id = self.id
+        objSomeViewController.token = self.token
+        print(self.id)
+
+        
+        self.navigationController?.pushViewController(objSomeViewController, animated: true)
+    }
     
    
 

@@ -7,13 +7,21 @@
 
 import UIKit
 
-class VolunteerEditProfileViewController: UIViewController {
+class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate{
 
+    //widgets
+    @IBOutlet weak var fullnamelabel: UITextField!
+    @IBOutlet weak var usernamelabel: UITextField!
+    //var
+    var token:String?
+    var id :String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.navigationItem.setHidesBackButton(true, animated: true)
-
-        // Do any additional setup after loading the view.
+        
+        fullnamelabel.delegate = self
+        usernamelabel.delegate = self
+        print(id!)
     }
     
     @IBAction func DateTapped(_ sender: Any) {
@@ -21,6 +29,23 @@ class VolunteerEditProfileViewController: UIViewController {
     }
     @IBOutlet weak var dateButton: UIButton!
     
+    
+    @IBAction func saveChanges(_ sender: Any) {
+        let fullname = fullnamelabel.text!
+        let username = usernamelabel.text!
+        print(fullname," ",username)
+        HomeVolunteer.instance.updateUser(id: id!, token: token!, username: username, lastname: fullname){
+            result in
+            print(result)
+            switch result {
+            case .success(let json):
+                self.alertmessage(message: "saved changes ", title: "success")
+            case .failure(let json):
+                self.alertmessage(message: "cannot save changes", title: "failure")
+            }
+        }
+        
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //if segue.identifier == "location"{
@@ -38,6 +63,17 @@ class VolunteerEditProfileViewController: UIViewController {
       //      destination.message = "All fields are required to be fllled out and an image needs to be selected!"
        // }
         
+    }
+    func alertmessage(message:String,title:String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "ok", style: .default,handler: nil)
+        //{action ->Void in
+          //  let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            //let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "HomeVolunteerViewController") as! HomeVolunteerViewController
+            //self.navigationController?.pushViewController(objSomeViewController, animated: true)
+        //}
+        alert.addAction(action)
+        self.present(alert,animated: true)
     }
    
 
