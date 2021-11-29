@@ -93,6 +93,12 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
     }
     @IBAction func logout(_ sender: UIButton) {
         LoginManager().logOut()
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "jsonwebtoken")
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.navigationController?.pushViewController(objSomeViewController, animated: true)
+        
     }
     
     @IBAction func editProfile(_ sender: Any) {

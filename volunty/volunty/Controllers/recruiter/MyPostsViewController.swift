@@ -9,21 +9,23 @@ import UIKit
 
 class MyPostsViewController: UIViewController {
 
+    @IBOutlet weak var addbutton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func addTapped(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "PostingRecruiterViewController") as! PostingRecruiterViewController
+        objSomeViewController.userId = defaults.value(forKey: "recruiterId")! as! String
+        objSomeViewController.token = defaults.value(forKey: "recruitertoken")! as! String
+        self.navigationController?.pushViewController(objSomeViewController, animated: true)
     }
-    */
+    
+  
 
 }
