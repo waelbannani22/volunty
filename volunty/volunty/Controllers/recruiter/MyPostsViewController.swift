@@ -9,9 +9,13 @@ import UIKit
 
 class MyPostsViewController: UIViewController {
 
+    @IBOutlet weak var namelabel: UILabel!
     @IBOutlet weak var addbutton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let defaults = UserDefaults.standard
+        namelabel.text! = defaults.value(forKey: "name") as! String
+        
 
         
     }

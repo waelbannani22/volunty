@@ -3479,14 +3479,6 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Group 130" translatesAutoresizingMaskIntoConstraints="NO" id="mKH-B6-XsW">
-                                <rect key="frame" x="150" y="311" width="21" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="outline-location_on-24px" translatesAutoresizingMaskIntoConstraints="NO" id="iF4-2w-34a">
-                                <rect key="frame" x="150" y="334" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjJ-KX-Nol">
                                 <rect key="frame" x="322" y="75" width="68" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3506,6 +3498,20 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzA-uC-M5g">
+                                <rect key="frame" x="50" y="75" width="112" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLu-5k-6fj">
+                                <rect key="frame" x="50" y="114" width="242" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dbY-cM-iAc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -3513,6 +3519,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                     <navigationItem key="navigationItem" id="DQB-Nc-Qge"/>
                     <connections>
                         <outlet property="addbutton" destination="wjJ-KX-Nol" id="gCp-rI-AGt"/>
+                        <outlet property="namelabel" destination="XLu-5k-6fj" id="8dj-af-qg8"/>
                         <segue destination="TN0-n0-jJI" kind="showDetail" id="YSj-MU-Bml"/>
                     </connections>
                 </viewController>
@@ -4022,7 +4029,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvy-TX-B26">
-                                                        <rect key="frame" x="120" y="695" width="148" height="31"/>
+                                                        <rect key="frame" x="118" y="677" width="148" height="31"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>

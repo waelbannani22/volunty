@@ -40,11 +40,14 @@ class LoginRecruiterViewController: UIViewController ,UITextFieldDelegate{
                     let token = (  json as AnyObject).value(forKey: "token") as! String
                     let user = (  json as AnyObject).value(forKey: "user") as! NSDictionary
                     let userId = (  user as AnyObject).value(forKey: "_id") as! String
+                    let name = (  user as AnyObject).value(forKey: "name") as! String
                     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                     let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "PostingRecruiterViewController") as! PostingRecruiterViewController
                     let defaults = UserDefaults.standard
                     defaults.setValue(token, forKey: "recruitertoken")
                     defaults.setValue(userId, forKey: "recruiterId")
+                    defaults.setValue(name, forKey: "name")
+                    
                     objSomeViewController.token = token
                     objSomeViewController.userId = userId
                     let alert = UIAlertController(title: "success", message: "connected successfully", preferredStyle: .alert)
