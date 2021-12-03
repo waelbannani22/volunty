@@ -3442,26 +3442,19 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WN4-p4-eaG">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WN4-p4-eaG">
                                                     <rect key="frame" x="8" y="0.0" width="112" height="89"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="titre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcl-00-g2b">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="titre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcl-00-g2b">
                                                     <rect key="frame" x="128" y="7" width="246" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1p-5Q-3va">
-                                                    <rect key="frame" x="157" y="31" width="34" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-bg-eo0">
-                                                    <rect key="frame" x="157" y="57" width="61" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-bg-eo0">
+                                                    <rect key="frame" x="157" y="57" width="161" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -3474,10 +3467,21 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                                     <color key="textColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1p-5Q-3va">
+                                                    <rect key="frame" x="128" y="39" width="178" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1Yr-ci-Ji7" id="UGj-bC-KjF"/>
+                                    <outlet property="delegate" destination="1Yr-ci-Ji7" id="QbB-ir-iG0"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjJ-KX-Nol">
                                 <rect key="frame" x="322" y="75" width="68" height="60"/>
@@ -3512,6 +3516,16 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUf-Pe-8Ap">
+                                <rect key="frame" x="181" y="173" width="54" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="refreshhed:" destination="1Yr-ci-Ji7" eventType="touchUpInside" id="Gwb-HN-5Pu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dbY-cM-iAc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -3520,7 +3534,9 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                     <connections>
                         <outlet property="addbutton" destination="wjJ-KX-Nol" id="gCp-rI-AGt"/>
                         <outlet property="namelabel" destination="XLu-5k-6fj" id="8dj-af-qg8"/>
-                        <segue destination="TN0-n0-jJI" kind="showDetail" id="YSj-MU-Bml"/>
+                        <outlet property="refresh" destination="LUf-Pe-8Ap" id="FTd-sO-bHX"/>
+                        <outlet property="tv" destination="lgz-NQ-6AQ" id="Ppw-f0-XeC"/>
+                        <segue destination="TN0-n0-jJI" kind="show" identifier="detail" id="7xG-GW-PZp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ta7-84-rmE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3532,10 +3548,10 @@ mperdiet eros, in tempor nulla ipsum id . </string>
             <objects>
                 <viewController id="TN0-n0-jJI" customClass="PostDetailViewController" customModule="volunty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UIY-FU-dNN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iie-gb-151">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crown" translatesAutoresizingMaskIntoConstraints="NO" id="iie-gb-151">
                                 <rect key="frame" x="78" y="102" width="247" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -3551,7 +3567,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re8-tG-ABN">
-                                <rect key="frame" x="97" y="291" width="34" height="21"/>
+                                <rect key="frame" x="97" y="291" width="121" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -3573,7 +3589,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="groupage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPK-0O-UJp">
-                                <rect key="frame" x="299" y="291" width="73" height="21"/>
+                                <rect key="frame" x="299" y="291" width="86" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -3586,43 +3602,40 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                 <color key="textColor" red="0.0" green="0.86078917980000003" blue="0.81249229789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="LOi-ja-aVY">
-                                <rect key="frame" x="51" y="449" width="321" height="71"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="LOi-ja-aVY">
+                                <rect key="frame" x="51" y="449" width="321" height="57.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hFP-oO-Jkf">
-                                        <rect key="frame" x="0.0" y="0.0" width="67" height="71"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="57.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="baseline-cancel-24px" translatesAutoresizingMaskIntoConstraints="NO" id="VYp-4p-sO2">
-                                                <rect key="frame" x="0.0" y="0.0" width="67" height="24"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8z-af-c5v">
-                                                <rect key="frame" x="0.0" y="24" width="67" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="83" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Declined" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhT-L6-Vrf">
-                                                <rect key="frame" x="0.0" y="50.5" width="67" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkY-Wi-i76">
+                                                <rect key="frame" x="0.0" y="26.5" width="83" height="31"/>
+                                                <color key="tintColor" red="0.27843138579999999" green="0.58431375029999999" blue="0.59607845540000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Declined"/>
+                                                <connections>
+                                                    <action selector="declinedTapped:" destination="TN0-n0-jJI" eventType="touchUpInside" id="hN5-nb-6YG"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Tu4-XF-XJh">
-                                        <rect key="frame" x="128" y="0.0" width="62.5" height="71"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tu4-XF-XJh">
+                                        <rect key="frame" x="136" y="0.0" width="62.5" height="57.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="baseline-more_horiz-24px" translatesAutoresizingMaskIntoConstraints="NO" id="utx-oB-K3C">
-                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="24"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bem-y3-w22">
-                                                <rect key="frame" x="0.0" y="24" width="62.5" height="26.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bem-y3-w22">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDd-ip-Dml">
-                                                <rect key="frame" x="0.0" y="50.5" width="62.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pending" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDd-ip-Dml">
+                                                <rect key="frame" x="0.0" y="37" width="62.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -3630,19 +3643,16 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2UM-R6-Wi4">
-                                        <rect key="frame" x="251.5" y="0.0" width="69.5" height="71"/>
+                                        <rect key="frame" x="251.5" y="0.0" width="69.5" height="57.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="baseline-check_circle_outline-24px" translatesAutoresizingMaskIntoConstraints="NO" id="kIw-02-TyN">
-                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="25"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6w4-bl-7uV">
-                                                <rect key="frame" x="0.0" y="25" width="69.5" height="26.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6w4-bl-7uV">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="38"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accpeted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdF-DP-TT4">
-                                                <rect key="frame" x="0.0" y="51.5" width="69.5" height="19.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Accpeted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdF-DP-TT4">
+                                                <rect key="frame" x="0.0" y="38" width="69.5" height="19.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -3657,14 +3667,14 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="58" id="zfN-sf-A23">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mCell" rowHeight="58" id="zfN-sf-A23">
                                         <rect key="frame" x="0.0" y="44.5" width="354" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zfN-sf-A23" id="ZI3-DE-Wel">
                                             <rect key="frame" x="0.0" y="0.0" width="354" height="58"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="volunteer name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mND-jA-QNo">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="volunteer name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mND-jA-QNo">
                                                     <rect key="frame" x="38" y="17" width="264" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -3674,32 +3684,9 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                             </subviews>
                                             <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="2x7-Op-Wzc" kind="showDetail" id="75I-Uw-OjD"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUk-Ie-s0k">
-                                <rect key="frame" x="230" y="36" width="62" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntX-la-OeB">
-                                <rect key="frame" x="323" y="36" width="62" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="edit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iw3-D0-Jxt">
                                 <rect key="frame" x="240" y="44" width="29" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3717,7 +3704,22 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XWC-TX-LG0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XWC-TX-LG0" firstAttribute="trailing" secondItem="LOi-ja-aVY" secondAttribute="trailing" constant="42" id="6Xe-4s-zRy"/>
+                            <constraint firstItem="LOi-ja-aVY" firstAttribute="top" secondItem="UIY-FU-dNN" secondAttribute="top" constant="449" id="I2k-CP-INT"/>
+                            <constraint firstItem="LOi-ja-aVY" firstAttribute="leading" secondItem="XWC-TX-LG0" secondAttribute="leading" constant="51" id="ZjX-zN-U1g"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tad-I9-3qy"/>
+                    <connections>
+                        <outlet property="buttonDeclined" destination="PkY-Wi-i76" id="cg6-qF-gbF"/>
+                        <outlet property="datelabel" destination="re8-tG-ABN" id="czn-Yt-6Ja"/>
+                        <outlet property="groupelabel" destination="WPK-0O-UJp" id="nhr-dC-4Bp"/>
+                        <outlet property="locationlabel" destination="4oK-Hj-dxY" id="4VW-OL-TBp"/>
+                        <outlet property="namelabel" destination="PoY-jY-zoM" id="o49-JQ-PhP"/>
+                        <outlet property="tv" destination="8n1-Va-ov4" id="gu2-dn-99N"/>
+                        <segue destination="2x7-Op-Wzc" kind="showDetail" identifier="Seguev" id="LCS-qX-TYb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDl-DE-uPY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3883,6 +3885,9 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                         <color key="backgroundColor" red="0.62352943419999995" green="0.83137255909999996" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="acceptTapped:" destination="2x7-Op-Wzc" eventType="touchUpInside" id="Wud-n3-crr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fd-0v-qdM">
                                 <rect key="frame" x="235" y="747" width="128" height="58"/>
@@ -3893,6 +3898,9 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                         <color key="backgroundColor" red="0.62352943419999995" green="0.83137255909999996" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="declineTapped:" destination="2x7-Op-Wzc" eventType="touchUpInside" id="WXQ-EY-frq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ACCEPT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNV-CH-fT4">
                                 <rect key="frame" x="59" y="763" width="75" height="24"/>
@@ -3912,6 +3920,16 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                         <viewLayoutGuide key="safeArea" id="CP2-sM-X3U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="acceptbutton" destination="fca-6w-oZ6" id="u0U-xo-wIj"/>
+                        <outlet property="birthdaylabel" destination="7bj-fD-iKJ" id="b2H-Mi-fI6"/>
+                        <outlet property="citylabel" destination="cBb-fW-b5x" id="LtA-cZ-LhN"/>
+                        <outlet property="declinedbuuton" destination="0fd-0v-qdM" id="lrU-6z-DKm"/>
+                        <outlet property="emaillabel" destination="B4u-2N-Vfa" id="tnF-e4-Dke"/>
+                        <outlet property="firstnamelabel" destination="d8n-ZH-AuP" id="0Wd-OP-YVx"/>
+                        <outlet property="image" destination="mjE-c0-7ko" id="SYN-uc-t2s"/>
+                        <outlet property="lastnamelabel" destination="Qga-LR-oxB" id="Mcy-km-lov"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYM-hm-OIN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4858,12 +4876,10 @@ loremloremloremloremloremloremloremlorem</string>
         <image name="Star Outlined - FontAwesome" width="26" height="24"/>
         <image name="Star Outlined - FontAwesomeBlack" width="14" height="13"/>
         <image name="aboutIcon" width="27" height="27"/>
+        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="âPngtreeâcreative color hands up_3853489" width="456" height="436"/>
         <image name="bannerDefault" width="324" height="130"/>
         <image name="baseline-add_circle_outline-24px" width="24" height="24"/>
-        <image name="baseline-cancel-24px" width="24" height="24"/>
-        <image name="baseline-check_circle_outline-24px" width="24" height="24"/>
-        <image name="baseline-more_horiz-24px" width="24" height="24"/>
         <image name="baseline-reorder-24px" width="38" height="36"/>
         <image name="button1" width="203" height="56"/>
         <image name="changePassIcon" width="22" height="27"/>

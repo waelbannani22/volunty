@@ -45,10 +45,18 @@ class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UIT
             print("token",token!,"id",userId)
             PostingViewModel.instance.postingcall(token: token!, name: nametf.text!, city: citytf.text!, dateBegin: "", description: descriptiontf.text!, recruiter: userId!, ageGroupe: targetagetf.text!, category: ""){
                 result in
+                let defaults = UserDefaults.standard
                 switch result {
                 case .success(let json):
-                    let alert = UIAlertController(title: "succes", message: "post has been created", preferredStyle: .alert)
-                    let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+                    let alert = UIAlertController(title: "success", message: "post created", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "ok", style: .default){action ->Void in
+                      
+                        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                        let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "MyPostsViewController") as! MyPostsViewController
+                      
+                      
+                        self.navigationController?.pushViewController(objSomeViewController, animated: true)
+                    }
                     alert.addAction(action)
                     self.present(alert,animated: true)
                 case .failure(let json):

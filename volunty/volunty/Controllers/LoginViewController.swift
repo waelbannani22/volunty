@@ -170,6 +170,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
                 switch result{
                 case .success(let json):
                     let jsonSent = json!
+                    debugPrint(json)
                     let token = (json as AnyObject).value(forKey: "token") as! String?
                     defaults.setValue(token, forKey: "jsonwebtoken")
                     //print(defaults.string(forKey: "jsonwebtoken"))
