@@ -170,6 +170,44 @@ class HomeVolunteer {
         }
         
     }
+    func fetchByCategory(category : String,completionHandler: @escaping HandlerHomeV){
+        let para :[String: Any] = [
+            "category":category,
+        
+        ]
+       // print(para)
+        let headers :HTTPHeaders = [
+            "Content-Type" : "application/json"
+        ]
+        Alamofire.request("http://localhost:3000/fetchByCategory", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+            response  in
+            debugPrint(response)
+            if let status =  response.response?.statusCode{
+                let data = response.data
+                print(status)
+                switch status {
+                    case 200:
+                    do {
+                        let json =  try JSONSerialization.jsonObject(with: data!, options: [])
+                        completionHandler(.success(json))
+                        
+                    } catch  {
+                        completionHandler(.failure(.custom(message: "failed")))
+                    }
+                  
+                    
+                    
+                default:
+                   
+                    completionHandler(.failure(.custom(message: "please try again")))
+                }
+                    
+                }
+            
+        }
+        
+    }
+    
    
    
 }

@@ -58,6 +58,25 @@ class GestionVolunteerViewController: UIViewController  {
     }
     
     @IBAction func declineTapped(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.synchronize()
+        PostingViewModel.instance.decline(callId: defaults.value(forKey: "usercall1") as! String, idv: self.id!){
+            result in
+            switch result{
+            case .success(_):
+                let alert = UIAlertController(title: "success", message: "volunteer has been rejected", preferredStyle: .alert)
+                let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+                alert.addAction(action)
+                self.present(alert,animated: true)
+                
+            case .failure(let value):
+                let alert = UIAlertController(title: "failure", message: value.localizedDescription, preferredStyle: .alert)
+                let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+                alert.addAction(action)
+                self.present(alert,animated: true)
+                
+            }
+        }
     }
     
   

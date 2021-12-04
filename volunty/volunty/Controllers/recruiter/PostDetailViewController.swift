@@ -20,6 +20,9 @@ class PostDetailViewController: UIViewController ,UITableViewDelegate,UITableVie
     @IBOutlet weak var namelabel: UILabel!
     
     
+    @IBOutlet weak var accepted: UILabel!
+    @IBOutlet weak var pending: UILabel!
+    @IBOutlet weak var declined: UILabel!
     @IBOutlet weak var buttonDeclined: UIButton!
     @IBOutlet weak var tv: UITableView!
     @IBOutlet weak var datelabel: UILabel!
@@ -43,6 +46,10 @@ class PostDetailViewController: UIViewController ,UITableViewDelegate,UITableVie
                 self.datelabel.text = json1["call"][self.index!]["dateBegin"].string!
                 self.groupelabel.text = json1["call"][self.index!]["ageGroup"].string!
                 self.locationlabel.text = json1["call"][self.index!]["city"].string!
+                print(json1["call"][self.index!]["pending"].int)
+                self.accepted.text = json1["call"][self.index!]["accepted"].int?.formatted()
+                self.declined.text = json1["call"][self.index!]["declined"].int?.formatted()
+                self.pending.text = json1["call"][self.index!]["pending"].int?.formatted()
                 self.userid = json1["call"][self.index!]["_id"].string!
                 let user = json1["call"][self.index!]["_id"].string!
                 print ("user",user)
@@ -103,7 +110,21 @@ class PostDetailViewController: UIViewController ,UITableViewDelegate,UITableVie
                     let json2 = JSON(json)["call"]
                     let contentView = cell.contentView
                     let name = contentView.viewWithTag(1) as! UILabel
+                    let status = contentView.viewWithTag(2) as! UILabel
                     name.text = json2[indexPath.row]["username"].string
+                    let row = json2[indexPath.row]["status"].string
+                    print(row!)
+                    if row! == "accepted"{
+                        status.textColor = UIColor.green
+                    }
+                    if row! == "pending"{
+                        status.textColor = UIColor.orange
+                    }
+                    if row! == "declined"{
+                        status.textColor = UIColor.red
+                    }
+                    status.text = json2[indexPath.row]["status"].string
+                    
                     self.r = json2
                     let size = json2.count
                    
