@@ -11,6 +11,8 @@ import SwiftyJSON
 class ExperiencesViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
    
     var categoryName : String?
+    var json2 : JSON?
+    var size = 0
     //var
     //widgets
     @IBOutlet weak var tv: UITableView!
@@ -26,6 +28,7 @@ class ExperiencesViewController: UIViewController ,UITableViewDelegate,UITableVi
                 let json1 = JSON(json as Any)
                 defaults.setValue(json1["call"].count, forKey: "size")
                 defaults.synchronize()
+                self.size = (defaults.value(forKey: "size") as? Int)!
                 self.tv.reloadData()
             case .failure(let value):
                 print(value.localizedDescription)
@@ -37,9 +40,8 @@ class ExperiencesViewController: UIViewController ,UITableViewDelegate,UITableVi
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let defaults = UserDefaults.standard
-        defaults.synchronize()
-        return defaults.value(forKey: "size") as! Int
+      
+        return size
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,15 +49,23 @@ class ExperiencesViewController: UIViewController ,UITableViewDelegate,UITableVi
         let contentView = cell.contentView
         let name = contentView.viewWithTag(2) as! UILabel
         let city = contentView.viewWithTag(3) as! UILabel
-        
+        let imageV = contentView.viewWithTag(1) as! UIImageView
         HomeVolunteer.instance.fetchByCategory(category: categoryName!){
             result in
             switch result {
             case .success(let json):
                 let json1 = JSON(json as Any)
+               
                 name.text = json1["call"][indexPath.row]["name"].string
                 city.text = json1["call"][indexPath.row]["city"].string
-                
+                let img = json1["call"][indexPath.row]["photo"].string
+                ImageLoader.shared.loadImage(
+                 identifier: img!,
+                    url: "http://localhost:3000/img/\(img!)",
+                    completion: { image in
+                        imageV.image = image!
+                        
+                    })
             case .failure(let value):
                 print(value.localizedDescription)
             }
@@ -63,6 +73,29 @@ class ExperiencesViewController: UIViewController ,UITableViewDelegate,UITableVi
             cell.layer.borderColor = CGColor.init(red: 12.2, green: 12.2, blue: 12.2, alpha: 1)
         }
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        HomeVolunteer.instance.fetchByCategory(category: categoryName!){
+            result in
+            switch result {
+            case .success(let json):
+                let json1 = JSON(json as Any)
+                self.json2 = json1["call"][indexPath.row]
+              
+                self.performSegue(withIdentifier: "Segue", sender: self.json2)
+            case .failure(let value):
+                print(value.localizedDescription)
+            }
+          
+        }
+       
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Segue" {
+            let json = sender as! JSON
+            let destination = segue.destination as! OpenedCallViewController
+            destination.json = json
+        }
     }
 
    

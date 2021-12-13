@@ -51,14 +51,14 @@ class LoginRecruiterViewController: UIViewController ,UITextFieldDelegate{
                     objSomeViewController.token = token
                     objSomeViewController.userId = userId
                     let alert = UIAlertController(title: "success", message: "connected successfully", preferredStyle: .alert)
-                    let action = UIAlertAction(title: "go to home", style: .default){action ->Void in
+                   /* let action = UIAlertAction(title: "go to home", style: .default){action ->Void in
                         let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "MyPostsViewController") as! MyPostsViewController
                         self.navigationController?.pushViewController(objSomeViewController, animated: true)
                     }
                     alert.addAction(action)
-                    self.present(alert,animated: true)
-                  
-                    
+                    self.present(alert,animated: true)*/
+                    print(defaults.value(forKey: "sizeof"))
+                    self.performSegue(withIdentifier: "tab", sender: nil)
                   
                     
                 case .failure(let json):
