@@ -24,7 +24,7 @@ class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate{
         usernamelabel.delegate = self
    //     print("toekn initiale",token)
         let defaults = UserDefaults.standard
-        self.tokenEdit = defaults.string(forKey: "jsonwebtoken")!
+        //self.tokenEdit = defaults.string(forKey: "jsonwebtoken")!
         print("token edit",tokenEdit)
         
     }
@@ -41,7 +41,7 @@ class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate{
         let username = usernamelabel.text!
         //print(self.tokenEdit)
         print(fullname," ",username)
-        HomeVolunteer.instance.updateUser(id: id!, token: tokenEdit!, username: username, lastname: fullname){
+        HomeVolunteer.instance.updateUser(id: id!, token: self.token!, username: username, lastname: fullname){
             result in
             print(result)
             switch result {

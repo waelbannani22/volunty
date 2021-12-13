@@ -6,14 +6,15 @@
 //
 
 import UIKit
-
+import SwiftyJSON
 class HomeVolunteerViewController: UIViewController {
 
-    var email : String?
-    var name :String?
-    var json : String?
-    var token :String?
-    var user :NSDictionary?
+   
+ //   var name :String?
+    //var json : String?
+ //   var token :String?
+   // var user :NSDictionary?
+    var id : String? 
     override func viewDidLoad() {
         super.viewDidLoad()
         let defaults = UserDefaults.standard
@@ -22,17 +23,39 @@ class HomeVolunteerViewController: UIViewController {
         imageProfile.layer.borderColor = UIColor.black.cgColor
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.tabBarController?.navigationItem.hidesBackButton = true
-        print(email)
-        let username = (  user! as NSDictionary).value(forKey: "username") as! String
-        nameLabel.text = username
+        //envoie profile
+        
+     //   print(email)
+     //   let username = (  user! as NSDictionary).value(forKey: "username") as! String
+       // defaults.setValue((  user! as NSDictionary).value(forKey: "_id") as! String, forKey: "iduser")
+     //   nameLabel.text = username
        // emailLabel.text = email! ?? ""
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        if  defaults.value(forKey: "noncnxfb") as? String == Optional(nil){
+            id = (defaults.value(forKey: "cnxfb") ) as? String
+        }else{
+            id =  defaults.value(forKey: "noncnxfb") as? String
+        }
+        print(id)
+     /*   let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "VolunteerProfileViewController") as! VolunteerProfileViewController
-        print("default token",defaults.string(forKey: "jsonwebtoken"))
-        objSomeViewController.user = user!
+            objSomeViewController.id = id! */
+        HomeVolunteer.instance.fetchbyUser(id: id!){
+            result in
+            switch result {
+            case .success(let json):
+                let json2 = JSON(json!)
+                print(json2)
+                let username = json2["users"]["username"].string
+                defaults.setValue(self.id!, forKey: "volunteerId")
+                let defaults = UserDefaults.standard
+                self.nameLabel.text = username
+                defaults.setValue(username, forKey: "usernamev")
+            case .failure(let value):
+                print(value.localizedDescription)
+            }
+        }
         
 
-        // Do any additional setup after loading the view.
     }
     
     @IBOutlet weak var imageProfile: UIImageView!
@@ -43,14 +66,22 @@ class HomeVolunteerViewController: UIViewController {
     
     
     @IBAction func edit(_ sender: Any) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "VolunteerProfileViewController") as! VolunteerProfileViewController
         
-        objSomeViewController.user = user!
-        print(user)
-
-        
-        self.navigationController?.pushViewController(objSomeViewController, animated: true)
+                self.performSegue(withIdentifier: "edit", sender: self.id!)
+                
+               
+                
+         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "edit"
+        {
+            let l = sender as! String?
+            if let vc = segue.destination as? VolunteerProfileViewController {
+                vc.id = l!
+               
+            }
+        }
     }
     
 }

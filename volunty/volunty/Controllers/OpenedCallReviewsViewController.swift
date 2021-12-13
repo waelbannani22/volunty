@@ -6,24 +6,74 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class OpenedCallReviewsViewController: UIViewController {
-
+class OpenedCallReviewsViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
+    
+    
+    var id :String?
+    var size = 0
+    //widgets
+    @IBOutlet weak var tv: UITableView!
+    
+    @IBOutlet weak var no: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        createReview()
+        HomeVolunteer.instance.fetchReview(id: id!){ [self]
+            result in
+            switch result {
+            case .success(let json):
+                let json2 = JSON(json!)
+                self.size = json2["review"].count
+                if self.size == 0 {
+                    self.no.isHidden = false
+                }else{
+                    self.no.isHidden = true
+                }
+                
+                self.tv.reloadData()
+            case .failure(let value):
+                print(value.localizedDescription)
+            }
+        }
+  
+    }
+    func createReview(){
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+    }
+    @objc func didTapAdd (){
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "WriteReviewViewController") as! WriteReviewViewController
+       
+        objSomeViewController.id = id
+    
+        self.navigationController?.pushViewController(objSomeViewController, animated: true)
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return size
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mCell")
+        let contentView = cell?.contentView
+        let name = contentView?.viewWithTag(1) as! UILabel
+        let date = contentView?.viewWithTag(2) as! UILabel
+        let desc = contentView?.viewWithTag(3) as! UILabel
+        
+            //fetch
+        HomeVolunteer.instance.fetchReview(id: id!){
+            result in
+            switch result {
+            case .success(let json):
+                let json2 = JSON(json!)
+                name.text = json2["review"][indexPath.row]["reviewerName"].string
+                date.text = json2["review"][indexPath.row]["date"].string
+                desc.text = json2["review"][indexPath.row]["reviewDescription"].string
+            case .failure(let value):
+                print(value.localizedDescription)
+            }
+        }
+        return cell!
     }
-    */
-
 }
