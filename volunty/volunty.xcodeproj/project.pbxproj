@@ -14,6 +14,9 @@
 		391EBD8027496690000878AD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391EBD7F27496690000878AD /* LoginViewModel.swift */; };
 		391EBD852749B631000878AD /* keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391EBD842749B631000878AD /* keyboard.swift */; };
 		3926D40827665E6B0067CC76 /* uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3926D40727665E6A0067CC76 /* uploader.swift */; };
+		392B5E69277231D400E5CBE1 /* emailSentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B5E68277231D400E5CBE1 /* emailSentViewController.swift */; };
+		392B5E6B277231FD00E5CBE1 /* resetpasswordRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B5E6A277231FD00E5CBE1 /* resetpasswordRecruiterViewController.swift */; };
+		392B5E6D2772322400E5CBE1 /* verifcodeRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B5E6C2772322400E5CBE1 /* verifcodeRecruiterViewController.swift */; };
 		393D403427358F650097D3C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393D403327358F650097D3C1 /* LoginViewController.swift */; };
 		39427876273AC97B002EBDE9 /* VolunteerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39427875273AC97B002EBDE9 /* VolunteerProfileViewController.swift */; };
 		39427878273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39427877273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift */; };
@@ -38,6 +41,7 @@
 		397381F527357BB0008D8A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397381F327357BB0008D8A66 /* LaunchScreen.storyboard */; };
 		3981722D2750112000975199 /* loginViewModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981722C2750112000975199 /* loginViewModel1.swift */; };
 		3981722F2750299400975199 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981722E2750299400975199 /* LoginModel.swift */; };
+		398C2B6C2771337F00AEDE15 /* modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C2B6B2771337F00AEDE15 /* modal.swift */; };
 		398D9FE1273988F700C22704 /* EmergencyCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D9FE0273988F700C22704 /* EmergencyCaseViewController.swift */; };
 		398D9FE3273993CD00C22704 /* DonationMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D9FE2273993CD00C22704 /* DonationMessageViewController.swift */; };
 		398D9FE52739994100C22704 /* PostingRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D9FE42739994100C22704 /* PostingRecruiterViewController.swift */; };
@@ -72,6 +76,9 @@
 		391EBD7F27496690000878AD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		391EBD842749B631000878AD /* keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboard.swift; sourceTree = "<group>"; };
 		3926D40727665E6A0067CC76 /* uploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploader.swift; sourceTree = "<group>"; };
+		392B5E68277231D400E5CBE1 /* emailSentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emailSentViewController.swift; sourceTree = "<group>"; };
+		392B5E6A277231FD00E5CBE1 /* resetpasswordRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resetpasswordRecruiterViewController.swift; sourceTree = "<group>"; };
+		392B5E6C2772322400E5CBE1 /* verifcodeRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verifcodeRecruiterViewController.swift; sourceTree = "<group>"; };
 		393D403327358F650097D3C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		39427875273AC97B002EBDE9 /* VolunteerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerProfileViewController.swift; sourceTree = "<group>"; };
 		39427877273ACC10002EBDE9 /* VolunteerEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerEditProfileViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +105,7 @@
 		397381F627357BB0008D8A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3981722C2750112000975199 /* loginViewModel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewModel1.swift; sourceTree = "<group>"; };
 		3981722E2750299400975199 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		398C2B6B2771337F00AEDE15 /* modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modal.swift; sourceTree = "<group>"; };
 		398D9FE0273988F700C22704 /* EmergencyCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyCaseViewController.swift; sourceTree = "<group>"; };
 		398D9FE2273993CD00C22704 /* DonationMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationMessageViewController.swift; sourceTree = "<group>"; };
 		398D9FE42739994100C22704 /* PostingRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingRecruiterViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +264,10 @@
 				39EDAAAE2741851800084814 /* RecruiterProfileEditViewController.swift */,
 				396577F42765015A00E985B4 /* MyDonationViewController.swift */,
 				396577F62765017A00E985B4 /* AddDonationViewController.swift */,
+				398C2B6B2771337F00AEDE15 /* modal.swift */,
+				392B5E68277231D400E5CBE1 /* emailSentViewController.swift */,
+				392B5E6A277231FD00E5CBE1 /* resetpasswordRecruiterViewController.swift */,
+				392B5E6C2772322400E5CBE1 /* verifcodeRecruiterViewController.swift */,
 			);
 			path = recruiter;
 			sourceTree = "<group>";
@@ -398,11 +410,13 @@
 				397381EA27357BAF008D8A66 /* ViewController.swift in Sources */,
 				E46399E92735916E0054616B /* ViewControllerSecondePage.swift in Sources */,
 				39A607E827545ACC008CC2C9 /* CallLoader.swift in Sources */,
+				392B5E6D2772322400E5CBE1 /* verifcodeRecruiterViewController.swift in Sources */,
 				398D9FE3273993CD00C22704 /* DonationMessageViewController.swift in Sources */,
 				3942787A273ACF5D002EBDE9 /* DateSelectionViewController.swift in Sources */,
 				39427876273AC97B002EBDE9 /* VolunteerProfileViewController.swift in Sources */,
 				3926D40827665E6B0067CC76 /* uploader.swift in Sources */,
 				399B8AFF2738508200E16429 /* CategoryViewController.swift in Sources */,
+				392B5E6B277231FD00E5CBE1 /* resetpasswordRecruiterViewController.swift in Sources */,
 				39DB7188274004A00010390B /* LoginRecruiterViewController.swift in Sources */,
 				397381F027357BAF008D8A66 /* volunty.xcdatamodeld in Sources */,
 				396F9C9B2741C3F1007E658E /* NotificationVolunteerViewController.swift in Sources */,
@@ -413,10 +427,12 @@
 				391EBD7927493CF0000878AD /* Volunteer.swift in Sources */,
 				39B66177275310B2000F1DCD /* VerifcodeViewController.swift in Sources */,
 				399B8B0127388BF800E16429 /* ExperiencesViewController.swift in Sources */,
+				392B5E69277231D400E5CBE1 /* emailSentViewController.swift in Sources */,
 				39565EBB274039C60059E37B /* MyPostsViewController.swift in Sources */,
 				397381E627357BAF008D8A66 /* AppDelegate.swift in Sources */,
 				394278A9273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift in Sources */,
 				394278AD273B336D002EBDE9 /* acceptedVoluntingViewController.swift in Sources */,
+				398C2B6C2771337F00AEDE15 /* modal.swift in Sources */,
 				39F7731B27517086007FF95A /* HomeVolunteer.swift in Sources */,
 				39EDAAAF2741851800084814 /* RecruiterProfileEditViewController.swift in Sources */,
 				3981722D2750112000975199 /* loginViewModel1.swift in Sources */,

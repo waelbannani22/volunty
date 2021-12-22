@@ -6,10 +6,11 @@
 //
 
 import UIKit
-
-class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate{
+import PhotosUI
+class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate,PHPickerViewControllerDelegate{
 
     //widgets
+    @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var fullnamelabel: UITextField!
     @IBOutlet weak var usernamelabel: UITextField!
     //var
@@ -19,6 +20,9 @@ class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(didTapAdd))
+        image.addGestureRecognizer(tapGR)
+        image.isUserInteractionEnabled = true
         
         fullnamelabel.delegate = self
         usernamelabel.delegate = self
@@ -29,7 +33,40 @@ class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate{
         
     }
     
-    
+    @objc private func didTapAdd(){
+        var config = PHPickerConfiguration(photoLibrary: .shared())
+        config.selectionLimit = 1
+        config.filter = .images
+        let vc = PHPickerViewController(configuration: config)
+        vc.delegate = self
+        present(vc,animated: true)
+    }
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        picker.dismiss(animated: true, completion: nil)
+        let group = DispatchGroup()
+        results.forEach{
+            result in
+            group.enter()
+            result.itemProvider.loadObject(ofClass: UIImage.self){
+                reading, error in
+                defer {
+                    group.leave()
+                }
+                guard let imagei = reading as? UIImage , error == nil else{
+                    return
+                }
+                group.notify(queue: .main){
+                    print(imagei)
+                  
+                    self.image.image = imagei
+                   
+                    
+                }
+               
+            }
+        }
+        
+    }
     @IBAction func DateTapped(_ sender: Any) {
         performSegue(withIdentifier: "date", sender: nil)
     }
@@ -41,7 +78,7 @@ class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate{
         let username = usernamelabel.text!
         //print(self.tokenEdit)
         print(fullname," ",username)
-        HomeVolunteer.instance.updateUser(id: id!, token: self.token!, username: username, lastname: fullname){
+        HomeVolunteer.instance.updateUser(id: id!, token: self.token!, username: username, lastname: fullname, photo: self.image.image!){
             result in
             print(result)
             switch result {

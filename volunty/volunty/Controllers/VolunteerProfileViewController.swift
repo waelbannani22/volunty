@@ -14,6 +14,7 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
     
     //widgets
     
+    @IBOutlet weak var imageProfile: UIImageView!
     @IBOutlet weak var reset: UIButton!
     @IBOutlet weak var phonelabel: UILabel!
     @IBOutlet weak var datelabel: UILabel!
@@ -51,7 +52,17 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
                 print("json2",json2)
                 self.email = json2["users"]["email"].string
                 let token = json2["users"]["token"].string
-               
+                let img = json2["users"]["photo"].string
+                if img != Optional(nil){
+                    ImageLoader.shared.loadImage(
+                     identifier: img!,
+                        url: "http://localhost:3000/img/\(img!)",
+                        completion: { image in
+                            self.imageProfile.image = image!
+                            
+                        })
+                }
+                
                 
                
                 

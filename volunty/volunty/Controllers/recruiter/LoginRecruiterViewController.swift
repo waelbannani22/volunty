@@ -16,6 +16,7 @@ class LoginRecruiterViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var emailtf: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: true)
 
         emailtf.delegate = self
         passwordtf.delegate = self

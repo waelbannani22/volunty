@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 import AVFoundation
+import UIKit
 enum FetchError : Error{
     case custom(message : String)
 }
@@ -130,44 +131,58 @@ class HomeVolunteer {
         }
         
     }
-    func updateUser(id : String,token : String,username : String,lastname :String,completionHandler: @escaping HandlerHomeV){
+    func updateUser(id : String,token : String,username : String,lastname :String,photo:UIImage,completionHandler: @escaping HandlerHomeV){
         let para :[String: Any] = [
             "id":id,
             "token":token,
             "username":username,
-            "lastname":lastname
+            "lastname":lastname,
+            "photo":photo
           
         ]
         print(para)
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/update_volunteer", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
-            response  in
-            debugPrint(response)
-            if let status =  response.response?.statusCode{
-                let data = response.data
-                print(status)
-                switch status {
-                    case 200:
-                    do {
-                       // let json =  try JSONSerialization.jsonObject(with: data!, options: [])
-                        completionHandler(.success(status))
-                        
-                    } catch  {
-                        completionHandler(.failure(.custom(message: "failed")))
-                    }
-                  
-                    
-                    
-                default:
-                   
-                    completionHandler(.failure(.custom(message: "please try again")))
-                }
-                    
-                }
+        Alamofire.upload(multipartFormData: { multipartFormData in
+            multipartFormData.append(photo.jpegData(compressionQuality: 0.5)!, withName: "image" , fileName: "image.jpeg", mimeType: "image/jpeg")
+                for (key, value) in para {
+                    multipartFormData.append((value as AnyObject).data(using: String.Encoding.utf8.rawValue)!, withName: key)
+                    } //Optional for extra parameters
+            },
+                         to:"http://localhost:3000/update_volunteer",method: .post,headers: headers )
+        { result in
+          
             
-        }
+            switch result {
+            case .success(let upload, _, _):
+
+                upload.uploadProgress(closure: { (progress) in
+                    print("Upload Progress: \(progress.fractionCompleted)")
+                })
+
+                upload.responseJSON { response in
+                    let status = response.response?.statusCode
+                    switch status{
+                    case 200 :
+                        print(response.response?.statusCode)
+                        completionHandler(.success("success"))
+                    case 400 :
+                        print(response.response?.statusCode)
+                        completionHandler(.failure(.custom(message: "failed")))
+                   
+                    case .none:
+                        completionHandler(.failure(.custom(message: "failed")))
+                    case .some(_):
+                        completionHandler(.success("success"))
+                    }
+                   
+                }
+
+            case .failure(let encodingError):
+                print(encodingError)
+            }
+}
         
     }
     func fetchByCategory(category : String,completionHandler: @escaping HandlerHomeV){

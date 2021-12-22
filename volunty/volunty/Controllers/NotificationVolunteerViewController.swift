@@ -41,6 +41,7 @@ class NotificationVolunteerViewController: UIViewController ,UITableViewDelegate
                     self.NO.isHidden = false
                 }else{
                     self.NO.isHidden = true
+                    self.tv.reloadData()
                 }
                 //self.tv.reloadData()
                 
@@ -75,13 +76,13 @@ class NotificationVolunteerViewController: UIViewController ,UITableViewDelegate
             switch result{
             case .success(let json):
                 let json2 = JSON(json!)
-                self.size = json2["notification"].count
+                //self.size = json2["notification"].count
                 if (self.size == 0){
                     self.NO.isHidden = false
                 }else{
                     self.NO.isHidden = true
                 }
-                self.tv.reloadData()
+                //self.tv.reloadData()
                 date.text = json2["notification"][indexPath.row]["date"].string
                 desc.text = json2["notification"][indexPath.row]["contenu"].string! + json2["notification"][indexPath.row]["nameExperience"].string!
                
@@ -92,7 +93,7 @@ class NotificationVolunteerViewController: UIViewController ,UITableViewDelegate
             }
             
         }
-        
+        //self.tv.reloadData()
         return cell!
     }
     
