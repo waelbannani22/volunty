@@ -11,7 +11,8 @@ import simd
 class LoginRecruiterViewController: UIViewController ,UITextFieldDelegate{
 
     
-    @IBOutlet weak var loginbutton: UIButton!
+    
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var passwordtf: UITextField!
     @IBOutlet weak var emailtf: UITextField!
     override func viewDidLoad() {
@@ -21,6 +22,7 @@ class LoginRecruiterViewController: UIViewController ,UITextFieldDelegate{
         emailtf.delegate = self
         passwordtf.delegate = self
     }
+    
     
     @IBAction func loginTapped(_ sender: Any) {
         let email = emailtf.text!

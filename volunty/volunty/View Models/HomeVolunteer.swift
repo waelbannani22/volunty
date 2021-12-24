@@ -137,7 +137,7 @@ class HomeVolunteer {
             "token":token,
             "username":username,
             "lastname":lastname,
-            "photo":photo
+           // "photo":photo
           
         ]
         print(para)

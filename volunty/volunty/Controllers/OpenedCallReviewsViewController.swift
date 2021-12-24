@@ -32,6 +32,7 @@ class OpenedCallReviewsViewController: UIViewController ,UITableViewDelegate,UIT
                 }else{
                     self.no.isHidden = true
                 }
+              
                 
                 self.tv.reloadData()
             case .failure(let value):
@@ -61,10 +62,8 @@ class OpenedCallReviewsViewController: UIViewController ,UITableViewDelegate,UIT
         let name = contentView?.viewWithTag(1) as! UILabel
         let date = contentView?.viewWithTag(2) as! UILabel
         let desc = contentView?.viewWithTag(3) as! UILabel
-        cell!.layer.cornerRadius = 20
-       // cell!.layer.backgroundColor = CGColor.init(red: 150.1, green: 12.2, blue: 60.0, alpha: 1)
-        //fetch
-        cell!.layer.borderColor = CGColor.init(red: 12.2, green: 12.2, blue: 12.2, alpha: 1)
+        cell?.layer.cornerRadius = 20
+        cell?.layer.borderColor = CGColor.init(red: 12.2, green: 12.2, blue: 12.2, alpha: 1)
             //fetch
         HomeVolunteer.instance.fetchReview(id: id!){
             result in

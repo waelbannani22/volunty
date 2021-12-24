@@ -50,6 +50,16 @@ class HomeVolunteerViewController: UIViewController {
                 let defaults = UserDefaults.standard
                 self.nameLabel.text = username
                 defaults.setValue(username, forKey: "usernamev")
+                let img = json2["users"]["photo"].string
+                if img != Optional(nil){
+                    ImageLoader.shared.loadImage(
+                     identifier: img!,
+                        url: "http://localhost:3000/img/\(img!)",
+                        completion: { image in
+                            self.imageProfile.image = image!
+                            
+                        })
+                }
             case .failure(let value):
                 print(value.localizedDescription)
             }
