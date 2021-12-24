@@ -13,6 +13,7 @@ class GestionVolunteerViewController: UIViewController  {
     var id :String?
     //widgets
     @IBOutlet weak var image: UIImageView!
+    
     @IBOutlet weak var firstnamelabel: UILabel!
     
     @IBOutlet weak var nameCall: UILabel!
@@ -30,8 +31,7 @@ class GestionVolunteerViewController: UIViewController  {
         firstnamelabel.text = valueJson["username"].string
         lastnamelabel.text = valueJson["lastname"].string
         emaillabel.text = valueJson["email"].string
-        citylabel.text = valueJson["city"].string
-        birthdaylabel.text = valueJson["age"].string
+        
         self.id = valueJson["idV"].string
         if (valueJson["status"].string! == "accepted" || valueJson["status"].string! == "declined" ){
             declinedbuuton.isHidden = true
