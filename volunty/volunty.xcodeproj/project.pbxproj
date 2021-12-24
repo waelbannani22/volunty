@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DE585A070955FF60D768CAD /* Pods_volunty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC611DF4A2B7EF3324849DB3 /* Pods_volunty.framework */; };
 		3906821E2741561E00C242E4 /* GestionVolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906821D2741561E00C242E4 /* GestionVolunteerViewController.swift */; };
 		391EBD7927493CF0000878AD /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391EBD7827493CF0000878AD /* Volunteer.swift */; };
 		391EBD7B274942B9000878AD /* Recruiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391EBD7A274942B9000878AD /* Recruiter.swift */; };
@@ -64,10 +63,12 @@
 		39EDAAAF2741851800084814 /* RecruiterProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDAAAE2741851800084814 /* RecruiterProfileEditViewController.swift */; };
 		39F7731B27517086007FF95A /* HomeVolunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F7731A27517086007FF95A /* HomeVolunteer.swift */; };
 		39F7731D2751AFF7007FF95A /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F7731C2751AFF7007FF95A /* ResetPasswordViewController.swift */; };
+		6ACAA02208D9D630DE309B9B /* Pods_volunty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379FC6561A7F6FBC443D974C /* Pods_volunty.framework */; };
 		E46399E92735916E0054616B /* ViewControllerSecondePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46399E82735916E0054616B /* ViewControllerSecondePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		379FC6561A7F6FBC443D974C /* Pods_volunty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_volunty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3906821D2741561E00C242E4 /* GestionVolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestionVolunteerViewController.swift; sourceTree = "<group>"; };
 		391EBD7827493CF0000878AD /* Volunteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
 		391EBD7A274942B9000878AD /* Recruiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recruiter.swift; sourceTree = "<group>"; };
@@ -126,9 +127,8 @@
 		39EDAAAE2741851800084814 /* RecruiterProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruiterProfileEditViewController.swift; sourceTree = "<group>"; };
 		39F7731A27517086007FF95A /* HomeVolunteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVolunteer.swift; sourceTree = "<group>"; };
 		39F7731C2751AFF7007FF95A /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		746D90D75E293E0982CC68AD /* Pods-volunty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volunty.release.xcconfig"; path = "Target Support Files/Pods-volunty/Pods-volunty.release.xcconfig"; sourceTree = "<group>"; };
-		9351C1754121D845A0285D05 /* Pods-volunty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volunty.debug.xcconfig"; path = "Target Support Files/Pods-volunty/Pods-volunty.debug.xcconfig"; sourceTree = "<group>"; };
-		DC611DF4A2B7EF3324849DB3 /* Pods_volunty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_volunty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68FAD34866897E532A4BDAD1 /* Pods-volunty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volunty.debug.xcconfig"; path = "Target Support Files/Pods-volunty/Pods-volunty.debug.xcconfig"; sourceTree = "<group>"; };
+		9737C0BD71F15982FDC4B2C0 /* Pods-volunty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volunty.release.xcconfig"; path = "Target Support Files/Pods-volunty/Pods-volunty.release.xcconfig"; sourceTree = "<group>"; };
 		E46399E82735916E0054616B /* ViewControllerSecondePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSecondePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,21 +137,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DE585A070955FF60D768CAD /* Pods_volunty.framework in Frameworks */,
+				6ACAA02208D9D630DE309B9B /* Pods_volunty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28B7DED674611EFE7F526696 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DC611DF4A2B7EF3324849DB3 /* Pods_volunty.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		391EBD7627493CC3000878AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +192,7 @@
 				397381E427357BAF008D8A66 /* volunty */,
 				397381E327357BAF008D8A66 /* Products */,
 				C77A9526BBAF3150473A8508 /* Pods */,
-				28B7DED674611EFE7F526696 /* Frameworks */,
+				3D96F7A91293B45E10AA4A5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -283,11 +275,19 @@
 			path = recruiter;
 			sourceTree = "<group>";
 		};
+		3D96F7A91293B45E10AA4A5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				379FC6561A7F6FBC443D974C /* Pods_volunty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C77A9526BBAF3150473A8508 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9351C1754121D845A0285D05 /* Pods-volunty.debug.xcconfig */,
-				746D90D75E293E0982CC68AD /* Pods-volunty.release.xcconfig */,
+				68FAD34866897E532A4BDAD1 /* Pods-volunty.debug.xcconfig */,
+				9737C0BD71F15982FDC4B2C0 /* Pods-volunty.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -299,11 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 397381F927357BB0008D8A66 /* Build configuration list for PBXNativeTarget "volunty" */;
 			buildPhases = (
-				E1675F816A5D13E861C67A1A /* [CP] Check Pods Manifest.lock */,
+				6630592A7077CAB9243ABD9F /* [CP] Check Pods Manifest.lock */,
 				397381DE27357BAF008D8A66 /* Sources */,
 				397381DF27357BAF008D8A66 /* Frameworks */,
 				397381E027357BAF008D8A66 /* Resources */,
-				ECA233187BB28FCBBBE6E4C5 /* [CP] Embed Pods Frameworks */,
+				644F0F5BC2D70DDF91B174BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -361,7 +361,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E1675F816A5D13E861C67A1A /* [CP] Check Pods Manifest.lock */ = {
+		644F0F5BC2D70DDF91B174BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-volunty/Pods-volunty-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-volunty/Pods-volunty-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-volunty/Pods-volunty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6630592A7077CAB9243ABD9F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,23 +398,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ECA233187BB28FCBBBE6E4C5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-volunty/Pods-volunty-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-volunty/Pods-volunty-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-volunty/Pods-volunty-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -604,7 +604,7 @@
 		};
 		397381FA27357BB0008D8A66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9351C1754121D845A0285D05 /* Pods-volunty.debug.xcconfig */;
+			baseConfigurationReference = 68FAD34866897E532A4BDAD1 /* Pods-volunty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -634,7 +634,7 @@
 		};
 		397381FB27357BB0008D8A66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 746D90D75E293E0982CC68AD /* Pods-volunty.release.xcconfig */;
+			baseConfigurationReference = 9737C0BD71F15982FDC4B2C0 /* Pods-volunty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
