@@ -10,13 +10,16 @@ import SwiftyJSON
 class HomeVolunteerViewController: UIViewController {
 
    
- //   var name :String?
+    @IBOutlet weak var myview: UIView!
+    //   var name :String?
     //var json : String?
  //   var token :String?
    // var user :NSDictionary?
     var id : String? 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //view corner
+        myview.layer.cornerRadius = 10
         let defaults = UserDefaults.standard
         imageProfile.layer.masksToBounds = true
         imageProfile.layer.cornerRadius = imageProfile.frame.size.width/2

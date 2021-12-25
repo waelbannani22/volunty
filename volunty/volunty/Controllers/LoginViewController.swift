@@ -78,10 +78,11 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
             let loginButton = FBLoginButton()
             loginButton.delegate = self
             
-            let X_Position:CGFloat? = 100.0 //use your X position here
-            var Y_Position:CGFloat? = 780.0 //use your Y position here
+            let X_Position:CGFloat? = view.center.x - loginButton.frame.width//use your X position here
+            var Y_Position:CGFloat? = signInButton.frame.origin.y + 150 //use your Y position here
             loginButton.frame = CGRect(x: X_Position!, y: Y_Position!, width: loginButton.frame.width, height: loginButton.frame.height)
                     view.addSubview(loginButton)
+            loginButton.center.x = self.view.center.x
             loginButton.delegate = self
             loginButton.permissions = ["public_profile", "email"]
             self.tabBarController?.navigationItem.hidesBackButton = true
@@ -122,7 +123,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
         request.start(completionHandler : { connection,result,error in
         
            // let List = result!.map{$0.count}
-            print("\(result!)")
+           // print("\(result!)")
             
             if ((result) != nil){
                 print("resultButton\(result!)")

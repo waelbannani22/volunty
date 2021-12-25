@@ -26,6 +26,7 @@ class GestionVolunteerViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         let defaults = UserDefaults.standard
+      
         
         nameCall.text = defaults.value(forKey: "nameCall") as? String
         firstnamelabel.text = valueJson["username"].string

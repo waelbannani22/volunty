@@ -18,6 +18,8 @@ class CategoryViewController: UIViewController ,UICollectionViewDelegate,UIColle
 
     @IBOutlet weak var viewCollection: UICollectionView!
     override func viewDidLoad() {
+        
+        navigationController?.navigationBar.barTintColor = UIColor.green
         super.viewDidLoad()
         viewCollection.delegate = self
         viewCollection.dataSource = self
