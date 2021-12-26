@@ -93,7 +93,15 @@ class RecruiterProfileEditViewController: UIViewController,PHPickerViewControlle
         let defaults = UserDefaults.standard
         let recruiteriD = defaults.value(forKey: "recruiterId") as! String
         print(" start updating")
+        
        // let token = defaults.value(forKey: "recruitertoken")as! String
+        
+        if (self.IMAGE.image == Optional(nil)){
+            let alert = UIAlertController(title: "warning", message: "please add an image", preferredStyle: .alert)
+            let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert,animated: true)
+        }else{
         PostingViewModel.instance.updateRecruiter(recruiterId: recruiteriD,  name: self.namelabel.text!, phone: self.phoneLabel.text!, photo: self.IMAGE.image!){
             result in
             switch result {
@@ -109,7 +117,7 @@ class RecruiterProfileEditViewController: UIViewController,PHPickerViewControlle
             self.navigationController?.pushViewController(objSomeViewController, animated: true)
             
         }
-        
+        }
        
         
     }

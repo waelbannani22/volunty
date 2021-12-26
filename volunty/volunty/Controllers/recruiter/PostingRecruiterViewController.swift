@@ -9,7 +9,7 @@ import UIKit
 import Photos
 import PhotosUI
 
-class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, PHPickerViewControllerDelegate {
+class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, PHPickerViewControllerDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -27,14 +27,20 @@ class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UIT
     }
     
 
+   
+    
+   
+   
+    @IBOutlet weak var category: UIPickerView!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var submitbuuton: UIButton!
     @IBOutlet weak var descriptiontf: UITextView!
     @IBOutlet weak var citytf: UITextField!
     @IBOutlet weak var addresstf: UITextField!
     @IBOutlet weak var begintimetf: UITextField!
+    
+    
     @IBOutlet weak var targetagetf: UITextField!
-    @IBOutlet weak var category: UIPickerView!
     @IBOutlet weak var nametf: UITextField!
     //var
     var token :String?
@@ -60,12 +66,12 @@ class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UIT
         pickerData = ["ANIMAL", "CHILDREN", "COMMUNITY", "DISABILITY", "EDUCATION", "ENVIRONMENT", "HEALTH", "HOMELESS", "SENIOR"]
         createDatePicker()
         createImagePicker()
-        
+        print(self.image.image)
         
         
     }
     func createImagePicker(){
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showActionSheet))
         navigationItem.rightBarButtonItem?.title = "add image"
     }
     @objc private func didTapAdd(){
@@ -94,7 +100,7 @@ class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UIT
                     print(image)
                   
                     self.image.image = image
-                    let path = "photo/temp/album1/img.jpg"
+                    print("image",image)
                 
                    
                     
@@ -105,6 +111,55 @@ class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UIT
         }
         
     }
+    func camera()
+      {
+          let myPickerControllerCamera = UIImagePickerController()
+          myPickerControllerCamera.delegate = self
+          myPickerControllerCamera.sourceType = UIImagePickerController.SourceType.camera
+          myPickerControllerCamera.allowsEditing = true
+          self.present(myPickerControllerCamera, animated: true, completion: nil)
+      }
+    func gallery()
+        {
+            let myPickerControllerGallery = UIImagePickerController()
+            myPickerControllerGallery.delegate = self
+            myPickerControllerGallery.sourceType = UIImagePickerController.SourceType.photoLibrary
+            myPickerControllerGallery.allowsEditing = true
+            self.present(myPickerControllerGallery, animated: true, completion: nil)
+            
+        }
+        
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            
+            guard let selectedImage = info[.originalImage] as? UIImage else {
+                return
+            }
+            
+            self.image.image = selectedImage
+           
+            
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+    @objc func showActionSheet(){
+            
+            let actionSheetController: UIAlertController = UIAlertController(title: NSLocalizedString("Upload Image", comment: ""), message: nil, preferredStyle: .actionSheet)
+            actionSheetController.view.tintColor = UIColor.black
+            let cancelActionButton: UIAlertAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel) { action -> Void in
+                print("Cancel")
+            }
+            actionSheetController.addAction(cancelActionButton)
+            
+           
+            
+            let deleteActionButton: UIAlertAction = UIAlertAction(title: NSLocalizedString("Choose From Gallery", comment: ""), style: .default)
+            { action -> Void in
+                self.gallery()
+            }
+            
+            actionSheetController.addAction(deleteActionButton)
+            self.present(actionSheetController, animated: true, completion: nil)
+        }
     func createDatePicker(){
         let toolbar = UIToolbar()
         toolbar.sizeToFit()

@@ -13,6 +13,7 @@ class SignUpRecruiterViewController: UIViewController ,UITextFieldDelegate{
     //widgets
     @IBOutlet weak var nametf: UITextField!
     
+    @IBOutlet weak var myview: UIView!
     @IBOutlet weak var signupbutton: UIButton!
     @IBOutlet weak var phonetf: UITextField!
     @IBOutlet weak var confirmpasstf: UITextField!
@@ -21,7 +22,7 @@ class SignUpRecruiterViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var organisationtf: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        myview.layer.cornerRadius = 20.0
         phonetf.delegate = self
         nametf.delegate = self
         emailtf.delegate = self

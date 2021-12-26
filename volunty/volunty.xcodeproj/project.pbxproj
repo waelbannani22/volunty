@@ -25,6 +25,7 @@
 		394278A9273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278A8273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift */; };
 		394278AB273B2F9E002EBDE9 /* WriteReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278AA273B2F9E002EBDE9 /* WriteReviewViewController.swift */; };
 		394278AD273B336D002EBDE9 /* acceptedVoluntingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278AC273B336C002EBDE9 /* acceptedVoluntingViewController.swift */; };
+		3942E6B327774A6800C5699E /* animationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942E6B227774A6800C5699E /* animationViewController.swift */; };
 		395595E9274019D9001EA18B /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395595E8274019D9001EA18B /* RoleViewController.swift */; };
 		39565EBB274039C60059E37B /* MyPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39565EBA274039C60059E37B /* MyPostsViewController.swift */; };
 		396577F52765015A00E985B4 /* MyDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396577F42765015A00E985B4 /* MyDonationViewController.swift */; };
@@ -87,6 +88,7 @@
 		394278A8273B2D4B002EBDE9 /* OpenedCallReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenedCallReviewsViewController.swift; sourceTree = "<group>"; };
 		394278AA273B2F9E002EBDE9 /* WriteReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewViewController.swift; sourceTree = "<group>"; };
 		394278AC273B336C002EBDE9 /* acceptedVoluntingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acceptedVoluntingViewController.swift; sourceTree = "<group>"; };
+		3942E6B227774A6800C5699E /* animationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animationViewController.swift; sourceTree = "<group>"; };
 		395595E8274019D9001EA18B /* RoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
 		39565EBA274039C60059E37B /* MyPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsViewController.swift; sourceTree = "<group>"; };
 		396577F42765015A00E985B4 /* MyDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDonationViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				391EBD842749B631000878AD /* keyboard.swift */,
+				3942E6B227774A6800C5699E /* animationViewController.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				392B5E6D2772322400E5CBE1 /* verifcodeRecruiterViewController.swift in Sources */,
 				398D9FE3273993CD00C22704 /* DonationMessageViewController.swift in Sources */,
 				3942787A273ACF5D002EBDE9 /* DateSelectionViewController.swift in Sources */,
+				3942E6B327774A6800C5699E /* animationViewController.swift in Sources */,
 				39427876273AC97B002EBDE9 /* VolunteerProfileViewController.swift in Sources */,
 				3926D40827665E6B0067CC76 /* uploader.swift in Sources */,
 				399B8AFF2738508200E16429 /* CategoryViewController.swift in Sources */,

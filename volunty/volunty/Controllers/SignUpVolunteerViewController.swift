@@ -28,13 +28,14 @@ class SignUpVolunteerViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var button: UIButton!
     
     
+    @IBOutlet weak var myview: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameText.delegate = self
         lastnameText.delegate = self
         emailText.delegate = self
         passwordText.delegate = self
-        
+        myview.layer.cornerRadius = 20.0
         
         
     }

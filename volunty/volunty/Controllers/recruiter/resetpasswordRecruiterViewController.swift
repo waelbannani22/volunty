@@ -9,6 +9,7 @@ import UIKit
 
 class resetpasswordRecruiterViewController: UIViewController {
 
+    @IBOutlet weak var MYVIEW: UIView!
     @IBOutlet weak var submit: UIButton!
     @IBOutlet weak var confirm: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -16,13 +17,13 @@ class resetpasswordRecruiterViewController: UIViewController {
         super.viewDidLoad()
         confirm.isSecureTextEntry = true
         password.isSecureTextEntry = true
-        
+        MYVIEW.layer.cornerRadius = 20.0
         
     }
     
     @IBAction func submittapped(_ sender: Any) {
         print(password.text!)
-        if password.text != confirm.text {
+        if password.text != confirm.text || password.text == "" {
             let alert = UIAlertController(title: "confirmation", message: "passwords doesn't match", preferredStyle: .alert)
             let action = UIAlertAction(title: "Retry", style: .default, handler: nil)
             alert.addAction(action)

@@ -14,6 +14,8 @@ class verifcodeRecruiterViewController: UIViewController {
     var userId : String?
     //widgets
     
+    @IBOutlet weak var myview2: UIView!
+    @IBOutlet weak var myview1: UIView!
     @IBOutlet weak var submitcode: UIButton!
     @IBOutlet weak var submitpass: UIButton!
     @IBOutlet weak var confirmpass: UITextField!
@@ -22,6 +24,8 @@ class verifcodeRecruiterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         submitpass.isEnabled = false;
+        myview1.layer.cornerRadius = 20.0
+        myview2.layer.cornerRadius = 20.0
 
     }
     
