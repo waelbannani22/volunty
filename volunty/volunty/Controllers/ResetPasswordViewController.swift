@@ -12,6 +12,7 @@ class ResetPasswordViewController: UIViewController {
     
     //widgets
     
+    @IBOutlet weak var myview: UIView!
     @IBOutlet weak var confirmlabel: UITextField!
     @IBOutlet weak var newlabel: UITextField!
     //var
@@ -19,6 +20,7 @@ class ResetPasswordViewController: UIViewController {
     var user :String?
     override func viewDidLoad() {
         super.viewDidLoad()
+        myview.layer.cornerRadius = 20.0
         print(token,user)
       
     }

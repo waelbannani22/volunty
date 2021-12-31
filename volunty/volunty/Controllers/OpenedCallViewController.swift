@@ -19,6 +19,7 @@ class OpenedCallViewController: UIViewController {
     @IBOutlet weak var apply: UIButton!
     
    
+    @IBOutlet weak var qr: UIButton!
     @IBOutlet weak var imageV: UIImageView!
     @IBOutlet weak var desc: UITextView!
     
@@ -28,6 +29,7 @@ class OpenedCallViewController: UIViewController {
     @IBOutlet weak var name: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.apply.isEnabled = true
         let defaults = UserDefaults.standard
         defaults.synchronize()
         print(json!)
@@ -51,6 +53,10 @@ class OpenedCallViewController: UIViewController {
         
     }
     
+    @IBAction func qrcode(_ sender: Any) {
+        let combined = "name :\(name.text!)\n date :\(date.text!)\n group age :\(gpage.text!)\n  description: \(desc.text!)\n city: \(city.text!)"
+        performSegue(withIdentifier: "qr", sender:combined )
+    }
     @IBAction func applyTapped(_ sender: Any) {
         let defaults = UserDefaults.standard
         defaults.synchronize()
@@ -78,7 +84,7 @@ class OpenedCallViewController: UIViewController {
                         let action = UIAlertAction(title: "ok", style: .default, handler: nil)
                         alert.addAction(action)
                         self.present(alert,animated: true)
-                        //self.apply.isHidden = true
+                        self.apply.isEnabled = false
                     case .failure(let value):
                         let alert = UIAlertController(title: "failure", message: "your request has been  already submited", preferredStyle: .alert)
                         let action = UIAlertAction(title: "ok", style: .default, handler: nil)
@@ -104,6 +110,12 @@ class OpenedCallViewController: UIViewController {
             if let vc = segue.destination as? OpenedCallReviewsViewController {
                 vc.id = l!
                
+            }
+        }
+        if segue.identifier == "qr"{
+            let o = sender as! String?
+            if let vc1 = segue.destination as? volunteerQrViewController{
+                vc1.combined = o!
             }
         }
     }

@@ -1,55 +1,32 @@
 //
-//  EmergencyCaseViewController.swift
+//  donateViewController.swift
 //  volunty
 //
-//  Created by wael bannani on 8/11/2021.
+//  Created by wael bannani on 26/12/2021.
 //
 
 import UIKit
 import SwiftyJSON
 import Braintree
-class EmergencyCaseViewController: UIViewController, BTAppSwitchDelegate , BTViewControllerPresentingDelegate{
-    func appSwitcherWillPerformAppSwitch(_ appSwitcher: Any) {
-        
-    }
-    
-    func appSwitcher(_ appSwitcher: Any, didPerformSwitchTo target: BTAppSwitchTarget) {
-        
-    }
-    
-    func appSwitcherWillProcessPaymentInfo(_ appSwitcher: Any) {
-        
-    }
-    
-    func paymentDriver(_ driver: Any, requestsPresentationOf viewController: UIViewController) {
-        
-    }
-    
-    func paymentDriver(_ driver: Any, requestsDismissalOf viewController: UIViewController) {
-        
-    }
-    
-    //var
+
+class donateViewController: UIViewController ,BTAppSwitchDelegate,BTViewControllerPresentingDelegate{
+
     var index :Int?
-    //widgets
-    
+
+    @IBOutlet weak var myview: UIView!
     @IBOutlet weak var desc: UILabel!
+    @IBOutlet weak var by: UILabel!
     @IBOutlet weak var name: UILabel!
-   
-    @IBOutlet weak var target: UILabel!
-    @IBOutlet weak var imageV: UIImageView!
-    
-    @IBOutlet weak var PAY: UIButton!
+    @IBOutlet weak var image: UIImageView!
     override func viewDidLoad() {
-        //paypal
-       
-        //
         super.viewDidLoad()
-        let defaults = UserDefaults.standard
-        let id = defaults.value(forKey: "recruiterId") as! String
+        myview.layer.cornerRadius = 20.0
+
+        //let defaults = UserDefaults.standard
+      //  let id = defaults.value(forKey: "recruiterId") as! String
         let amount = "20"
         //api
-        PostingViewModel.instance.fetchDonation(recruiterId: id){
+        PostingViewModel.instance.fetchDonationAll{
             result in
             switch result {
             case .success(let json):
@@ -62,17 +39,16 @@ class EmergencyCaseViewController: UIViewController, BTAppSwitchDelegate , BTVie
                   identifier: img!,
                      url: "http://localhost:3000/img/\(img!)",
                      completion: { image in
-                         self.imageV.image = image!
+                         self.image.image = image!
                          
                      })
             case .failure(let value):
                 print(value.localizedDescription)
             }
         }
-
-        
     }
     
+
     @IBAction func paypal(_ sender: Any) {
         let amount = "50"
         print("payment")
@@ -122,8 +98,23 @@ class EmergencyCaseViewController: UIViewController, BTAppSwitchDelegate , BTVie
             }
     }
     
+    func appSwitcherWillPerformAppSwitch(_ appSwitcher: Any) {
+        
+    }
     
-  
+    func appSwitcher(_ appSwitcher: Any, didPerformSwitchTo target: BTAppSwitchTarget) {
+        
+    }
     
+    func appSwitcherWillProcessPaymentInfo(_ appSwitcher: Any) {
+        
+    }
     
+    func paymentDriver(_ driver: Any, requestsPresentationOf viewController: UIViewController) {
+        
+    }
+    
+    func paymentDriver(_ driver: Any, requestsDismissalOf viewController: UIViewController) {
+        
+    }
 }

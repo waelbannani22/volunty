@@ -414,6 +414,41 @@ class PostingViewModel {
         
     }
 }
+    func fetchDonationAll(completionHandler: @escaping HandlerHomeV){
+        
+        
+        let headers :HTTPHeaders = [
+            "Content-Type" : "application/json"
+        ]
+        Alamofire.request("http://localhost:3000/getDonations", method: .get,encoding: JSONEncoding.default,headers: headers).response {
+            response  in
+            //debugPrint(response)
+            if let status =  response.response?.statusCode{
+                let data = response.data
+              //  print(status)
+                switch status {
+                    case 200:
+                    do {
+                      
+                        let json =  try JSONSerialization.jsonObject(with: data!, options: [])
+                     
+                        completionHandler(.success(json))
+                        
+                    } catch  {
+                        completionHandler(.failure(.custom(message: "failed")))
+                    }
+                  
+                    
+                    
+                default:
+                   
+                    completionHandler(.failure(.custom(message: "please try again")))
+                }
+                    
+                }
+        
+    }
+}
     func updateRecruiter(recruiterId:String,name:String,phone:String,photo:UIImage,completionHandler: @escaping HandlerHomeV){
         
         let para :[String: Any] = [
@@ -645,5 +680,49 @@ class PostingViewModel {
         }
    
     }
+    func fetchbycall(callId:String,completionHandler: @escaping HandlerHomeV){
+        
+        let para :[String: Any] = [
+           
+            
+          
+            "callId":callId
+         
+            
+        ]
+        let headers :HTTPHeaders = [
+            "Content-Type" : "application/json"
+        ]
+        Alamofire.request("http://localhost:3000/fetchbycall", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+            response  in
+            //debugPrint(response)
+            if let status =  response.response?.statusCode{
+                let data = response.data
+              //  print(status)
+                switch status {
+                    case 200:
+                    do {
+                      
+                        let json =  try JSONSerialization.jsonObject(with: data!, options: [])
+                     
+
+
+                        completionHandler(.success(json))
+                        
+                    } catch  {
+                        completionHandler(.failure(.custom(message: "failed")))
+                    }
+                  
+                    
+                    
+                default:
+                   
+                    completionHandler(.failure(.custom(message: "please try again")))
+                }
+                    
+                }
+        
+    }
+}
     
 }

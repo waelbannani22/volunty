@@ -14,6 +14,7 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
     
     //widgets
     
+    @IBOutlet weak var myview: UIView!
     @IBOutlet weak var imageProfile: UIImageView!
     @IBOutlet weak var reset: UIButton!
     @IBOutlet weak var phonelabel: UILabel!
@@ -35,6 +36,7 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
     
 
     override func viewDidLoad() {
+        myview.layer.cornerRadius = 20.0
         super.viewDidLoad()
         let defaults = UserDefaults.standard
         if defaults.value(forKey: "cnxfb") as? String == Optional(nil){

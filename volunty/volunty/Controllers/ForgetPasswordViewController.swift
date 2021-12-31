@@ -12,13 +12,14 @@ import UIKit
 
 class ForgetPasswordViewController: UIViewController ,UITextFieldDelegate{
 
+    @IBOutlet weak var myview: UIView!
     @IBOutlet weak var submitlabel: UILabel!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var emaillabel: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         emaillabel.delegate = self
-
+        myview.layer.cornerRadius = 20.0
         // Do any additional setup after loading the view.
     }
     

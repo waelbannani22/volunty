@@ -26,6 +26,8 @@
 		394278AB273B2F9E002EBDE9 /* WriteReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278AA273B2F9E002EBDE9 /* WriteReviewViewController.swift */; };
 		394278AD273B336D002EBDE9 /* acceptedVoluntingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394278AC273B336C002EBDE9 /* acceptedVoluntingViewController.swift */; };
 		3942E6B327774A6800C5699E /* animationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942E6B227774A6800C5699E /* animationViewController.swift */; };
+		394FB52A2778BB5F00294861 /* AuthorizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394FB5292778BB5F00294861 /* AuthorizeViewController.swift */; };
+		394FB52C2778CF4700294861 /* volunteerQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394FB52B2778CF4700294861 /* volunteerQrViewController.swift */; };
 		395595E9274019D9001EA18B /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395595E8274019D9001EA18B /* RoleViewController.swift */; };
 		39565EBB274039C60059E37B /* MyPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39565EBA274039C60059E37B /* MyPostsViewController.swift */; };
 		396577F52765015A00E985B4 /* MyDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396577F42765015A00E985B4 /* MyDonationViewController.swift */; };
@@ -59,9 +61,12 @@
 		39B6617527530A73000F1DCD /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B6617427530A73000F1DCD /* ForgetPasswordViewController.swift */; };
 		39B66177275310B2000F1DCD /* VerifcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B66176275310B2000F1DCD /* VerifcodeViewController.swift */; };
 		39C2BEF427504F330025D6B4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C2BEF327504F330025D6B4 /* SignUpViewModel.swift */; };
+		39D97BE0277A9C0E009BC8BF /* encoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D97BDF277A9C0E009BC8BF /* encoursViewController.swift */; };
 		39DB7188274004A00010390B /* LoginRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB7187274004A00010390B /* LoginRecruiterViewController.swift */; };
 		39DB718A27400E620010390B /* SignUpRecruiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB718927400E620010390B /* SignUpRecruiterViewController.swift */; };
 		39EDAAAF2741851800084814 /* RecruiterProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDAAAE2741851800084814 /* RecruiterProfileEditViewController.swift */; };
+		39F4B16D2779190A00780BC5 /* donateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F4B16C2779190A00780BC5 /* donateViewController.swift */; };
+		39F4B16F27791D7700780BC5 /* ALLdonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F4B16E27791D7700780BC5 /* ALLdonationsViewController.swift */; };
 		39F7731B27517086007FF95A /* HomeVolunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F7731A27517086007FF95A /* HomeVolunteer.swift */; };
 		39F7731D2751AFF7007FF95A /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F7731C2751AFF7007FF95A /* ResetPasswordViewController.swift */; };
 		6ACAA02208D9D630DE309B9B /* Pods_volunty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379FC6561A7F6FBC443D974C /* Pods_volunty.framework */; };
@@ -89,6 +94,8 @@
 		394278AA273B2F9E002EBDE9 /* WriteReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewViewController.swift; sourceTree = "<group>"; };
 		394278AC273B336C002EBDE9 /* acceptedVoluntingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acceptedVoluntingViewController.swift; sourceTree = "<group>"; };
 		3942E6B227774A6800C5699E /* animationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animationViewController.swift; sourceTree = "<group>"; };
+		394FB5292778BB5F00294861 /* AuthorizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeViewController.swift; sourceTree = "<group>"; };
+		394FB52B2778CF4700294861 /* volunteerQrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volunteerQrViewController.swift; sourceTree = "<group>"; };
 		395595E8274019D9001EA18B /* RoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
 		39565EBA274039C60059E37B /* MyPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsViewController.swift; sourceTree = "<group>"; };
 		396577F42765015A00E985B4 /* MyDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDonationViewController.swift; sourceTree = "<group>"; };
@@ -124,9 +131,12 @@
 		39B6617427530A73000F1DCD /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		39B66176275310B2000F1DCD /* VerifcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifcodeViewController.swift; sourceTree = "<group>"; };
 		39C2BEF327504F330025D6B4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		39D97BDF277A9C0E009BC8BF /* encoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = encoursViewController.swift; sourceTree = "<group>"; };
 		39DB7187274004A00010390B /* LoginRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRecruiterViewController.swift; sourceTree = "<group>"; };
 		39DB718927400E620010390B /* SignUpRecruiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRecruiterViewController.swift; sourceTree = "<group>"; };
 		39EDAAAE2741851800084814 /* RecruiterProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruiterProfileEditViewController.swift; sourceTree = "<group>"; };
+		39F4B16C2779190A00780BC5 /* donateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = donateViewController.swift; sourceTree = "<group>"; };
+		39F4B16E27791D7700780BC5 /* ALLdonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALLdonationsViewController.swift; sourceTree = "<group>"; };
 		39F7731A27517086007FF95A /* HomeVolunteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVolunteer.swift; sourceTree = "<group>"; };
 		39F7731C2751AFF7007FF95A /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		68FAD34866897E532A4BDAD1 /* Pods-volunty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volunty.debug.xcconfig"; path = "Target Support Files/Pods-volunty/Pods-volunty.debug.xcconfig"; sourceTree = "<group>"; };
@@ -252,6 +262,11 @@
 				39F7731C2751AFF7007FF95A /* ResetPasswordViewController.swift */,
 				39B6617427530A73000F1DCD /* ForgetPasswordViewController.swift */,
 				39B66176275310B2000F1DCD /* VerifcodeViewController.swift */,
+				394FB5292778BB5F00294861 /* AuthorizeViewController.swift */,
+				394FB52B2778CF4700294861 /* volunteerQrViewController.swift */,
+				39F4B16C2779190A00780BC5 /* donateViewController.swift */,
+				39F4B16E27791D7700780BC5 /* ALLdonationsViewController.swift */,
+				39D97BDF277A9C0E009BC8BF /* encoursViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -414,9 +429,11 @@
 				39AB82ED27409055008963A5 /* PostDetailViewController.swift in Sources */,
 				391EBD8027496690000878AD /* LoginViewModel.swift in Sources */,
 				397381EA27357BAF008D8A66 /* ViewController.swift in Sources */,
+				394FB52C2778CF4700294861 /* volunteerQrViewController.swift in Sources */,
 				E46399E92735916E0054616B /* ViewControllerSecondePage.swift in Sources */,
 				39A607E827545ACC008CC2C9 /* CallLoader.swift in Sources */,
 				392B5E6D2772322400E5CBE1 /* verifcodeRecruiterViewController.swift in Sources */,
+				39D97BE0277A9C0E009BC8BF /* encoursViewController.swift in Sources */,
 				398D9FE3273993CD00C22704 /* DonationMessageViewController.swift in Sources */,
 				3942787A273ACF5D002EBDE9 /* DateSelectionViewController.swift in Sources */,
 				3942E6B327774A6800C5699E /* animationViewController.swift in Sources */,
@@ -428,11 +445,13 @@
 				397381F027357BAF008D8A66 /* volunty.xcdatamodeld in Sources */,
 				396F9C9B2741C3F1007E658E /* NotificationVolunteerViewController.swift in Sources */,
 				3971ADA72775177C00FD2077 /* donnationAcceptedViewController.swift in Sources */,
+				394FB52A2778BB5F00294861 /* AuthorizeViewController.swift in Sources */,
 				398D9FE1273988F700C22704 /* EmergencyCaseViewController.swift in Sources */,
 				396577F72765017A00E985B4 /* AddDonationViewController.swift in Sources */,
 				3906821E2741561E00C242E4 /* GestionVolunteerViewController.swift in Sources */,
 				396F9C9D2741DBDD007E658E /* LeaderBoardViewController.swift in Sources */,
 				391EBD7927493CF0000878AD /* Volunteer.swift in Sources */,
+				39F4B16D2779190A00780BC5 /* donateViewController.swift in Sources */,
 				39B66177275310B2000F1DCD /* VerifcodeViewController.swift in Sources */,
 				399B8B0127388BF800E16429 /* ExperiencesViewController.swift in Sources */,
 				392B5E69277231D400E5CBE1 /* emailSentViewController.swift in Sources */,
@@ -465,6 +484,7 @@
 				397381E827357BAF008D8A66 /* SceneDelegate.swift in Sources */,
 				398D9FE52739994100C22704 /* PostingRecruiterViewController.swift in Sources */,
 				394278A7273B269D002EBDE9 /* OpenedCallViewController.swift in Sources */,
+				39F4B16F27791D7700780BC5 /* ALLdonationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

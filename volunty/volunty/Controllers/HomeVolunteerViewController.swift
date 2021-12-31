@@ -21,7 +21,7 @@ class HomeVolunteerViewController: UIViewController {
         //view corner
         myview.layer.cornerRadius = 10
         let defaults = UserDefaults.standard
-        imageProfile.layer.masksToBounds = true
+        imageProfile.layer.masksToBounds = false
         imageProfile.layer.cornerRadius = imageProfile.frame.size.width/2
         imageProfile.layer.borderColor = UIColor.black.cgColor
         self.navigationItem.setHidesBackButton(true, animated: true)

@@ -21,6 +21,7 @@ class PostDetailViewController: UIViewController ,UITableViewDelegate,UITableVie
     //widgets
     @IBOutlet weak var namelabel: UILabel!
     
+    @IBOutlet weak var stack: UIStackView!
     
     @IBOutlet weak var lo: UIImageView!
     @IBOutlet weak var gr: UIImageView!
@@ -38,6 +39,7 @@ class PostDetailViewController: UIViewController ,UITableViewDelegate,UITableVie
     @IBOutlet weak var locationlabel: UILabel!
     @IBOutlet weak var groupelabel: UILabel!
     override func viewDidLoad() {
+        stack.layer.cornerRadius = 20.0
         tv.delegate = self
         tv.dataSource = self
         self.refreshControl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)

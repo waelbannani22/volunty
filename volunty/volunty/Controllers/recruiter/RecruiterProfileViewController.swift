@@ -15,6 +15,9 @@ class RecruiterProfileViewController: UIViewController{
     
     //widgets
     
+    @IBOutlet weak var myview2: UIView!
+    @IBOutlet weak var myview1: UIView!
+    @IBOutlet weak var myview: UIView!
     @IBOutlet weak var imageview: UIImageView!
     @IBOutlet weak var phone: UILabel!
     @IBOutlet weak var company: UILabel!
@@ -22,7 +25,9 @@ class RecruiterProfileViewController: UIViewController{
     @IBOutlet weak var name: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        myview.layer.cornerRadius = 20.0
+        myview1.layer.cornerRadius = 20.0
+        myview2.layer.cornerRadius = 20.0
         self.tabBarController?.navigationItem.hidesBackButton = true
         self.navigationItem.setHidesBackButton(true, animated: true)
        

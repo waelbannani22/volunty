@@ -37,8 +37,18 @@ class ExperiencesViewController: UIViewController ,UITableViewDelegate,UITableVi
         //delegate
         tv.delegate = self
         tv.dataSource = self
+        if self.size == 0 {
+            makealert(value: "no available calls in this category ! \n please check it later")
+        }
         
     }
+    func makealert(value:String){
+        let alert = UIAlertController(title: "failure", message: value, preferredStyle: .alert)
+        let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+        alert.addAction(action)
+        self.present(alert,animated: true)
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       
         return size

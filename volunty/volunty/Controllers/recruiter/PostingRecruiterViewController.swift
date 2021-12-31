@@ -9,7 +9,7 @@ import UIKit
 import Photos
 import PhotosUI
 
-class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, PHPickerViewControllerDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -66,51 +66,59 @@ class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UIT
         pickerData = ["ANIMAL", "CHILDREN", "COMMUNITY", "DISABILITY", "EDUCATION", "ENVIRONMENT", "HEALTH", "HOMELESS", "SENIOR"]
         createDatePicker()
         createImagePicker()
-        print(self.image.image)
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification: )), name: UIResponder.keyboardWillShowNotification, object: nil)
         
+        NotificationCenter.default.addObserver(self, selector: #selector( keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
+    //keyboard
+    @objc private func hideKeyboard(){
+        self.view.endEditing(true)
+    }
+    @objc private func keyboardWillShow(notification:NSNotification){
+        if let keyboardFrame :NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue{
+            let keyboardHeight = keyboardFrame.cgRectValue.height
+            let buttomSpace = self.view.frame.height - (submitbuuton.frame.origin.y + submitbuuton.frame.height)
+            self.view.frame.origin.y = keyboardHeight - buttomSpace
+        }
+    }
+    @objc private func keyboardWillHide(){
+       
+    }
+    
+    
     func createImagePicker(){
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showActionSheet))
         navigationItem.rightBarButtonItem?.title = "add image"
     }
-    @objc private func didTapAdd(){
-        var config = PHPickerConfiguration(photoLibrary: .shared())
-        config.selectionLimit = 1
-        config.filter = .images
-        let vc = PHPickerViewController(configuration: config)
-        vc.delegate = self
-        present(vc,animated: true)
+    func validatePhone(value: String) -> Bool {
+        let PHONE_REGEX  = "\\d{8}"
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
+        let result =  phoneTest.evaluate(with: value)
+        return result
     }
-    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
-        picker.dismiss(animated: true, completion: nil)
-        let group = DispatchGroup()
-        results.forEach{
-            result in
-            group.enter()
-            result.itemProvider.loadObject(ofClass: UIImage.self){
-                reading, error in
-                defer {
-                    group.leave()
-                }
-                guard let image = reading as? UIImage , error == nil else{
-                    return
-                }
-                group.notify(queue: .main){
-                    print(image)
-                  
-                    self.image.image = image
-                    print("image",image)
-                
-                   
-                    
-                    
-                }
-               
-            }
-        }
+    func dateVerif(datee:String)->Bool{
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        let someDate = dateFormatter.date(from: datee)
+        
+        //Get calendar
+        let calendar = NSCalendar.current
+        let today = calendar.startOfDay(for: Date.now)
+        let todayfor = dateFormatter.string(from: today)
+        let todayformated = dateFormatter.date(from: todayfor)
+
+        
+
+        if someDate! > todayformated! {
+           return true
+        } else {
+            return false
+        }
     }
+ 
     func camera()
       {
           let myPickerControllerCamera = UIImagePickerController()
@@ -182,14 +190,21 @@ class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UIT
         
     }
    
-    
+    func makealert (value:String){
+        let alert = UIAlertController(title: "warning", message: value, preferredStyle: .alert)
+        let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+        alert.addAction(action)
+        self.present(alert,animated: true)
+    }
     @IBAction func submitTapped(_ sender: Any) {
         if (descriptiontf.text == ""||citytf.text == "" || addresstf.text == "" || targetagetf.text == "" ||  nametf.text == "" ||  begintimetf.text == ""  ){
-            let alert = UIAlertController(title: "failure", message: "fill all fields", preferredStyle: .alert)
+            let alert = UIAlertController(title: "warning", message: "fill all fields", preferredStyle: .alert)
             let action = UIAlertAction(title: "ok", style: .default, handler: nil)
             alert.addAction(action)
             self.present(alert,animated: true)
+        }else if !dateVerif(datee: begintimetf.text!) {
             
+            makealert(value: "please add a valid date")
             
         }else{
            // print("token",token!,"id",userId)

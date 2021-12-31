@@ -9,13 +9,14 @@ import UIKit
 
 class emailSentViewController: UIViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var myview: UIView!
     @IBOutlet weak var submit: UIButton!
     @IBOutlet weak var email: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         email.delegate = self
-        
+        myview.layer.cornerRadius = 20.0
     }
     
     @IBAction func submit(_ sender: Any) {

@@ -12,7 +12,10 @@ class LeaderBoardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let alert = UIAlertController(title: "hi ", message: "coming soon stay tuned!", preferredStyle: .alert)
+        let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+        alert.addAction(action)
+        self.present(alert,animated: true)
     }
     
 
