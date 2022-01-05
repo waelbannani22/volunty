@@ -28,28 +28,74 @@ class SignUpVolunteerViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var button: UIButton!
     
     
+    @IBOutlet weak var myview: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameText.delegate = self
         lastnameText.delegate = self
         emailText.delegate = self
         passwordText.delegate = self
+        myview.layer.cornerRadius = 20.0
         
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification: )), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector( keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         
     }
+    //keyboard
+    @objc private func hideKeyboard(){
+        self.view.endEditing(true)
+    }
+    @objc private func keyboardWillShow(notification:NSNotification){
+        if let keyboardFrame :NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue{
+            let keyboardHeight = keyboardFrame.cgRectValue.height
+            let buttomSpace = self.view.frame.height - (button.frame.origin.y + button.frame.height)
+            self.view.frame.origin.y = keyboardHeight - buttomSpace
+        }
+    }
+    @objc private func keyboardWillHide(){
+        self.view.frame.origin.y = 0
+    }
     
-    
+    func makeAlert(titre: String?, message: String?) {
+          let alert = UIAlertController(title: titre, message: message, preferredStyle: .alert)
+          let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+          alert.addAction(action)
+          self.present(alert, animated: true)
+      }
+   
     func checkingUserInfo() -> Bool{
         if emailText.text!.isValidEmail() && (passwordText.text?.count)! >= 3 {
             return true
         }
         return false
     }
+    func validate(value: String) -> Bool {
+        let PHONE_REGEX  = "\\d{2}"
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
+        let result =  phoneTest.evaluate(with: value)
+        return result
+    }
+    func validatePhone(value: String) -> Bool {
+        let PHONE_REGEX  = "\\d{8}"
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
+        let result =  phoneTest.evaluate(with: value)
+        return result
+    }
+   
     @IBAction func signupTapped(_ sender: UIButton) {
        
        
         if (checkingUserInfo()){
+            if (!validate(value: self.ageText.text!)){
+                makeAlert(titre: "error", message: "please fill a valid age")
+            }else if !validatePhone(value: self.phoneText.text!) {
+                makeAlert(titre: "error", message: "please fill a valid phone number")
+            }else if ( usernameText.text! == "" && lastnameText.text! == "" ){
+                makeAlert(titre: "error", message: "please fill a username or lastname")
+                
+            }else{
             guard let email = emailText.text else {return}
             guard let password = passwordText.text else {return}
             guard let lastname = lastnameText.text else {return}
@@ -95,8 +141,9 @@ class SignUpVolunteerViewController: UIViewController,UITextFieldDelegate {
                 }
                 
             }
+            }
         }else{
-            let alert = UIAlertController(title: "failed", message: "check your mail and your password", preferredStyle: .alert)
+            let alert = UIAlertController(title: "failed", message: "check your fields ", preferredStyle: .alert)
                        let action = UIAlertAction(title: "retry", style: .cancel, handler: nil)
                        alert.addAction(action)
                        self.present(alert,animated: true)

@@ -27,6 +27,7 @@ class MyPostsViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     let groupe = DispatchGroup()
     var size = 0
     override func viewDidLoad() {
+        self.navigationItem.setHidesBackButton(true, animated: true)
         self.tabBarController?.navigationItem.hidesBackButton = true
         tv.delegate = self
         tv.dataSource = self
@@ -37,7 +38,7 @@ class MyPostsViewController: UIViewController ,UITableViewDelegate,UITableViewDa
           refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         let defaults = UserDefaults.standard
         defaults.synchronize()
-        namelabel.text! = defaults.value(forKey: "name") as! String
+       
     
         PostingViewModel.instance.FetchPostsByRecruiter(token:defaults.value(forKey: "recruitertoken") as! String , recruiter: defaults.value(forKey: "recruiterId") as! String){
             result in

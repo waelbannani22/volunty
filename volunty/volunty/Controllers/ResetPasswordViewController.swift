@@ -12,6 +12,7 @@ class ResetPasswordViewController: UIViewController {
     
     //widgets
     
+    @IBOutlet weak var myview: UIView!
     @IBOutlet weak var confirmlabel: UITextField!
     @IBOutlet weak var newlabel: UITextField!
     //var
@@ -19,6 +20,7 @@ class ResetPasswordViewController: UIViewController {
     var user :String?
     override func viewDidLoad() {
         super.viewDidLoad()
+        myview.layer.cornerRadius = 20.0
         print(token,user)
       
     }
@@ -38,12 +40,12 @@ class ResetPasswordViewController: UIViewController {
                 switch result {
                     case .success(let json):
                         print(json!)
-                        let alert = UIAlertController(title: "confirmation", message: "password has been cahnged", preferredStyle: .alert)
+                        let alert = UIAlertController(title: "confirmation", message: "password has been changed", preferredStyle: .alert)
                         let action = UIAlertAction(title: "ok", style: .default, handler: nil)
                         alert.addAction(action)
                         self.present(alert,animated: true)
                     case .failure(let json):
-                    let alert = UIAlertController(title: "confirmation", message: "password has been cahnged", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "failure", message: "password hasn't been changed", preferredStyle: .alert)
                     let action = UIAlertAction(title: "ok", style: .default, handler: nil)
                     alert.addAction(action)
                     self.present(alert,animated: true)

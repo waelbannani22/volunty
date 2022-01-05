@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 import FacebookCore
-
+import Braintree
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ApplicationDelegate.shared.application(
                 application,
                 didFinishLaunchingWithOptions: launchOptions
+                
             )
+            BTAppSwitch.setReturnURLScheme("com.company.volunty.payments")
 
             return true
         }
@@ -37,6 +39,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
                 annotation: options[UIApplication.OpenURLOptionsKey.annotation]
             )
+            if url.scheme?.localizedCaseInsensitiveCompare("com.company.volunty.payments") == .orderedSame {
+                    return BTAppSwitch.handleOpen(url, options: options)
+                }
+                return false
         }
 
     // MARK: - Core Data stack

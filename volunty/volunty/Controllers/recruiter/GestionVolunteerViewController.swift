@@ -13,6 +13,7 @@ class GestionVolunteerViewController: UIViewController  {
     var id :String?
     //widgets
     @IBOutlet weak var image: UIImageView!
+    
     @IBOutlet weak var firstnamelabel: UILabel!
     
     @IBOutlet weak var nameCall: UILabel!
@@ -25,13 +26,13 @@ class GestionVolunteerViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         let defaults = UserDefaults.standard
+      
         
         nameCall.text = defaults.value(forKey: "nameCall") as? String
         firstnamelabel.text = valueJson["username"].string
         lastnamelabel.text = valueJson["lastname"].string
         emaillabel.text = valueJson["email"].string
-        citylabel.text = valueJson["city"].string
-        birthdaylabel.text = valueJson["age"].string
+        
         self.id = valueJson["idV"].string
         if (valueJson["status"].string! == "accepted" || valueJson["status"].string! == "declined" ){
             declinedbuuton.isHidden = true
@@ -50,7 +51,10 @@ class GestionVolunteerViewController: UIViewController  {
             switch result{
             case .success(_):
                 let alert = UIAlertController(title: "success", message: "volunteer has been accepted", preferredStyle: .alert)
-                let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+                let action = UIAlertAction(title: "ok", style: .default){
+                    action -> Void in
+                    self.dismiss(animated: true, completion: nil)
+                }
                 alert.addAction(action)
                 self.present(alert,animated: true)
                 

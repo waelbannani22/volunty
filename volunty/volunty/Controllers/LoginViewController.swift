@@ -23,13 +23,16 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
     
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
-   
+    @IBOutlet weak var signup: UIButton!
+    
     var id :String?
     
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        resetDefaults()
         self.tabBarController?.hidesBottomBarWhenPushed = true
         if let token = AccessToken.current,
                 !token.isExpired {
@@ -78,10 +81,11 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
             let loginButton = FBLoginButton()
             loginButton.delegate = self
             
-            let X_Position:CGFloat? = 100.0 //use your X position here
-            var Y_Position:CGFloat? = 780.0 //use your Y position here
+            let X_Position:CGFloat? = view.center.x - loginButton.frame.width//use your X position here
+            var Y_Position:CGFloat? = signup.frame.origin.y + 100 //use your Y position here
             loginButton.frame = CGRect(x: X_Position!, y: Y_Position!, width: loginButton.frame.width, height: loginButton.frame.height)
                     view.addSubview(loginButton)
+            loginButton.center.x = self.view.center.x
             loginButton.delegate = self
             loginButton.permissions = ["public_profile", "email"]
             self.tabBarController?.navigationItem.hidesBackButton = true
@@ -122,7 +126,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
         request.start(completionHandler : { connection,result,error in
         
            // let List = result!.map{$0.count}
-            print("\(result!)")
+           // print("\(result!)")
             
             if ((result) != nil){
                 print("resultButton\(result!)")
@@ -133,7 +137,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
                 let last = info["last_name"] as? String
                 let fbid = info["id"] as? String
                 let picture = json2["picture"]["data"]["url"].string
-                HomeVolunteer.instance.addVB(name: first!, last: last!, email: email!, picture: picture!, fbid: fbid!){
+                HomeVolunteer.instance.addVB(name: first!, last: last!, email: email!, picture: picture!, fbid: fbid!,age : "undefined",phone : "undefined"){
                     res in
                     switch res {
                     case .success(let json):
@@ -281,6 +285,14 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
             }
             
         }
+    func resetDefaults() {
+        let defaults = UserDefaults.standard
+        let dictionary = defaults.dictionaryRepresentation()
+        dictionary.keys.forEach { key in
+            defaults.removeObject(forKey: key)
+        }
+    }
+
    
 
 }

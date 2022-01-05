@@ -30,7 +30,15 @@ class WriteReviewViewController: UIViewController {
             switch    result{
             case .success(let json):
                 let alert = UIAlertController(title: "success", message: "your review has been submited", preferredStyle: .alert)
-                let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+                let action = UIAlertAction(title: "ok", style: .default){action -> Void in
+                    self.dismiss(animated: true)
+                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                    let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "OpenedCallReviewsViewController") as! OpenedCallReviewsViewController
+                    objSomeViewController.id = self.id
+                   
+                
+                    self.navigationController?.pushViewController(objSomeViewController, animated: true)
+                }
                 alert.addAction(action)
                 self.present(alert,animated: true)
             case .failure(let value):

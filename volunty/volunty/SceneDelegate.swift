@@ -7,7 +7,7 @@
 
 import UIKit
 import FacebookCore
-
+import Braintree
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -51,9 +51,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        URLContexts.forEach { context in
+               if context.url.scheme?.localizedCaseInsensitiveCompare("com.company.volunty.payments") == .orderedSame {
+                   BTAppSwitch.handleOpenURLContext(context)
+               }
+           }
         guard let url = URLContexts.first?.url else {
             return
         }
+        
     }
 
 
