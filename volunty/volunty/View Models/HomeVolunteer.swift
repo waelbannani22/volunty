@@ -131,13 +131,14 @@ class HomeVolunteer {
         }
         
     }
-    func updateUser(id : String,token : String,username : String,lastname :String,photo:UIImage,completionHandler: @escaping HandlerHomeV){
+    func updateUser(id : String,token : String,username : String,lastname :String,photo:UIImage,phone : String,age : String,completionHandler: @escaping HandlerHomeV){
         let para :[String: Any] = [
             "id":id,
             "token":token,
             "username":username,
             "lastname":lastname,
-           // "photo":photo
+            "phone":phone,
+            "age":age
           
         ]
         print(para)
@@ -414,13 +415,15 @@ class HomeVolunteer {
             
         }
 }
-    func addVB(name : String,last:String,email:String,picture:String,fbid:String,completionHandler: @escaping HandlerHomeV){
+    func addVB(name : String,last:String,email:String,picture:String,fbid:String,age:String,phone:String,completionHandler: @escaping HandlerHomeV){
         let para :[String: Any] = [
             "last":last,
             "name":name,
             "email":email,
             "picture":picture,
-            "id":fbid
+            "id":fbid,
+            "age":age,
+            "phone":phone
          ]
        // print(para)
         let headers :HTTPHeaders = [

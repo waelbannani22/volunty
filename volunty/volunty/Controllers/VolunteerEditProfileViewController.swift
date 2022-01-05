@@ -119,22 +119,35 @@ class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate,
         
         let fullname = fullnamelabel.text!
         let username = usernamelabel.text!
+        let age = age.text!
+        let phone = phone.text!
         
         if fullname == "" || username == "" || self.phone.text == "" || self.age.text == "" {
             makealert(value: "fill all fields")
         }else if (!validate(value: self.age.text!)) {
             makealert(value: "fill a valid age")
-        }else if (validatePhone(value: self.phone.text!)) {
+        }else if (!validatePhone(value: self.phone.text!)) {
             makealert(value: "please fill a valid phone number")
+        }else if (self.image.image == Optional(nil)){
+            makealert(value: "please add an image")
+         
         }else{
         //print(self.tokenEdit)
         print(fullname," ",username)
-        HomeVolunteer.instance.updateUser(id: id!, token: self.token!, username: username, lastname: fullname, photo: self.image.image!){
+            HomeVolunteer.instance.updateUser(id: id!, token: self.token!, username: self.usernamelabel.text!, lastname: fullname,photo : self.image.image!,phone: phone,age: age){
             result in
             print(result)
             switch result {
             case .success(let json):
-                self.alertmessage(message: "saved changes ", title: "success")
+                let alert = UIAlertController(title: "good!", message: "saved changes", preferredStyle: .alert)
+                let action = UIAlertAction(title: "ok", style: .default)
+                {action ->Void in
+                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                    let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "VolunteerProfileViewController") as! VolunteerProfileViewController
+                    self.navigationController?.pushViewController(objSomeViewController, animated: true)
+                }
+                alert.addAction(action)
+                self.present(alert,animated: true)
             case .failure(let json):
                 self.alertmessage(message: "cannot save changes", title: "failure")
             }

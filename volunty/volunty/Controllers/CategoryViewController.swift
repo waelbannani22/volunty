@@ -19,7 +19,7 @@ class CategoryViewController: UIViewController ,UICollectionViewDelegate,UIColle
     @IBOutlet weak var viewCollection: UICollectionView!
     override func viewDidLoad() {
         
-        navigationController?.navigationBar.barTintColor = UIColor.green
+        navigationController?.navigationBar.barTintColor = UIColor.cyan
         super.viewDidLoad()
         viewCollection.delegate = self
         viewCollection.dataSource = self
@@ -38,9 +38,9 @@ class CategoryViewController: UIViewController ,UICollectionViewDelegate,UIColle
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mCell", for: indexPath)
         let contentView = cell.contentView
         let image = contentView.viewWithTag(1) as! UIImageView
-        let name = contentView.viewWithTag(2) as! UILabel
+       // let name = contentView.viewWithTag(2) as! UILabel
         image.image = UIImage(named: "\(categoryNames[indexPath.row])_i.png")
-        name.text = categoryNames[indexPath.row]
+       // name.text = categoryNames[indexPath.row]
         cell.contentView.layer.cornerRadius = 20
         cell.contentView.layer.masksToBounds = true
         

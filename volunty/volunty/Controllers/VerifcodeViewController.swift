@@ -9,6 +9,8 @@ import UIKit
 
 class VerifcodeViewController: UIViewController {
 
+    @IBOutlet weak var myview2: UIView!
+    @IBOutlet weak var myview1: UIView!
     @IBOutlet weak var submitpass: UIButton!
     @IBOutlet weak var confirmtf: UITextField!
     @IBOutlet weak var newtf: UITextField!
@@ -18,7 +20,8 @@ class VerifcodeViewController: UIViewController {
     var userId :String?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        myview1.layer.cornerRadius = 20.0
+        myview2.layer.cornerRadius = 20.0
         submitpass.isEnabled = false
     }
     

@@ -34,7 +34,7 @@ class verifcodeRecruiterViewController: UIViewController {
         let code = self.code.text!
         print("codetapped\(code)")
         print("codepassed\(codep)")
-        PostingViewModel.instance.verifcode(codePassed: codep, code: code){
+        LoginViewModel1.instance.verifcode(codePassed: codep, code: code){
             result in
             switch result {
             case .success(let json):

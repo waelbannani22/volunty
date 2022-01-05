@@ -638,6 +638,8 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = volunty/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "we need to access to your camera";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow to continue with biometrics id";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -668,6 +670,8 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = volunty/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "we need to access to your camera";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow to continue with biometrics id";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

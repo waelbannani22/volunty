@@ -30,6 +30,9 @@ class ExperiencesViewController: UIViewController ,UITableViewDelegate,UITableVi
                 defaults.synchronize()
                 self.size = (defaults.value(forKey: "size") as? Int)!
                 self.tv.reloadData()
+                if self.size == 0 {
+                    self.makealert(value: "no available calls in this category ! \n please check it later")
+                }
             case .failure(let value):
                 print(value.localizedDescription)
             }
@@ -37,9 +40,7 @@ class ExperiencesViewController: UIViewController ,UITableViewDelegate,UITableVi
         //delegate
         tv.delegate = self
         tv.dataSource = self
-        if self.size == 0 {
-            makealert(value: "no available calls in this category ! \n please check it later")
-        }
+        
         
     }
     func makealert(value:String){

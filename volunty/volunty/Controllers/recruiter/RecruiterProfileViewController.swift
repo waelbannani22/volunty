@@ -44,13 +44,16 @@ class RecruiterProfileViewController: UIViewController{
                 let companyValue = json1["user"][0]["organisation"].string
                 let phoneValue =  json1["user"][0]["phone"].string
                 let image = json1["user"][0]["photo"].string
-                ImageLoader.shared.loadImage(
-                 identifier: image!,
-                    url: "http://localhost:3000/img/\(image!)",
-                    completion: { image in
-                        self.imageview.image = image!
-                        
-                    })
+                if image != Optional(nil){
+                    ImageLoader.shared.loadImage(
+                     identifier: image!,
+                        url: "http://localhost:3000/img/\(image!)",
+                        completion: { image in
+                            self.imageview.image = image!
+                            
+                        })
+                }
+                
                 self.name.text = nameValue!
                 self.email.text = emailValue!
                 self.company.text = companyValue!
@@ -76,8 +79,23 @@ class RecruiterProfileViewController: UIViewController{
         print("triggered")
         performSegue(withIdentifier: "Segue", sender: nil)
     }
+    func resetDefaults() {
+        let defaults = UserDefaults.standard
+        let dictionary = defaults.dictionaryRepresentation()
+        dictionary.keys.forEach { key in
+            defaults.removeObject(forKey: key)
+        }
+    }
     
+    @IBOutlet weak var log: UILabel!
     
+    @IBAction func logout(_ sender: Any) {
+        resetDefaults()
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "LoginRecruiterViewController") as! LoginRecruiterViewController
+        self.tabBarController?.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(objSomeViewController, animated: true)
+    }
     
   
 

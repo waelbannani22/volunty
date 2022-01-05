@@ -14,6 +14,7 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
     
     //widgets
     
+    @IBOutlet weak var logout: UIButton!
     @IBOutlet weak var myview: UIView!
     @IBOutlet weak var imageProfile: UIImageView!
     @IBOutlet weak var reset: UIButton!
@@ -36,7 +37,9 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
     
 
     override func viewDidLoad() {
-        myview.layer.cornerRadius = 20.0
+  
+        logout.layer.cornerRadius = 20.0
+        self.navigationItem.setHidesBackButton(true, animated: true)
         super.viewDidLoad()
         let defaults = UserDefaults.standard
         if defaults.value(forKey: "cnxfb") as? String == Optional(nil){
@@ -81,7 +84,9 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
             case .success(let json):
                 let userResponse = (  json as AnyObject).value(forKey: "username") as! String
                 let lastname = (  json as AnyObject).value(forKey: "lastname") as! String
-               // let date = (  json as AnyObject).value(forKey: "memberDate") as! String
+                    let age = (  json as AnyObject).value(forKey: "age") as! String
+                //
+                let phone1 = (  json as AnyObject).value(forKey: "phone") as! String
                 let email1 = (  json as AnyObject).value(forKey: "email") as! String
                 let status = (  json as AnyObject).value(forKey: "fbUser") as? Bool
                 if status == true {
@@ -89,8 +94,9 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
                 }
                 self.firstnamelabel.text = userResponse
                 self.lastnamelabel.text = lastname
-              //  self.datelabel.text = date
-                self.emaillabel.text = email1
+                self.datelabel.text = age
+                self.phonelabel.text = phone1
+//                self.emaillabel.text = email1
                 self.id = (  json as AnyObject).value(forKey: "_id") as? String
                 self.token = (  json as AnyObject).value(forKey: "token") as? String
               //  print(token)

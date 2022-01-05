@@ -164,7 +164,13 @@ class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UIT
             { action -> Void in
                 self.gallery()
             }
-            
+        actionSheetController.popoverPresentationController?.sourceView = self.view
+        let xOrigin = self.view.layer.frame.origin.x // Replace this with one of the lines at the end
+        let popoverRect = CGRect(x: xOrigin, y: 0, width: 1, height: 1)
+        actionSheetController.popoverPresentationController?.sourceRect = popoverRect
+        actionSheetController.popoverPresentationController?.permittedArrowDirections = .up
+        
+        
             actionSheetController.addAction(deleteActionButton)
             self.present(actionSheetController, animated: true, completion: nil)
         }
@@ -177,14 +183,15 @@ class PostingRecruiterViewController: UIViewController ,UITextFieldDelegate, UIT
         toolbar.setItems([btn], animated: true)
         begintimetf.inputAccessoryView = toolbar
         begintimetf.inputView = datapicker
-        datapicker.datePickerMode = .dateAndTime
+        datapicker.datePickerMode = .date
         
     }
     @objc func adddate(){
         let formater = DateFormatter()
-        formater.dateStyle = .medium
-        formater.timeZone = .current
-        formater.timeStyle = .short
+        formater.dateFormat = "MM/dd/yyyy"
+      //  formater.dateStyle = .short
+       // formater.timeZone = .current
+//formater.timeStyle = .short
         begintimetf.text = formater.string(from: datapicker.date)
         self.view.endEditing(true)
         

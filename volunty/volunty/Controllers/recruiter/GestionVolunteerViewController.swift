@@ -51,7 +51,10 @@ class GestionVolunteerViewController: UIViewController  {
             switch result{
             case .success(_):
                 let alert = UIAlertController(title: "success", message: "volunteer has been accepted", preferredStyle: .alert)
-                let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+                let action = UIAlertAction(title: "ok", style: .default){
+                    action -> Void in
+                    self.dismiss(animated: true, completion: nil)
+                }
                 alert.addAction(action)
                 self.present(alert,animated: true)
                 

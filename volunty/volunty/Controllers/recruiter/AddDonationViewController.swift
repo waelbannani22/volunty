@@ -98,6 +98,12 @@ class AddDonationViewController: UIViewController,  UIImagePickerControllerDeleg
                 self.gallery()
             }
             
+            actionSheetController.popoverPresentationController?.sourceView = self.view
+        let xOrigin = self.view.center.x // Replace this with one of the lines at the end
+        let popoverRect = CGRect(x: xOrigin, y: self.image.frame.origin.y + 50, width: 1, height: 1)
+            actionSheetController.popoverPresentationController?.sourceRect = popoverRect
+            actionSheetController.popoverPresentationController?.permittedArrowDirections = .up
+            
             actionSheetController.addAction(deleteActionButton)
             self.present(actionSheetController, animated: true, completion: nil)
         }
@@ -194,7 +200,7 @@ class AddDonationViewController: UIViewController,  UIImagePickerControllerDeleg
                     }
                     alert.addAction(action)
                     self.present(alert,animated: true)
-                    self.dismiss(animated: true)
+                  //  self.dismiss(animated: true)
                 case .failure(_):
                     let alert = UIAlertController(title: "failure", message: "something went wrong!", preferredStyle: .alert)
                     let action = UIAlertAction(title: "ok", style: .default, handler: nil)

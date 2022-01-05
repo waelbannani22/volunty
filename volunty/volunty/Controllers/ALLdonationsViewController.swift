@@ -15,7 +15,10 @@ class ALLdonationsViewController: UIViewController,UICollectionViewDelegate,UICo
     @IBOutlet weak var TV: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tabBarController?.tabBar.isTranslucent = false
+      //  self.tabBarController?.tabBar.backgroundColor = UIColor(named: "323B61")
+       
+           
         //let defaults = UserDefaults.standard
         //let id = defaults.value(forKey: "recruiterId") as! String
         PostingViewModel.instance.fetchDonationAll{

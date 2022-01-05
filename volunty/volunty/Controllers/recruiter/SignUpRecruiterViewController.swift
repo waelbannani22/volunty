@@ -98,12 +98,9 @@ class SignUpRecruiterViewController: UIViewController ,UITextFieldDelegate{
                 switch result {
                 case .success(let json):
                     let alert = UIAlertController(title: "success", message: "your account has been created", preferredStyle: .alert)
-                    let action = UIAlertAction(title: "retry", style: .default){
+                    let action = UIAlertAction(title: "ok", style: .default){
                         action ->Void in
-                        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                        let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "LoginRecruiterViewController") as! LoginRecruiterViewController
-                        
-                        self.navigationController?.pushViewController(objSomeViewController, animated: true)
+                        self.dismiss(animated: true, completion: nil)
                         
                     }
                     alert.addAction(action)

@@ -44,6 +44,16 @@ class RecruiterProfileEditViewController: UIViewController,UIImagePickerControll
                 let emailValue = json1["user"][0]["email"].string
                 let companyValue = json1["user"][0]["organisation"].string
                 let phoneValue =  json1["user"][0]["phone"].string
+                let image = json1["user"][0]["photo"].string
+                if image != Optional(nil){
+                    ImageLoader.shared.loadImage(
+                     identifier: image!,
+                        url: "http://localhost:3000/img/\(image!)",
+                        completion: { image in
+                            self.IMAGE.image = image!
+                            
+                        })
+                }
                 self.namelabel.text = nameValue!
                 self.emaillabel.text = emailValue!
                 self.company.text = companyValue!

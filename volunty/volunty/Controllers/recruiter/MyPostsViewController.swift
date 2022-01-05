@@ -27,6 +27,7 @@ class MyPostsViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     let groupe = DispatchGroup()
     var size = 0
     override func viewDidLoad() {
+        self.navigationItem.setHidesBackButton(true, animated: true)
         self.tabBarController?.navigationItem.hidesBackButton = true
         tv.delegate = self
         tv.dataSource = self
