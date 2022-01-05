@@ -9,21 +9,49 @@ import UIKit
 
 class WriteReviewViewController: UIViewController {
 
+    @IBOutlet weak var desclabel: UITextView!
+    var id :String?
+    var idv:String?
+    var name:String?
     override func viewDidLoad() {
         super.viewDidLoad()
+        let defaults = UserDefaults.standard
+        self.idv = defaults.value(forKey: "volunteerId") as! String?
+        self.name = defaults.value(forKey: "usernamev") as! String?
+        
 
-        // Do any additional setup after loading the view.
+      
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func submit(_ sender: Any) {
+        HomeVolunteer.instance.addReview(id: id!, name: name!, idv: self.idv!, desc: self.desclabel.text){
+            result in
+            switch    result{
+            case .success(let json):
+                let alert = UIAlertController(title: "success", message: "your review has been submited", preferredStyle: .alert)
+                let action = UIAlertAction(title: "ok", style: .default){action -> Void in
+                    self.dismiss(animated: true)
+                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                    let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "OpenedCallReviewsViewController") as! OpenedCallReviewsViewController
+                    objSomeViewController.id = self.id
+                   
+                
+                    self.navigationController?.pushViewController(objSomeViewController, animated: true)
+                }
+                alert.addAction(action)
+                self.present(alert,animated: true)
+            case .failure(let value):
+                let alert = UIAlertController(title: "failure", message: value.localizedDescription, preferredStyle: .alert)
+                let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+                alert.addAction(action)
+                self.present(alert,animated: true)
+                
+            }
+            
+            
+        }
     }
-    */
+    
 
 }

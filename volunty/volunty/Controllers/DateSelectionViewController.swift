@@ -21,7 +21,7 @@ class DateSelectionViewController: UIViewController {
             dateFormatter.dateFormat = "dd/MM/yyyy"
             let date = dateFormatter.date(from: selectedDate)
             
-            datePicker.date = date!
+            //datePicker.date = date!
             
         }
         
