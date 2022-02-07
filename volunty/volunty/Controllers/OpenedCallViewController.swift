@@ -29,8 +29,7 @@ class OpenedCallViewController: UIViewController {
     @IBOutlet weak var name: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarController?.tabBar.isTranslucent = false
-        self.tabBarController?.tabBar.backgroundColor = UIColor(named: "323B61")
+        
         self.apply.isEnabled = true
         let defaults = UserDefaults.standard
         defaults.synchronize()

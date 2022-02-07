@@ -84,7 +84,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
             loginButton.delegate = self
             
             let X_Position:CGFloat? = view.center.x - loginButton.frame.width//use your X position here
-            var Y_Position:CGFloat? = signup.frame.origin.y + 100 //use your Y position here
+            var Y_Position:CGFloat? = signup.frame.origin.y + 50 //use your Y position here
             loginButton.frame = CGRect(x: X_Position!, y: Y_Position!, width: loginButton.frame.width, height: loginButton.frame.height)
                     view.addSubview(loginButton)
             loginButton.center.x = self.view.center.x
