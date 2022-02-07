@@ -30,7 +30,7 @@ class HomeVolunteer {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/volunteers", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/volunteers", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -67,7 +67,7 @@ class HomeVolunteer {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/resetpassword", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/resetpassword", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -103,7 +103,7 @@ class HomeVolunteer {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/\(user)/\(token)", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/\(user)/\(token)", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -151,7 +151,7 @@ class HomeVolunteer {
                     multipartFormData.append((value as AnyObject).data(using: String.Encoding.utf8.rawValue)!, withName: key)
                     } //Optional for extra parameters
             },
-                         to:"http://localhost:3000/update_volunteer",method: .post,headers: headers )
+                         to:"http://localhost:8885/update_volunteer",method: .post,headers: headers )
         { result in
           
             
@@ -194,7 +194,7 @@ class HomeVolunteer {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/fetchByCategory", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/fetchByCategory", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -224,7 +224,7 @@ class HomeVolunteer {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/fetchUserById", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/fetchUserById", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -262,7 +262,7 @@ class HomeVolunteer {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/VolunteerCall", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/VolunteerCall", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -294,7 +294,7 @@ class HomeVolunteer {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/fetchNotificationById", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/fetchNotificationById", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -325,7 +325,7 @@ class HomeVolunteer {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/fetchReviewById", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/fetchReviewById", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -356,7 +356,7 @@ class HomeVolunteer {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/fetchUserEmail", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/fetchUserEmail", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -390,7 +390,7 @@ class HomeVolunteer {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/addReview", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/addReview", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -429,7 +429,7 @@ class HomeVolunteer {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/createVolunteerFB", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/createVolunteerFB", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -462,7 +462,7 @@ class HomeVolunteer {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/encours", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/encours", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{

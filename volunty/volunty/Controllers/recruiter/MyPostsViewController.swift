@@ -28,7 +28,7 @@ class MyPostsViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     var size = 0
     override func viewDidLoad() {
         self.navigationItem.setHidesBackButton(true, animated: true)
-        self.tabBarController?.navigationItem.hidesBackButton = true
+        //self.tabBarController?.navigationItem.hidesBackButton = true
         tv.delegate = self
         tv.dataSource = self
         tv.isHidden = true
@@ -104,7 +104,7 @@ class MyPostsViewController: UIViewController ,UITableViewDelegate,UITableViewDa
                     let  imageTV = contentView.viewWithTag(3) as! UIImageView
                     ImageLoader.shared.loadImage(
                      identifier: img!,
-                        url: "http://localhost:3000/img/\(img!)",
+                        url: "http://localhost:8885/img/\(img!)",
                         completion: { image in
                             imageTV.image = image!
                             

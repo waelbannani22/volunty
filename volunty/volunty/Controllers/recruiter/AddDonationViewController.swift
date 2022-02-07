@@ -193,7 +193,7 @@ class AddDonationViewController: UIViewController,  UIImagePickerControllerDeleg
                     let action = UIAlertAction(title: "ok", style: .default){action ->Void in
                         
                         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                        let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "MyPostsViewController") as! MyPostsViewController
+                        let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "MyDonationViewController") as! MyDonationViewController
                       
                       
                         self.navigationController?.pushViewController(objSomeViewController, animated: true)

@@ -681,7 +681,7 @@
 		D5059D23F0D8C905654291BCDD2AC684 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520167E5BA688427B5D52F592E5EF0C9 /* Permission.swift */; };
 		D52B9EB4C0265AD75F880EE5A50E8FAD /* FBSDKAddressFilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE4D1C2070BEB9154D5AC2171B07BDF /* FBSDKAddressFilterManager.m */; };
 		D593E5BEB4221FF272DBF69E51945319 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC077D6640AC656E1B3B970AA2DDDB47 /* Request.swift */; };
-		D5DADA7FA0622FB78F688C0A26E8A20D /* Braintree-Braintree-UI-Localization in Resources */ = {isa = PBXBuildFile; fileRef = 850CC112A439D2467280787E32F17602 /* Braintree-Braintree-UI-Localization */; };
+		D5DADA7FA0622FB78F688C0A26E8A20D /* Braintree-UI-Localization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 850CC112A439D2467280787E32F17602 /* Braintree-UI-Localization.bundle */; };
 		D616F3EEE809F8BA69A1C315DA7A1B4A /* BTAppSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3DD0B4ADE281483204BA64F52ADABF /* BTAppSwitch.m */; settings = {COMPILER_FLAGS = "-Wall -Werror -Wextra"; }; };
 		D6D603CD7B4C7379DBAD774E40AC73A0 /* FBSDKLikeActionControllerCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF0DDB96FC603AE3BA502C177671A58 /* FBSDKLikeActionControllerCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D7AEA33794785C95193429C815F58575 /* FBSDKServerConfigurationManager+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 092748506759C4AABEE81FA7304C4B77 /* FBSDKServerConfigurationManager+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -756,7 +756,7 @@
 		F293CD98088C986C13C6AE81749AF5C4 /* BTPayPalCreditFinancingAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9FEBCF8B9172C07E40DFEB4BB622F /* BTPayPalCreditFinancingAmount.m */; settings = {COMPILER_FLAGS = "-Wall -Werror -Wextra"; }; };
 		F2A26CBB847D36A0F91E665DBF79BF8E /* FBSDKButton+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5015C8947AA1AB465CA7BEBA54CB06 /* FBSDKButton+Subclass.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F2C829B0FBEA38AFD9648145871B9C2B /* BTUIPayPalButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 40391867F86431D7E78D8D6DCC22DF3B /* BTUIPayPalButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2E1CA4975059D9CE1F92E941A044097 /* Braintree-Braintree-Drop-In-Localization in Resources */ = {isa = PBXBuildFile; fileRef = 0669A4449A89D583C86BCD24D7CA75F7 /* Braintree-Braintree-Drop-In-Localization */; };
+		F2E1CA4975059D9CE1F92E941A044097 /* Braintree-Drop-In-Localization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0669A4449A89D583C86BCD24D7CA75F7 /* Braintree-Drop-In-Localization.bundle */; };
 		F349E6E3B5CBBE701F87A890861E82D2 /* FBSDKDeviceLoginCodeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCED9B4FD33C2D783F137F989D6B38C /* FBSDKDeviceLoginCodeInfo.m */; };
 		F3B3CADA4F8B4262681600F21E7E3DF4 /* BTUIFormField.h in Headers */ = {isa = PBXBuildFile; fileRef = B80414E359A14177B52278968734B85D /* BTUIFormField.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F48AC474D43AD5717BC6F1DCDA8ECA38 /* FBSDKGraphErrorRecoveryProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B12B357B37A5DEDBDECE582251701A8 /* FBSDKGraphErrorRecoveryProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -979,11 +979,11 @@
 		05E750F1B5131B1E0EE2118FDA932935 /* FBSDKError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKError.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKError.m; sourceTree = "<group>"; };
 		05FB1F842AA2A1604C077D6045F2979F /* FBSDKServerConfigurationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKServerConfigurationManager.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfigurationManager.h; sourceTree = "<group>"; };
 		0668A51174A203F82B1A1ADDA9B3E643 /* FacebookCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FacebookCore-umbrella.h"; sourceTree = "<group>"; };
-		0669A4449A89D583C86BCD24D7CA75F7 /* Braintree-Braintree-Drop-In-Localization */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Braintree-Braintree-Drop-In-Localization"; path = "Braintree-Drop-In-Localization.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0669A4449A89D583C86BCD24D7CA75F7 /* Braintree-Drop-In-Localization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Braintree-Drop-In-Localization.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06847E916980FCE13CA59E91F492BB24 /* PPOTString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPOTString.h; path = BraintreePayPal/PayPalUtils/Public/PPOTString.h; sourceTree = "<group>"; };
-		06DC1AF2156A37892EDBD59B7DAB53FA /* en_CA.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en_CA.lproj; path = "BraintreeUI/Drop-In/Localization/en_CA.lproj"; sourceTree = "<group>"; };
+		06DC1AF2156A37892EDBD59B7DAB53FA /* en_CA.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en_CA.lproj; path = "BraintreeUI/Drop-In/Localization/en_CA.lproj"; sourceTree = "<group>"; };
 		071AF0C5EBA13C327C22705C4D8F4AE1 /* FBSDKCodelessIndexer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKCodelessIndexer.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKCodelessIndexer.m; sourceTree = "<group>"; };
-		07242D8F8DD625F5C89C516F445111FD /* fr_CA.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr_CA.lproj; path = "BraintreeUI/Drop-In/Localization/fr_CA.lproj"; sourceTree = "<group>"; };
+		07242D8F8DD625F5C89C516F445111FD /* fr_CA.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr_CA.lproj; path = "BraintreeUI/Drop-In/Localization/fr_CA.lproj"; sourceTree = "<group>"; };
 		07A3BD557A1B7EB9458FD0950195FE8F /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		07A4022C2D47677343372E99E12B52C4 /* FBSDKKeychainStoreViaBundleID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKKeychainStoreViaBundleID.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKKeychainStoreViaBundleID.h; sourceTree = "<group>"; };
 		07BB7B37A03E57E1020D58F54939B448 /* PPOTCheckoutRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPOTCheckoutRequest.m; path = BraintreePayPal/PayPalOneTouch/Models/PPOTCheckoutRequest.m; sourceTree = "<group>"; };
@@ -1012,7 +1012,7 @@
 		0C7040D99E2F0FB054A7ED63A9E49804 /* FBSDKDeviceShareButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDeviceShareButton.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKDeviceShareButton.h; sourceTree = "<group>"; };
 		0CA69C91A797515A710875BCFF2F6C9E /* BTUICardCvvField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUICardCvvField.m; path = "BraintreeUI/Views/Form Fields/BTUICardCvvField.m"; sourceTree = "<group>"; };
 		0D1A1138FC7AA81524057C2F3040C5E8 /* Enums+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Enums+Extensions.swift"; path = "Sources/Share/Enums+Extensions.swift"; sourceTree = "<group>"; };
-		0D2AD5FDB5BDB64E81E9372C7EA3997E /* en_AU.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en_AU.lproj; path = "BraintreeUI/Drop-In/Localization/en_AU.lproj"; sourceTree = "<group>"; };
+		0D2AD5FDB5BDB64E81E9372C7EA3997E /* en_AU.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en_AU.lproj; path = "BraintreeUI/Drop-In/Localization/en_AU.lproj"; sourceTree = "<group>"; };
 		0D5696CA16B7D2E265328D2FE05F6253 /* BTUIPaymentButtonCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIPaymentButtonCollectionViewCell.h; path = "BraintreeUI/Views/Collection Views/BTUIPaymentButtonCollectionViewCell.h"; sourceTree = "<group>"; };
 		0D8F64E108E669D0B6EC6229DB3967A9 /* FacebookLogin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FacebookLogin; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA6A6823FEE9BA7697D7BCB237B9D3D /* PPOTConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPOTConfiguration.h; path = BraintreePayPal/PayPalOneTouch/Configuration/PPOTConfiguration.h; sourceTree = "<group>"; };
@@ -1072,11 +1072,11 @@
 		1ECD0D90D127F9AFFAF8E389342D842E /* FBSDKShareKit+Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FBSDKShareKit+Typealiases.swift"; path = "Sources/Share/FBSDKShareKit+Typealiases.swift"; sourceTree = "<group>"; };
 		1FD79C89992397BA14397F79D8BD36F6 /* FBSDKBridgeAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKBridgeAPI.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPI.m; sourceTree = "<group>"; };
 		1FF67E589E2A55DFD4F18374D2EC0D70 /* FBSDKAppLinkUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppLinkUtility.m; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkUtility.m; sourceTree = "<group>"; };
-		20513EBEF850FD25A098F7434584A02E /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = BraintreeUI/Localization/en.lproj; sourceTree = "<group>"; };
+		20513EBEF850FD25A098F7434584A02E /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = BraintreeUI/Localization/en.lproj; sourceTree = "<group>"; };
 		20E5393B064447255E65A13DD5F6A2E2 /* PPOTMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPOTMacros.h; path = BraintreePayPal/PayPalUtils/Public/PPOTMacros.h; sourceTree = "<group>"; };
 		20E539C251DFD09454B6F45A895C4636 /* FBSDKTooltipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKTooltipView.h; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKTooltipView.h; sourceTree = "<group>"; };
 		20F5F35C20B99104E499DC6D361C7CA3 /* FBSDKShareOpenGraphValueContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareOpenGraphValueContainer.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphValueContainer.h; sourceTree = "<group>"; };
-		2114588CADFE68177F410D1A83EC77B9 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = BraintreeUI/Localization/nl.lproj; sourceTree = "<group>"; };
+		2114588CADFE68177F410D1A83EC77B9 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nl.lproj; path = BraintreeUI/Localization/nl.lproj; sourceTree = "<group>"; };
 		217E92E3E69B88D2A7E505D46E441632 /* FBSDKLikeActionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeActionController.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeActionController.h; sourceTree = "<group>"; };
 		21893D9824E414D0BD92116F5937E73F /* FBSDKIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKIcon.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKIcon.m; sourceTree = "<group>"; };
 		21ADE29B6C8591623C0DEAACFE0CFD62 /* BTPaymentMethodNonceParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTPaymentMethodNonceParser.h; path = BraintreeCore/Public/BTPaymentMethodNonceParser.h; sourceTree = "<group>"; };
@@ -1141,7 +1141,7 @@
 		3148A5C9F8495EC09B51FA3EAC09857F /* FBSDKShareCameraEffectContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareCameraEffectContent.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareCameraEffectContent.m; sourceTree = "<group>"; };
 		3170289859401DACEBC270111D508111 /* FBSDKHashtag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKHashtag.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKHashtag.m; sourceTree = "<group>"; };
 		31A56DB18D55A9EF34ECF330AFAE05FE /* PPOTVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPOTVersion.h; path = BraintreePayPal/PayPalUtils/Public/PPOTVersion.h; sourceTree = "<group>"; };
-		31F1762A0C7E902338E3A22FF3521A5A /* en_GB.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en_GB.lproj; path = "BraintreeUI/Drop-In/Localization/en_GB.lproj"; sourceTree = "<group>"; };
+		31F1762A0C7E902338E3A22FF3521A5A /* en_GB.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en_GB.lproj; path = "BraintreeUI/Drop-In/Localization/en_GB.lproj"; sourceTree = "<group>"; };
 		32B598FDA98408F1A3CAACE885180AA0 /* FBSDKWebDialogView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKWebDialogView.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/WebDialog/FBSDKWebDialogView.h; sourceTree = "<group>"; };
 		337C8922846456B071B7D91B399A99C9 /* BTPayPalDriver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTPayPalDriver.m; path = BraintreePayPal/BTPayPalDriver.m; sourceTree = "<group>"; };
 		33E46F5720B30E8B0FB995082AB38E95 /* PPOTCheckoutSwitchRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPOTCheckoutSwitchRequest.m; path = BraintreePayPal/PayPalOneTouch/Models/PPOTCheckoutSwitchRequest.m; sourceTree = "<group>"; };
@@ -1155,7 +1155,7 @@
 		35E173D650459D50C340C4D4AF424EC2 /* BTJSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTJSON.m; path = BraintreeCore/BTJSON.m; sourceTree = "<group>"; };
 		35F34112525FB404D564ED21AFE543CF /* FBSDKShareOpenGraphObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareOpenGraphObject.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphObject.h; sourceTree = "<group>"; };
 		363D6D6FFBC486195370BF35B3CC29BA /* FBSDKGateKeeperManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGateKeeperManager.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKGateKeeperManager.h; sourceTree = "<group>"; };
-		3671F58FEE23D779147C19A90DC7A7B0 /* es_ES.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es_ES.lproj; path = BraintreeUI/Localization/es_ES.lproj; sourceTree = "<group>"; };
+		3671F58FEE23D779147C19A90DC7A7B0 /* es_ES.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es_ES.lproj; path = BraintreeUI/Localization/es_ES.lproj; sourceTree = "<group>"; };
 		36A0D052795896D9AE63B46827D62CDA /* FBSDKLoginTooltipView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginTooltipView.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginTooltipView.m; sourceTree = "<group>"; };
 		370AB94CBB3C8EB5F69D99AAAA9942CE /* FBSDKStandaloneModel.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = FBSDKStandaloneModel.hpp; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/ML/FBSDKStandaloneModel.hpp; sourceTree = "<group>"; };
 		373BE9FB32AD7BB697062704CE1ADF0E /* FBSDKAppLinkReturnToRefererView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkReturnToRefererView.h; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkReturnToRefererView.h; sourceTree = "<group>"; };
@@ -1170,7 +1170,7 @@
 		3CD3BB777037E9C2F79A0229C9217935 /* PPOTEncryptionHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPOTEncryptionHelper.h; path = BraintreePayPal/PayPalUtils/Public/PPOTEncryptionHelper.h; sourceTree = "<group>"; };
 		3D138C4A6B917439F302E15258712A0C /* FBSDKCameraEffectArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCameraEffectArguments.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKCameraEffectArguments.h; sourceTree = "<group>"; };
 		3E0134B74C882ED68AAA581298C4F781 /* BTUIUnionPayVectorArtView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUIUnionPayVectorArtView.m; path = "BraintreeUI/Views/Vector Art/BTUIUnionPayVectorArtView.m"; sourceTree = "<group>"; };
-		3E407E5C574E8446047C5990CA92E306 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = "BraintreeUI/Drop-In/Localization/ru.lproj"; sourceTree = "<group>"; };
+		3E407E5C574E8446047C5990CA92E306 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ru.lproj; path = "BraintreeUI/Drop-In/Localization/ru.lproj"; sourceTree = "<group>"; };
 		3EBE1FACF68DB8430D2ECCD9E4F5B19C /* BTCardNonce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTCardNonce.h; path = BraintreeCard/Public/BTCardNonce.h; sourceTree = "<group>"; };
 		3F0DE3724D9123E755CB749DA7D0A010 /* BTUIUnionPayVectorArtView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIUnionPayVectorArtView.h; path = "BraintreeUI/Views/Vector Art/BTUIUnionPayVectorArtView.h"; sourceTree = "<group>"; };
 		3F1A96D5F172E1505AB1364A82FEFC00 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
@@ -1206,8 +1206,8 @@
 		482A9055326D9A59BA6DF5D354559687 /* BTUIPaymentOptionType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIPaymentOptionType.h; path = BraintreeUI/Public/BTUIPaymentOptionType.h; sourceTree = "<group>"; };
 		48F19FDEE7CF438BDA4806A4B6D63270 /* FBSDKMaleSilhouetteIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKMaleSilhouetteIcon.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKMaleSilhouetteIcon.m; sourceTree = "<group>"; };
 		4924863AE2FA050C010E92876BFEBA4F /* FBSDKCrashHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKCrashHandler.m; path = FBSDKCoreKit/FBSDKCoreKit/Basics/Instrument/FBSDKCrashHandler.m; sourceTree = "<group>"; };
-		4A0006F52C5E657FBC35176EDBDFE7D3 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = sv.lproj; path = BraintreeUI/Localization/sv.lproj; sourceTree = "<group>"; };
-		4AAC71735A0C96E9E77A7D9BA9346B26 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = "BraintreeUI/Drop-In/Localization/nl.lproj"; sourceTree = "<group>"; };
+		4A0006F52C5E657FBC35176EDBDFE7D3 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = sv.lproj; path = BraintreeUI/Localization/sv.lproj; sourceTree = "<group>"; };
+		4AAC71735A0C96E9E77A7D9BA9346B26 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nl.lproj; path = "BraintreeUI/Drop-In/Localization/nl.lproj"; sourceTree = "<group>"; };
 		4ADA00B3F47B536A774B820E887B70CA /* FBSDKWebDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKWebDialog.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/WebDialog/FBSDKWebDialog.h; sourceTree = "<group>"; };
 		4B5C825CD3448AB901530BB9729CE38F /* FBSDKSharingScheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSharingScheme.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKSharingScheme.h; sourceTree = "<group>"; };
 		4B7C3FEF9166E145E4A27A9E27E03F0C /* FBSDKDeviceRequestsHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDeviceRequestsHelper.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKDeviceRequestsHelper.h; sourceTree = "<group>"; };
@@ -1232,7 +1232,7 @@
 		50B334B9324E2426DB94B1BE349C1A9B /* FBSDKUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKUtility.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.h; sourceTree = "<group>"; };
 		50C9E408F716E7509EC570502098B31D /* BTEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTEnums.h; path = BraintreeCore/Public/BTEnums.h; sourceTree = "<group>"; };
 		50FB243898E4C549448CDC2810F6EC4E /* BTUIMasterCardVectorArtView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUIMasterCardVectorArtView.m; path = "BraintreeUI/Views/Vector Art/BTUIMasterCardVectorArtView.m"; sourceTree = "<group>"; };
-		5193B7291963BCD7768A978D10F57023 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "BraintreeUI/Drop-In/Localization/de.lproj"; sourceTree = "<group>"; };
+		5193B7291963BCD7768A978D10F57023 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = "BraintreeUI/Drop-In/Localization/de.lproj"; sourceTree = "<group>"; };
 		51B8087EFF9D145DDBE3180819DB613B /* FBSDKWebViewAppLinkResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKWebViewAppLinkResolver.h; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKWebViewAppLinkResolver.h; sourceTree = "<group>"; };
 		51B8BCBE933F689ECB43CB33F3D71DF6 /* BTUIVenmoButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIVenmoButton.h; path = BraintreeUI/Public/BTUIVenmoButton.h; sourceTree = "<group>"; };
 		520167E5BA688427B5D52F592E5EF0C9 /* Permission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Permission.swift; path = Sources/Core/Permission.swift; sourceTree = "<group>"; };
@@ -1258,7 +1258,7 @@
 		57C15019FBC58013BC4BBCF89A08989D /* FBSDKGraphRequestConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKGraphRequestConnection.m; path = FBSDKCoreKit/FBSDKCoreKit/GraphAPI/FBSDKGraphRequestConnection.m; sourceTree = "<group>"; };
 		57D248A32D958C3D314C13303480914D /* FBSDKEventDeactivationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKEventDeactivationManager.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/EventDeactivation/FBSDKEventDeactivationManager.m; sourceTree = "<group>"; };
 		583D77FF43D9B0FB4BFE4323ED75B0E5 /* BTConfiguration+GraphQL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "BTConfiguration+GraphQL.m"; path = "BraintreeCore/BTConfiguration+GraphQL.m"; sourceTree = "<group>"; };
-		588EB1E27F90743E0F6DCCAE5D25A4DF /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = sv.lproj; path = "BraintreeUI/Drop-In/Localization/sv.lproj"; sourceTree = "<group>"; };
+		588EB1E27F90743E0F6DCCAE5D25A4DF /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = sv.lproj; path = "BraintreeUI/Drop-In/Localization/sv.lproj"; sourceTree = "<group>"; };
 		58C822F9937919E3E92C4905F5DD9896 /* FBSDKSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSwizzler.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKSwizzler.h; sourceTree = "<group>"; };
 		58FB8AEFAA169562ADA0C5C43A9CDFCA /* FBSDKTypeUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKTypeUtility.h; path = FBSDKCoreKit/FBSDKCoreKit/Basics/Internal/FBSDKTypeUtility.h; sourceTree = "<group>"; };
 		59063A3F96587FAFA06DB92F7F1E9CBB /* FBSDKTimeSpentData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKTimeSpentData.h; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKTimeSpentData.h; sourceTree = "<group>"; };
@@ -1279,7 +1279,7 @@
 		5AE386A5DAF4AE585F63E12EC57775AC /* FBSDKAppEventsUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppEventsUtility.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsUtility.m; sourceTree = "<group>"; };
 		5AED8C60048745B6F65C074A7B5E6AE7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5B02C5479A03B808897AC3A95185BBF8 /* FBSDKDynamicFrameworkLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDynamicFrameworkLoader.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal_NoARC/FBSDKDynamicFrameworkLoader.m; sourceTree = "<group>"; };
-		5B3202252D6C40010239EECB431AA783 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "BraintreeUI/Localization/zh-Hans.lproj"; sourceTree = "<group>"; };
+		5B3202252D6C40010239EECB431AA783 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "BraintreeUI/Localization/zh-Hans.lproj"; sourceTree = "<group>"; };
 		5C18B272B6A8C53376559CF38E2D00BC /* PPFPTIData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPFPTIData.m; path = BraintreePayPal/PayPalOneTouch/Analytics/PPFPTIData.m; sourceTree = "<group>"; };
 		5C2D83FAB3720F67DF985A90CC8DCD18 /* FBSDKBridgeAPIProtocolType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIProtocolType.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIProtocolType.h; sourceTree = "<group>"; };
 		5C32571AF9DBFB8A24EFE310FE307AE3 /* FBSDKShareDialogMode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareDialogMode.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareDialogMode.m; sourceTree = "<group>"; };
@@ -1314,7 +1314,7 @@
 		62D8A5A713101FF350B2DFFA7C730247 /* FBSDKAppLinkUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkUtility.h; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkUtility.h; sourceTree = "<group>"; };
 		62F84F6EDC0AF85A00B9DA8ABBAD686B /* FBSDKLoginKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSDKLoginKit-dummy.m"; sourceTree = "<group>"; };
 		639B9FF4ED25F6C2F3BB5E959E120280 /* FBSDKGraphErrorRecoveryProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKGraphErrorRecoveryProcessor.m; path = FBSDKCoreKit/FBSDKCoreKit/GraphAPI/FBSDKGraphErrorRecoveryProcessor.m; sourceTree = "<group>"; };
-		64991B6C5EB071C88DB141842A95E181 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = "BraintreeUI/Drop-In/Localization/pl.lproj"; sourceTree = "<group>"; };
+		64991B6C5EB071C88DB141842A95E181 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pl.lproj; path = "BraintreeUI/Drop-In/Localization/pl.lproj"; sourceTree = "<group>"; };
 		64A80251BB079405D6AB0F07FA29393B /* FBSDKErrorReport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKErrorReport.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Instrument/ErrorReport/FBSDKErrorReport.m; sourceTree = "<group>"; };
 		64AA91568D5E42F7BFFE44CADC481AD4 /* BTDropInSelectPaymentMethodViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTDropInSelectPaymentMethodViewController.h; path = "BraintreeUI/Drop-In/BTDropInSelectPaymentMethodViewController.h"; sourceTree = "<group>"; };
 		6531B35130D69729A18AB603BB870F8D /* BTUIScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUIScrollView.m; path = "BraintreeUI/Views/Custom Views/BTUIScrollView.m"; sourceTree = "<group>"; };
@@ -1325,11 +1325,11 @@
 		6646F58E9C2DB2DFAEAEED5886E5A6F5 /* PPFPTITracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPFPTITracker.h; path = BraintreePayPal/PayPalOneTouch/Analytics/PPFPTITracker.h; sourceTree = "<group>"; };
 		665A17C7E4913233EADE18970F112182 /* BTUIDiscoverVectorArtView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIDiscoverVectorArtView.h; path = "BraintreeUI/Views/Vector Art/BTUIDiscoverVectorArtView.h"; sourceTree = "<group>"; };
 		6696020C87EB417FD8B0922DD1AC49AB /* PPOTOAuth2SwitchRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPOTOAuth2SwitchRequest.h; path = BraintreePayPal/PayPalOneTouch/Models/PPOTOAuth2SwitchRequest.h; sourceTree = "<group>"; };
-		66AC927422808C3623E7F69AB522F16D /* fr_FR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr_FR.lproj; path = BraintreeUI/Localization/fr_FR.lproj; sourceTree = "<group>"; };
+		66AC927422808C3623E7F69AB522F16D /* fr_FR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr_FR.lproj; path = BraintreeUI/Localization/fr_FR.lproj; sourceTree = "<group>"; };
 		6701D6CB64B68CD512A88EC9B064E1D1 /* BTDropInUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTDropInUtil.h; path = "BraintreeUI/Drop-In/BTDropInUtil.h"; sourceTree = "<group>"; };
-		671EE64DA26ACF29543071E2CA627EC9 /* FBSDKAddressInferencer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBSDKAddressInferencer.mm; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/RestrictiveDataFilter/FBSDKAddressInferencer.mm; sourceTree = "<group>"; };
-		6753C527F31D5A1703F238532DDD8613 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = "BraintreeUI/Drop-In/Localization/tr.lproj"; sourceTree = "<group>"; };
-		68385243CFF6B3FB9DBB3EFB3296D7D4 /* fr_FR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr_FR.lproj; path = "BraintreeUI/Drop-In/Localization/fr_FR.lproj"; sourceTree = "<group>"; };
+		671EE64DA26ACF29543071E2CA627EC9 /* FBSDKAddressInferencer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBSDKAddressInferencer.mm; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/RestrictiveDataFilter/FBSDKAddressInferencer.mm; sourceTree = "<group>"; };
+		6753C527F31D5A1703F238532DDD8613 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = tr.lproj; path = "BraintreeUI/Drop-In/Localization/tr.lproj"; sourceTree = "<group>"; };
+		68385243CFF6B3FB9DBB3EFB3296D7D4 /* fr_FR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr_FR.lproj; path = "BraintreeUI/Drop-In/Localization/fr_FR.lproj"; sourceTree = "<group>"; };
 		684F61451E7098545A36F419DB072032 /* FBSDKShareOpenGraphAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareOpenGraphAction.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphAction.m; sourceTree = "<group>"; };
 		685B250C7F0520163113D85D6A8BFF25 /* FBSDKAppLinkReturnToRefererView_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkReturnToRefererView_Internal.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAppLinkReturnToRefererView_Internal.h; sourceTree = "<group>"; };
 		68BA60D5D368292DCFA9CE86C712664F /* PPOTCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPOTCore.h; path = BraintreePayPal/PayPalOneTouch/Public/PPOTCore.h; sourceTree = "<group>"; };
@@ -1350,14 +1350,14 @@
 		6BBBADC936B697B212297E1D8B9C08A1 /* FBSDKWebViewAppLinkResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKWebViewAppLinkResolver.m; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKWebViewAppLinkResolver.m; sourceTree = "<group>"; };
 		6D018201ED073EC508A706F23C3DA2B5 /* FBSDKGameRequestFrictionlessRecipientCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKGameRequestFrictionlessRecipientCache.m; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKGameRequestFrictionlessRecipientCache.m; sourceTree = "<group>"; };
 		6D840895D7334C2EAAC469D705FDB54A /* BTPaymentMethodNonceParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTPaymentMethodNonceParser.m; path = BraintreeCore/BTPaymentMethodNonceParser.m; sourceTree = "<group>"; };
-		6DEBFF60CC6B00073771327B6297E898 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = da.lproj; path = BraintreeUI/Localization/da.lproj; sourceTree = "<group>"; };
+		6DEBFF60CC6B00073771327B6297E898 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = da.lproj; path = BraintreeUI/Localization/da.lproj; sourceTree = "<group>"; };
 		6E186D1262011DFD6C39A4A59B643A00 /* PPOTCheckoutAppSwitchRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPOTCheckoutAppSwitchRequest.h; path = BraintreePayPal/PayPalOneTouch/Models/PPOTCheckoutAppSwitchRequest.h; sourceTree = "<group>"; };
 		6E920F23BD6A3BCA5EC450F1F56B5D6D /* FBSDKGraphRequestDataAttachment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKGraphRequestDataAttachment.m; path = FBSDKCoreKit/FBSDKCoreKit/GraphAPI/FBSDKGraphRequestDataAttachment.m; sourceTree = "<group>"; };
 		6EA74E19C7E63CDB97214C1ED28FC54F /* FBSDKErrorRecoveryConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKErrorRecoveryConfiguration.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKErrorRecoveryConfiguration.h; sourceTree = "<group>"; };
 		6EA8AACD3D8C75400B0CC5929D83BD0D /* BTDropInSelectPaymentMethodViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTDropInSelectPaymentMethodViewController.m; path = "BraintreeUI/Drop-In/BTDropInSelectPaymentMethodViewController.m"; sourceTree = "<group>"; };
 		6ED5AB5D16EC455C059DBAB3C28725CF /* FBSDKGraphRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequest.h; path = FBSDKCoreKit/FBSDKCoreKit/GraphAPI/FBSDKGraphRequest.h; sourceTree = "<group>"; };
 		6F44D509E53F51624F832CD7A98E4E6B /* PPOTSimpleKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPOTSimpleKeychain.m; path = BraintreePayPal/PayPalUtils/PPOTSimpleKeychain.m; sourceTree = "<group>"; };
-		6FBB5AF53F1D4F32E442E86432AACAC7 /* Pods-volunty */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-volunty"; path = Pods_volunty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBB5AF53F1D4F32E442E86432AACAC7 /* Pods_volunty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_volunty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		708CC1A6EDDEB3EFE2D600B97B3ACAE5 /* BTUICardType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUICardType.m; path = BraintreeUI/Models/BTUICardType.m; sourceTree = "<group>"; };
 		70FB40ED999E4925783014861448319B /* _FBSDKLoginRecoveryAttempter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBSDKLoginRecoveryAttempter.m; path = FBSDKLoginKit/FBSDKLoginKit/Internal/_FBSDKLoginRecoveryAttempter.m; sourceTree = "<group>"; };
 		71184A007D771DFB3F0DE4AF6412DDD2 /* FBSDKMeasurementEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMeasurementEvent.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKMeasurementEvent.h; sourceTree = "<group>"; };
@@ -1366,7 +1366,7 @@
 		718EE40A1BDA83FD5E2BB7B455F75267 /* FBSDKEventDeactivationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKEventDeactivationManager.h; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/EventDeactivation/FBSDKEventDeactivationManager.h; sourceTree = "<group>"; };
 		71C7B51B3C35724AB1B02572E642E0C0 /* FBSDKShareConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareConstants.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareConstants.m; sourceTree = "<group>"; };
 		71C96AA4B74A45B2550C554CCBC0BBB8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		71CE88CC4F715FF11E6CB825BE1AC1C8 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = BraintreeUI/Localization/pl.lproj; sourceTree = "<group>"; };
+		71CE88CC4F715FF11E6CB825BE1AC1C8 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pl.lproj; path = BraintreeUI/Localization/pl.lproj; sourceTree = "<group>"; };
 		7208BF3451E6406B4DE9620C42731D3D /* FBSDKLoginUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginUtility.m; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginUtility.m; sourceTree = "<group>"; };
 		72154280508C281B0BB820AD8DB0E2E5 /* FBSDKLoginTooltipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginTooltipView.h; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginTooltipView.h; sourceTree = "<group>"; };
 		72200EB535BAD37EE0981C46BF711B45 /* BTUICVVFrontVectorArtView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUICVVFrontVectorArtView.m; path = "BraintreeUI/Views/Vector Art/BTUICVVFrontVectorArtView.m"; sourceTree = "<group>"; };
@@ -1376,7 +1376,7 @@
 		738A78F2C8EDA8DDA3F066F84EEB2E17 /* FBSDKFeatureExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKFeatureExtractor.h; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/SuggestedEvents/FBSDKFeatureExtractor.h; sourceTree = "<group>"; };
 		73ED62AE07AB510F89AEDC78AFE779E4 /* FBSDKAddressFilterManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAddressFilterManager.h; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/RestrictiveDataFilter/FBSDKAddressFilterManager.h; sourceTree = "<group>"; };
 		73FA460C818F9AA2C85163240B0A5D4E /* BTUIVisaVectorArtView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIVisaVectorArtView.h; path = "BraintreeUI/Views/Vector Art/BTUIVisaVectorArtView.h"; sourceTree = "<group>"; };
-		74D4F6D2F4E97463732AF47A0EEFAC6E /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "BraintreeUI/Drop-In/Localization/en.lproj"; sourceTree = "<group>"; };
+		74D4F6D2F4E97463732AF47A0EEFAC6E /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = "BraintreeUI/Drop-In/Localization/en.lproj"; sourceTree = "<group>"; };
 		74FA61DB8B45B33E4EFF30458E9DDD2E /* FBSDKShareMessengerActionButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareMessengerActionButton.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerActionButton.h; sourceTree = "<group>"; };
 		75E21AAF38BEC81883CFCB20FD6B9079 /* PPFPTITracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPFPTITracker.m; path = BraintreePayPal/PayPalOneTouch/Analytics/PPFPTITracker.m; sourceTree = "<group>"; };
 		760A60BA5EF308C225109E038AEEAEE4 /* FBSDKUserDataStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKUserDataStore.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKUserDataStore.m; sourceTree = "<group>"; };
@@ -1388,7 +1388,7 @@
 		772D4AC0A8BEACA82F4349BEAFB66550 /* FBSDKCopying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCopying.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h; sourceTree = "<group>"; };
 		77C2A562CE5E53EF1559D2E21F995CB4 /* BTCard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTCard.m; path = BraintreeCard/BTCard.m; sourceTree = "<group>"; };
 		78C033B737550457682B9AC262E68C95 /* FBSDKLikeDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeDialog.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeDialog.h; sourceTree = "<group>"; };
-		78D57AD0B0F1BB542DE7608A129C68B0 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = BraintreeUI/Localization/tr.lproj; sourceTree = "<group>"; };
+		78D57AD0B0F1BB542DE7608A129C68B0 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = tr.lproj; path = BraintreeUI/Localization/tr.lproj; sourceTree = "<group>"; };
 		79625707D0830F2E501D8F014F149012 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		79F4C12B56F856CC32E7ACA7527E7626 /* BTUIPayPalCompactButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIPayPalCompactButton.h; path = "BraintreeUI/Views/Payments Components/BTUIPayPalCompactButton.h"; sourceTree = "<group>"; };
 		7B12B357B37A5DEDBDECE582251701A8 /* FBSDKGraphErrorRecoveryProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphErrorRecoveryProcessor.h; path = FBSDKCoreKit/FBSDKCoreKit/GraphAPI/FBSDKGraphErrorRecoveryProcessor.h; sourceTree = "<group>"; };
@@ -1396,7 +1396,7 @@
 		7B320DA934F96874C5F3350769B6A836 /* FBSDKLoginManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginManager.h; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginManager.h; sourceTree = "<group>"; };
 		7B967C8FDE30F52E6C35D9E97D0280DE /* BTThreeDSecureInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTThreeDSecureInfo.h; path = BraintreeCard/Public/BTThreeDSecureInfo.h; sourceTree = "<group>"; };
 		7C0526E65B46FF5E58BB5A382DA155FB /* FBSDKServerConfigurationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKServerConfigurationManager.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfigurationManager.m; sourceTree = "<group>"; };
-		7C2C247485886A1B7933FC104603697F /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "BraintreeUI/Drop-In/Localization/es.lproj"; sourceTree = "<group>"; };
+		7C2C247485886A1B7933FC104603697F /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = "BraintreeUI/Drop-In/Localization/es.lproj"; sourceTree = "<group>"; };
 		7C9D842FCB72259DA29330713D66B279 /* FBSDKProfile+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKProfile+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKProfile+Internal.h"; sourceTree = "<group>"; };
 		7CB91A7E8C143EF6FE0189FC0BA002D4 /* FBSDKVideoUploader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKVideoUploader.m; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKVideoUploader.m; sourceTree = "<group>"; };
 		7CD4C5E2026F289F43ED63B64616EE31 /* FBSDKHashtag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKHashtag.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKHashtag.h; sourceTree = "<group>"; };
@@ -1410,7 +1410,7 @@
 		806FE5DDCA85AC918F05BAD70D4C74AC /* BTLogger_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTLogger_Internal.h; path = BraintreeCore/BTLogger_Internal.h; sourceTree = "<group>"; };
 		807097B7816BED1336199F8D7650A600 /* FBSDKDialogConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDialogConfiguration.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKDialogConfiguration.m; sourceTree = "<group>"; };
 		80ADA7473744DE354EC2F503E5B5CB1B /* FBSDKMeasurementEventListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKMeasurementEventListener.m; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/Internal/FBSDKMeasurementEventListener.m; sourceTree = "<group>"; };
-		816CB37D10908D094DAEF9CB7E134390 /* es_ES.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es_ES.lproj; path = "BraintreeUI/Drop-In/Localization/es_ES.lproj"; sourceTree = "<group>"; };
+		816CB37D10908D094DAEF9CB7E134390 /* es_ES.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es_ES.lproj; path = "BraintreeUI/Drop-In/Localization/es_ES.lproj"; sourceTree = "<group>"; };
 		82FD6F02226C08EC6FD2EA41E3D4445C /* BTCardClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTCardClient.h; path = BraintreeCard/Public/BTCardClient.h; sourceTree = "<group>"; };
 		833D52BB8759DC4CE9965FF9A749A1EF /* UIColor+BTUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+BTUI.m"; path = "BraintreeUI/Theme/UIColor+BTUI.m"; sourceTree = "<group>"; };
 		8390D1835E616475AF47C5E061E30C70 /* BTDropInErrorAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTDropInErrorAlert.h; path = "BraintreeUI/Drop-In/BTDropInErrorAlert.h"; sourceTree = "<group>"; };
@@ -1418,7 +1418,7 @@
 		83D56ACCC2DBB6E86B98D5348E49A19E /* FBSDKMessageDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKMessageDialog.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKMessageDialog.m; sourceTree = "<group>"; };
 		83FB15B775412BB7113C9608A3CC9D6A /* BTAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTAPIClient.h; path = BraintreeCore/Public/BTAPIClient.h; sourceTree = "<group>"; };
 		84E2BEF2EC63B866051FAB4E5C1C3F46 /* FBSDKShareKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSDKShareKit-Info.plist"; sourceTree = "<group>"; };
-		850CC112A439D2467280787E32F17602 /* Braintree-Braintree-UI-Localization */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Braintree-Braintree-UI-Localization"; path = "Braintree-UI-Localization.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		850CC112A439D2467280787E32F17602 /* Braintree-UI-Localization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Braintree-UI-Localization.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85128AF76199890A6DD56FE81089D883 /* FBSDKShareKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSDKShareKit; path = FBSDKShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		854AFFBC40F0D41926FE49C997CDCED0 /* PPOTJSONHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPOTJSONHelper.h; path = BraintreePayPal/PayPalUtils/Public/PPOTJSONHelper.h; sourceTree = "<group>"; };
 		864118617A627849449EDFAA0A2D0F8A /* BTUIThemedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIThemedView.h; path = BraintreeUI/Public/BTUIThemedView.h; sourceTree = "<group>"; };
@@ -1474,7 +1474,7 @@
 		962092EFD2B39084379EE96427DFE518 /* BTCardRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTCardRequest.m; path = BraintreeCard/BTCardRequest.m; sourceTree = "<group>"; };
 		962BE37A8A4EE315336DF1751469641E /* FBSDKBridgeAPIProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIProtocol.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIProtocol.h; sourceTree = "<group>"; };
 		9641713A6987800D87739E41ECD8637B /* FBSDKShareExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareExtension.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareExtension.h; sourceTree = "<group>"; };
-		9665DE4DFC02CD5D15104BECD65C0AD5 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = BraintreeUI/Localization/es.lproj; sourceTree = "<group>"; };
+		9665DE4DFC02CD5D15104BECD65C0AD5 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = BraintreeUI/Localization/es.lproj; sourceTree = "<group>"; };
 		96DB71559BAD23C17111160B89423779 /* BTUIVectorArtView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUIVectorArtView.m; path = "BraintreeUI/Views/Custom Views/BTUIVectorArtView.m"; sourceTree = "<group>"; };
 		975015A09BA706CF5A550200AFEA366A /* BTAPIPinnedCertificates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTAPIPinnedCertificates.h; path = BraintreeCore/BTAPIPinnedCertificates.h; sourceTree = "<group>"; };
 		975FC9136F8B3CB3A942CB4E39FDBDF8 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
@@ -1482,21 +1482,21 @@
 		9899BC55900E4DD6D8D29A9D2374B609 /* FBSDKGameRequestDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKGameRequestDialog.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestDialog.m; sourceTree = "<group>"; };
 		995AD866297ED4E6D0F328AEB1C792B1 /* FBSDKVideoUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKVideoUploader.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKVideoUploader.h; sourceTree = "<group>"; };
 		998B2A170AEADF757DC4A62963A1052E /* BTPayPalDriver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTPayPalDriver.h; path = BraintreePayPal/Public/BTPayPalDriver.h; sourceTree = "<group>"; };
-		99C444C7C1852435BAFD3B2943396E16 /* en_AU.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en_AU.lproj; path = BraintreeUI/Localization/en_AU.lproj; sourceTree = "<group>"; };
+		99C444C7C1852435BAFD3B2943396E16 /* en_AU.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en_AU.lproj; path = BraintreeUI/Localization/en_AU.lproj; sourceTree = "<group>"; };
 		99FBE268A4858B1F293579B36AF1180B /* FBSDKEventBindingManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKEventBindingManager.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKEventBindingManager.m; sourceTree = "<group>"; };
 		9A65049263B9E0AE77092DDA4D9F33B3 /* BTAPIClient_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTAPIClient_Internal.h; path = BraintreeCore/BTAPIClient_Internal.h; sourceTree = "<group>"; };
 		9AADD26ABD0B330E2610A373EB125387 /* BTUIHorizontalButtonStackCollectionViewFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUIHorizontalButtonStackCollectionViewFlowLayout.m; path = "BraintreeUI/Views/Collection Views/BTUIHorizontalButtonStackCollectionViewFlowLayout.m"; sourceTree = "<group>"; };
 		9B139E33969550F9CA99F6E9BBC9A037 /* BTClientMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTClientMetadata.h; path = BraintreeCore/Public/BTClientMetadata.h; sourceTree = "<group>"; };
-		9BB7CE899E2EC0D84B6CD26366E9162D /* FBSDKEventInferencer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FBSDKEventInferencer.mm; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/SuggestedEvents/FBSDKEventInferencer.mm; sourceTree = "<group>"; };
+		9BB7CE899E2EC0D84B6CD26366E9162D /* FBSDKEventInferencer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBSDKEventInferencer.mm; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/SuggestedEvents/FBSDKEventInferencer.mm; sourceTree = "<group>"; };
 		9BDF5CD04C914A45C87D17A5B43971E6 /* FBSDKShareUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareUtility.m; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareUtility.m; sourceTree = "<group>"; };
 		9C04DCC6E0E347755D36565BF98B7E6D /* FBSDKButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKButton.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKButton.m; sourceTree = "<group>"; };
-		9C22C365249A0BA86D658A81CA2C23E4 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = BraintreeUI/Localization/it.lproj; sourceTree = "<group>"; };
+		9C22C365249A0BA86D658A81CA2C23E4 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = it.lproj; path = BraintreeUI/Localization/it.lproj; sourceTree = "<group>"; };
 		9CC3EBC8936EC713708DEF22AFCB8515 /* FBSDKGameRequestContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGameRequestContent.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestContent.h; sourceTree = "<group>"; };
 		9CCB09DC2F64B9EF95D6C48F856D65C4 /* FacebookCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FacebookCore.debug.xcconfig; sourceTree = "<group>"; };
 		9CFD9D61C718DA63E50CA002F027CA28 /* FBSDKUIUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKUIUtility.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKUIUtility.h; sourceTree = "<group>"; };
 		9D4096855EDC457E0BA7CFF779B38AF6 /* BTPayPalRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTPayPalRequest.h; path = BraintreePayPal/Public/BTPayPalRequest.h; sourceTree = "<group>"; };
 		9D4E34E800A33984BE924AA830707BF6 /* BTUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUI.m; path = BraintreeUI/Theme/BTUI.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DBD99C461D72E3ECA4B7AE54FB8C19E /* PPDataCollector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPDataCollector.h; path = BraintreePayPal/PayPalDataCollector/Public/PPDataCollector.h; sourceTree = "<group>"; };
 		9DC2F1C8EA4FD2BF46BBEF6BDB59B091 /* FBSDKShareOpenGraphValueContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareOpenGraphValueContainer.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphValueContainer.m; sourceTree = "<group>"; };
 		9DDCC91B640E9E49E734235DAEC64D91 /* FacebookCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FacebookCore-Info.plist"; sourceTree = "<group>"; };
@@ -1551,7 +1551,7 @@
 		AE05FA2FB2A0B0549DE86BA89BDAEF54 /* FBSDKLoginButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginButton.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginButton.m; sourceTree = "<group>"; };
 		AE140B9D1B333348E9665BFA76C8489F /* FacebookShare.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FacebookShare.modulemap; sourceTree = "<group>"; };
 		AE3BF2F4CE6DC4D4E80B949A59E9CDE5 /* BTUIFloatLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIFloatLabel.h; path = "BraintreeUI/Views/Custom Views/BTUIFloatLabel.h"; sourceTree = "<group>"; };
-		AE8B4615C53C3AA9CDADDC7EE4CDD341 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = BraintreeUI/Localization/fr.lproj; sourceTree = "<group>"; };
+		AE8B4615C53C3AA9CDADDC7EE4CDD341 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = BraintreeUI/Localization/fr.lproj; sourceTree = "<group>"; };
 		AECD90C8114D0A9DF6243DCD70293C9F /* FBSDKShareMessengerGenericTemplateElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareMessengerGenericTemplateElement.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerGenericTemplateElement.m; sourceTree = "<group>"; };
 		AECE878765A5B609C48AAA3F32947A3B /* FacebookCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FacebookCore.modulemap; sourceTree = "<group>"; };
 		AEEB880A9A534604D31F2BFE19D88DF7 /* BTHTTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTHTTP.h; path = BraintreeCore/BTHTTP.h; sourceTree = "<group>"; };
@@ -1594,7 +1594,7 @@
 		BBBAD66DDAD78570F55C5C72CDF037C6 /* BTPayPalIDToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTPayPalIDToken.m; path = BraintreeCore/BTPayPalIDToken.m; sourceTree = "<group>"; };
 		BC08B72B815702FF5047CE25F156CF87 /* BTDropInViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTDropInViewController.h; path = BraintreeUI/Public/BTDropInViewController.h; sourceTree = "<group>"; };
 		BC4B7E55F83468176A1262C8886E927D /* BTUICVVBackVectorArtView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUICVVBackVectorArtView.m; path = "BraintreeUI/Views/Vector Art/BTUICVVBackVectorArtView.m"; sourceTree = "<group>"; };
-		BCD5CDC2CCA164F08EFA06E623C3CE2E /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = BraintreeUI/Localization/pt.lproj; sourceTree = "<group>"; };
+		BCD5CDC2CCA164F08EFA06E623C3CE2E /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pt.lproj; path = BraintreeUI/Localization/pt.lproj; sourceTree = "<group>"; };
 		BD5BD14FCB080B3D8B7C2081CCC5EFE8 /* FBSDKSharePhoto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSharePhoto.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKSharePhoto.h; sourceTree = "<group>"; };
 		BD6ED27EA46D6AF91AB07D83BAEED79E /* BTPayPalDriver_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTPayPalDriver_Internal.h; path = BraintreePayPal/BTPayPalDriver_Internal.h; sourceTree = "<group>"; };
 		BEAE1CA124A4A686658885BE7977A70C /* FBSDKAppLinkNavigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppLinkNavigation.m; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkNavigation.m; sourceTree = "<group>"; };
@@ -1619,7 +1619,7 @@
 		C67D1C269C8AC3E76017DEBF8299F524 /* FBSDKShareMessengerGenericTemplateContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareMessengerGenericTemplateContent.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerGenericTemplateContent.h; sourceTree = "<group>"; };
 		C68BC12FF7685A44EF07258B3C375F7D /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		C6A35D4B955F6B206E6EE803C450D4B2 /* BTKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTKeychain.m; path = BraintreeCore/BTKeychain.m; sourceTree = "<group>"; };
-		C6F287A2679FD7C55E30BF96F3864877 /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nb.lproj; path = BraintreeUI/Localization/nb.lproj; sourceTree = "<group>"; };
+		C6F287A2679FD7C55E30BF96F3864877 /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nb.lproj; path = BraintreeUI/Localization/nb.lproj; sourceTree = "<group>"; };
 		C75B6CA02FC9CD2A5222ECF962A74D8A /* BTDropInErrorAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTDropInErrorAlert.m; path = "BraintreeUI/Drop-In/BTDropInErrorAlert.m"; sourceTree = "<group>"; };
 		C75F2E5729AB3652A00F6D23F7C97684 /* FBSDKAppEventsStateManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppEventsStateManager.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsStateManager.m; sourceTree = "<group>"; };
 		C7A48CBC590EDC9A64172062E777F9FB /* FBSDKShareOpenGraphValueContainer+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKShareOpenGraphValueContainer+Internal.h"; path = "FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareOpenGraphValueContainer+Internal.h"; sourceTree = "<group>"; };
@@ -1634,9 +1634,9 @@
 		CAECDC5B5B73B74608B1BAC69D888E19 /* FBSDKCrypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKCrypto.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Cryptography/FBSDKCrypto.m; sourceTree = "<group>"; };
 		CBC3BA1887AF51EF32A69D92C9461616 /* BTGraphQLHTTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTGraphQLHTTP.h; path = BraintreeCore/BTGraphQLHTTP.h; sourceTree = "<group>"; };
 		CC8642AC378952B02B14A70F0E9154C1 /* ResourceBundle-Braintree-UI-Localization-Braintree-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Braintree-UI-Localization-Braintree-Info.plist"; sourceTree = "<group>"; };
-		CD51F53647297E5AB4D7D3C5C2E04532 /* fr_CA.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr_CA.lproj; path = BraintreeUI/Localization/fr_CA.lproj; sourceTree = "<group>"; };
+		CD51F53647297E5AB4D7D3C5C2E04532 /* fr_CA.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr_CA.lproj; path = BraintreeUI/Localization/fr_CA.lproj; sourceTree = "<group>"; };
 		CD6CC3E2D2FBA7470108BB6C8E26DFBD /* PPOTCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPOTCore.m; path = BraintreePayPal/PayPalOneTouch/Models/PPOTCore.m; sourceTree = "<group>"; };
-		CD8DDBEBEAEC01C05AE584B1D81C2827 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "BraintreeUI/Drop-In/Localization/zh-Hans.lproj"; sourceTree = "<group>"; };
+		CD8DDBEBEAEC01C05AE584B1D81C2827 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "BraintreeUI/Drop-In/Localization/zh-Hans.lproj"; sourceTree = "<group>"; };
 		CD9BDE1838588D1B3CDF1D1EAD9C0C5B /* FBSDKBridgeAPIProtocolWebV2.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKBridgeAPIProtocolWebV2.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/ProtocolVersions/FBSDKBridgeAPIProtocolWebV2.m; sourceTree = "<group>"; };
 		CDD86B1A87C86191A07B548813A079BA /* FBSDKServerConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKServerConfiguration.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfiguration.m; sourceTree = "<group>"; };
 		CDF122034F1ED6CFB9240E92FFC44174 /* BTUIPayPalWordmarkVectorArtView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIPayPalWordmarkVectorArtView.h; path = "BraintreeUI/Views/Vector Art/BTUIPayPalWordmarkVectorArtView.h"; sourceTree = "<group>"; };
@@ -1654,7 +1654,7 @@
 		D251667460686E37ED4C55CC4D5F5D56 /* BTUITextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUITextField.h; path = "BraintreeUI/Views/Custom Views/BTUITextField.h"; sourceTree = "<group>"; };
 		D263F1C211B33BBB50075CD69D81CE10 /* PPOTBillingAgreementRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPOTBillingAgreementRequest.m; path = BraintreePayPal/PayPalOneTouch/Models/PPOTBillingAgreementRequest.m; sourceTree = "<group>"; };
 		D29FEC063055A761059A2551C31129B9 /* PPOTResult_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPOTResult_Internal.h; path = BraintreePayPal/PayPalOneTouch/Models/PPOTResult_Internal.h; sourceTree = "<group>"; };
-		D3127990A52B7CE55739A2C656974394 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = da.lproj; path = "BraintreeUI/Drop-In/Localization/da.lproj"; sourceTree = "<group>"; };
+		D3127990A52B7CE55739A2C656974394 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = da.lproj; path = "BraintreeUI/Drop-In/Localization/da.lproj"; sourceTree = "<group>"; };
 		D385A2C3DB775FE9056F85A52D50BC9E /* FBSDKCodelessPathComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKCodelessPathComponent.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKCodelessPathComponent.m; sourceTree = "<group>"; };
 		D4ED544B7E3F17F551F51C019DF32F31 /* BTUIPayPalMonogramCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIPayPalMonogramCardView.h; path = "BraintreeUI/Views/Vector Art/BTUIPayPalMonogramCardView.h"; sourceTree = "<group>"; };
 		D5093B860F9AEFE910F1D81D6E290399 /* FBSDKShareVideo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareVideo.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareVideo.m; sourceTree = "<group>"; };
@@ -1684,7 +1684,7 @@
 		DC73F0806923584AEED1224A659ABDF1 /* BTUIDiscoverVectorArtView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUIDiscoverVectorArtView.m; path = "BraintreeUI/Views/Vector Art/BTUIDiscoverVectorArtView.m"; sourceTree = "<group>"; };
 		DC87E4C2EBDF00E94A85B8D3F499EFB9 /* FBSDKShareDialogMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareDialogMode.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareDialogMode.h; sourceTree = "<group>"; };
 		DC8D4AF44269E296D5454661632C3719 /* FBSDKLoginKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSDKLoginKit.release.xcconfig; sourceTree = "<group>"; };
-		DCC59F6B7226FC9D0C772582FCD958DB /* Braintree */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Braintree; path = Braintree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC59F6B7226FC9D0C772582FCD958DB /* Braintree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Braintree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD044EC9FBE60F65FF425A4B6D852412 /* BTUICardVectorArtView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUICardVectorArtView.h; path = "BraintreeUI/Views/Vector Art/BTUICardVectorArtView.h"; sourceTree = "<group>"; };
 		DD30A56E3311FF9069B18102FDA66712 /* BTUICardExpiryFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUICardExpiryFormat.h; path = BraintreeUI/Models/BTUICardExpiryFormat.h; sourceTree = "<group>"; };
 		DD7766955CF2F3248C64991583BB892C /* FBSDKAppLink_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLink_Internal.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAppLink_Internal.h; sourceTree = "<group>"; };
@@ -1711,7 +1711,7 @@
 		E45B1AFBE81E8DB7D864924F3743FF1F /* BTPayPalAccountNonce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTPayPalAccountNonce.m; path = BraintreePayPal/BTPayPalAccountNonce.m; sourceTree = "<group>"; };
 		E4646390D0F271DF1B61383A3D526E6B /* BTUIFormField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUIFormField.m; path = "BraintreeUI/Views/Custom Views/BTUIFormField.m"; sourceTree = "<group>"; };
 		E48ED4EB00C2C40DED730B071770A436 /* FBSDKURLSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKURLSession.m; path = FBSDKCoreKit/FBSDKCoreKit/Basics/Internal/FBSDKURLSession.m; sourceTree = "<group>"; };
-		E56D5BBD8AD8B4E3F83D5D0534389B2C /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nb.lproj; path = "BraintreeUI/Drop-In/Localization/nb.lproj"; sourceTree = "<group>"; };
+		E56D5BBD8AD8B4E3F83D5D0534389B2C /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nb.lproj; path = "BraintreeUI/Drop-In/Localization/nb.lproj"; sourceTree = "<group>"; };
 		E578608CBC8B74B6BCBA0E0241CAD19B /* FBSDKAccessTokenCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAccessTokenCache.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCache.m; sourceTree = "<group>"; };
 		E582B7115053A3D461441FEBD96AB2AF /* BTUIPaymentMethodView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUIPaymentMethodView.m; path = "BraintreeUI/Views/Payments Components/BTUIPaymentMethodView.m"; sourceTree = "<group>"; };
 		E62DA429AAC000049A711D7F97119A86 /* FBSDKShareKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSDKShareKit-dummy.m"; sourceTree = "<group>"; };
@@ -1721,7 +1721,7 @@
 		E7400BB0E6DDA7368941583FA17DA6CC /* FBSDKCodelessParameterComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKCodelessParameterComponent.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKCodelessParameterComponent.m; sourceTree = "<group>"; };
 		E7B61BCAF3CBB9A3FC61D98AF748A97F /* FBSDKUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKUtility.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.m; sourceTree = "<group>"; };
 		E7E8DF172BDE9968F5C876D424AEC932 /* BTUIDinersClubVectorArtView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIDinersClubVectorArtView.h; path = "BraintreeUI/Views/Vector Art/BTUIDinersClubVectorArtView.h"; sourceTree = "<group>"; };
-		E80AD3C51E4B23E2332FC7493FF6320D /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = "BraintreeUI/Drop-In/Localization/it.lproj"; sourceTree = "<group>"; };
+		E80AD3C51E4B23E2332FC7493FF6320D /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = it.lproj; path = "BraintreeUI/Drop-In/Localization/it.lproj"; sourceTree = "<group>"; };
 		E81F1A1C3E4BFC1BF696775BE588F0E3 /* FBSDKShareUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareUtility.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareUtility.h; sourceTree = "<group>"; };
 		E8464CD826DDE5382A6C519FAE793599 /* BTAuthenticationInsight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTAuthenticationInsight.h; path = BraintreeCard/Public/BTAuthenticationInsight.h; sourceTree = "<group>"; };
 		E8686830FC6CABB2A5F291D90B75ED24 /* UIColor+BTUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+BTUI.h"; path = "BraintreeUI/Public/UIColor+BTUI.h"; sourceTree = "<group>"; };
@@ -1737,13 +1737,13 @@
 		EB2CB8428741A5905B2710C0243F31E7 /* FBSDKAppInviteContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppInviteContent.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKAppInviteContent.h; sourceTree = "<group>"; };
 		EB54CC464A0CD6D945873F74C5B2B040 /* BTUIViewUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUIViewUtil.m; path = BraintreeUI/Views/BTUIViewUtil.m; sourceTree = "<group>"; };
 		EB74307CA4A7CB5500F2D5B9F58473A4 /* Braintree-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Braintree-umbrella.h"; sourceTree = "<group>"; };
-		EB768180A3E57EB6874591552E9AB9EF /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = BraintreeUI/Localization/ru.lproj; sourceTree = "<group>"; };
+		EB768180A3E57EB6874591552E9AB9EF /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ru.lproj; path = BraintreeUI/Localization/ru.lproj; sourceTree = "<group>"; };
 		EBCED9B4FD33C2D783F137F989D6B38C /* FBSDKDeviceLoginCodeInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDeviceLoginCodeInfo.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginCodeInfo.m; sourceTree = "<group>"; };
-		EBE8305AF272EB2E1865BA38431EDDA5 /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = he.lproj; path = BraintreeUI/Localization/he.lproj; sourceTree = "<group>"; };
+		EBE8305AF272EB2E1865BA38431EDDA5 /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = he.lproj; path = BraintreeUI/Localization/he.lproj; sourceTree = "<group>"; };
 		EC01B7DAC43CDE7E24B83770A41838F1 /* PPOTEncryptionHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPOTEncryptionHelper.m; path = BraintreePayPal/PayPalUtils/PPOTEncryptionHelper.m; sourceTree = "<group>"; };
 		EC2141D6DA35143A5E6DBF45DD04A46B /* FBSDKMetadataIndexer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMetadataIndexer.h; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/AAM/FBSDKMetadataIndexer.h; sourceTree = "<group>"; };
 		EC2B90C4ED9A4092DBC3F550BFC36C20 /* BTUIMaestroVectorArtView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIMaestroVectorArtView.h; path = "BraintreeUI/Views/Vector Art/BTUIMaestroVectorArtView.h"; sourceTree = "<group>"; };
-		EC53A9CECE2B7E64394B904EE44239C9 /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = he.lproj; path = "BraintreeUI/Drop-In/Localization/he.lproj"; sourceTree = "<group>"; };
+		EC53A9CECE2B7E64394B904EE44239C9 /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = he.lproj; path = "BraintreeUI/Drop-In/Localization/he.lproj"; sourceTree = "<group>"; };
 		EC72C78B153ECB26594C51BE23356431 /* FBSDKModalFormPresentationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKModalFormPresentationController.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Device/FBSDKModalFormPresentationController.h; sourceTree = "<group>"; };
 		EC8F4D0BE3B0C192EBA4A93F8887D89F /* FBSDKCoreKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSDKCoreKit; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED0A46C272BF5AAE5C4745278351E5EB /* PPOTPersistentRequestData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PPOTPersistentRequestData.m; path = BraintreePayPal/PayPalOneTouch/Models/PPOTPersistentRequestData.m; sourceTree = "<group>"; };
@@ -1770,8 +1770,8 @@
 		F3313B0DC5D610D8466FFC34E62E34E5 /* FBSDKGraphRequestConnection+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKGraphRequestConnection+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestConnection+Internal.h"; sourceTree = "<group>"; };
 		F383FE55F587043E1D318CBCD6FB0A99 /* FBSDKShareOpenGraphContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareOpenGraphContent.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphContent.h; sourceTree = "<group>"; };
 		F3DE801CDFC69A43ECE695609570D4D7 /* FBSDKGraphRequestMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequestMetadata.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestMetadata.h; sourceTree = "<group>"; };
-		F3F8293BE5D44358525C5A95E22AAD22 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "BraintreeUI/Drop-In/Localization/fr.lproj"; sourceTree = "<group>"; };
-		F4CDF27CCC1B9683672E95FB9A043781 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = BraintreeUI/Localization/de.lproj; sourceTree = "<group>"; };
+		F3F8293BE5D44358525C5A95E22AAD22 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = "BraintreeUI/Drop-In/Localization/fr.lproj"; sourceTree = "<group>"; };
+		F4CDF27CCC1B9683672E95FB9A043781 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = BraintreeUI/Localization/de.lproj; sourceTree = "<group>"; };
 		F506B24FCF7EB07A38AD69BE945EB90C /* BTDropInLocalizedString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTDropInLocalizedString.m; path = "BraintreeUI/Drop-In/Localization/BTDropInLocalizedString.m"; sourceTree = "<group>"; };
 		F567BC7CD5A6DA21CAD6E3D48CD1DA2B /* FBSDKMutableCopying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMutableCopying.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKMutableCopying.h; sourceTree = "<group>"; };
 		F5CC624BFBCD9981B2D04D8F98942DA3 /* BTUIHorizontalButtonStackSeparatorLineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUIHorizontalButtonStackSeparatorLineView.h; path = "BraintreeUI/Views/Collection Views/BTUIHorizontalButtonStackSeparatorLineView.h"; sourceTree = "<group>"; };
@@ -1783,17 +1783,17 @@
 		F7702B0BC6ABE0F3AE2ED44BAD9A16ED /* BTUIPayPalWordmarkVectorArtView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUIPayPalWordmarkVectorArtView.m; path = "BraintreeUI/Views/Vector Art/BTUIPayPalWordmarkVectorArtView.m"; sourceTree = "<group>"; };
 		F77820B01751A156DCD1E17756B1FE4A /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		F7D06E46D5BDC70E90AF049FE137D47A /* PPOTCheckoutRequest_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPOTCheckoutRequest_Internal.h; path = BraintreePayPal/PayPalOneTouch/Models/PPOTCheckoutRequest_Internal.h; sourceTree = "<group>"; };
-		F80E4695C6CDA9BAC8BEFE26DF2412FF /* en_CA.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en_CA.lproj; path = BraintreeUI/Localization/en_CA.lproj; sourceTree = "<group>"; };
+		F80E4695C6CDA9BAC8BEFE26DF2412FF /* en_CA.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en_CA.lproj; path = BraintreeUI/Localization/en_CA.lproj; sourceTree = "<group>"; };
 		F84CA7E5FE746959810C43076A34E3B2 /* BTUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUI.h; path = BraintreeUI/Public/BTUI.h; sourceTree = "<group>"; };
 		F996860E5C26812C2C245EBAB2B2C698 /* FBSDKModelRuntime.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = FBSDKModelRuntime.hpp; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/ML/FBSDKModelRuntime.hpp; sourceTree = "<group>"; };
 		FA9905DE3004AD81F56F27227447D3ED /* BTMockApplePayPaymentAuthorizationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTMockApplePayPaymentAuthorizationView.h; path = "BraintreeUI/Views/Apple Pay/BTMockApplePayPaymentAuthorizationView.h"; sourceTree = "<group>"; };
 		FAC3C3FA6F58E8CD2EB2E215F428B1F7 /* BTURLUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTURLUtils.m; path = BraintreeCore/BTURLUtils.m; sourceTree = "<group>"; };
 		FB775B66101DC8611D1810B6602C492B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		FBC55003A646FE4DFB98D3BE6967A9B2 /* FBSDKMetadataIndexer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKMetadataIndexer.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/AAM/FBSDKMetadataIndexer.m; sourceTree = "<group>"; };
-		FBD0EF3C4AF3FD45CE80AD627CF3D40B /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "BraintreeUI/Drop-In/Localization/pt.lproj"; sourceTree = "<group>"; };
+		FBD0EF3C4AF3FD45CE80AD627CF3D40B /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pt.lproj; path = "BraintreeUI/Drop-In/Localization/pt.lproj"; sourceTree = "<group>"; };
 		FBF625364C5D91898EC6669FE26DC956 /* FBSDKMonotonicTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMonotonicTime.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKMonotonicTime.h; sourceTree = "<group>"; };
 		FC34213F147C322DD4B1707DF20071E9 /* FBSDKSendButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKSendButton.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKSendButton.m; sourceTree = "<group>"; };
-		FCB4075B9BE33467248897BC064300E1 /* en_GB.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en_GB.lproj; path = BraintreeUI/Localization/en_GB.lproj; sourceTree = "<group>"; };
+		FCB4075B9BE33467248897BC064300E1 /* en_GB.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en_GB.lproj; path = BraintreeUI/Localization/en_GB.lproj; sourceTree = "<group>"; };
 		FCE4D1C2070BEB9154D5AC2171B07BDF /* FBSDKAddressFilterManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAddressFilterManager.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/RestrictiveDataFilter/FBSDKAddressFilterManager.m; sourceTree = "<group>"; };
 		FE76503BD55053C8CB505EA3748CE6B4 /* PPOTAppSwitchResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PPOTAppSwitchResponse.h; path = BraintreePayPal/PayPalOneTouch/Models/PPOTAppSwitchResponse.h; sourceTree = "<group>"; };
 		FEF415E363576BF7F73021202F577A2C /* FacebookCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FacebookCore-prefix.pch"; sourceTree = "<group>"; };
@@ -1911,7 +1911,6 @@
 				1CDE4B620F688C61DFF4378C171335AF /* Core */,
 				7B9B7BF531F9A56CBB6351289052BEB0 /* Support Files */,
 			);
-			name = FBSDKCoreKit;
 			path = FBSDKCoreKit;
 			sourceTree = "<group>";
 		};
@@ -1964,7 +1963,6 @@
 				F77820B01751A156DCD1E17756B1FE4A /* Validation.swift */,
 				76E5EFA8BBFAC445D8B3C991A7DC0D20 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -2349,7 +2347,6 @@
 				2C2613B8EDB9C6E1DC37D3B038BBB6DF /* Login */,
 				4DFF21ED66C8C9D4AF3920FABBFEC141 /* Support Files */,
 			);
-			name = FBSDKLoginKit;
 			path = FBSDKLoginKit;
 			sourceTree = "<group>";
 		};
@@ -2403,7 +2400,6 @@
 				0F12B396B5BA9D61B0EB820871E76BE2 /* LoginManager.swift */,
 				53A9219CABD653BCC238052810763AFF /* Support Files */,
 			);
-			name = FacebookLogin;
 			path = FacebookLogin;
 			sourceTree = "<group>";
 		};
@@ -2549,7 +2545,6 @@
 				A8587F5534E08BCF5CA85CD114A3DB7D /* Settings.swift */,
 				0E58E1BA48C470CA8AAC79E7F034DE1B /* Support Files */,
 			);
-			name = FacebookCore;
 			path = FacebookCore;
 			sourceTree = "<group>";
 		};
@@ -2615,7 +2610,6 @@
 				1ECD0D90D127F9AFFAF8E389342D842E /* FBSDKShareKit+Typealiases.swift */,
 				739E3907572044A1DCAFB3A894CC2E96 /* Support Files */,
 			);
-			name = FacebookShare;
 			path = FacebookShare;
 			sourceTree = "<group>";
 		};
@@ -2822,7 +2816,6 @@
 				B2B2FD11412C8E4078DB9F6F6A116A77 /* Share */,
 				345FEBCB8F75D507BD3CC7911FEF09A4 /* Support Files */,
 			);
-			name = FBSDKShareKit;
 			path = FBSDKShareKit;
 			sourceTree = "<group>";
 		};
@@ -2949,16 +2942,16 @@
 			isa = PBXGroup;
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				DCC59F6B7226FC9D0C772582FCD958DB /* Braintree */,
-				0669A4449A89D583C86BCD24D7CA75F7 /* Braintree-Braintree-Drop-In-Localization */,
-				850CC112A439D2467280787E32F17602 /* Braintree-Braintree-UI-Localization */,
+				DCC59F6B7226FC9D0C772582FCD958DB /* Braintree.framework */,
+				0669A4449A89D583C86BCD24D7CA75F7 /* Braintree-Drop-In-Localization.bundle */,
+				850CC112A439D2467280787E32F17602 /* Braintree-UI-Localization.bundle */,
 				2841AEF52E29FA3509917881FAAF0B39 /* FacebookCore */,
 				0D8F64E108E669D0B6EC6229DB3967A9 /* FacebookLogin */,
 				8FA85C691FE86D8C0503CEC8E3285F8D /* FacebookShare */,
 				EC8F4D0BE3B0C192EBA4A93F8887D89F /* FBSDKCoreKit */,
 				5DE0FEFC3995E740EC1AE2611D0AEFB0 /* FBSDKLoginKit */,
 				85128AF76199890A6DD56FE81089D883 /* FBSDKShareKit */,
-				6FBB5AF53F1D4F32E442E86432AACAC7 /* Pods-volunty */,
+				6FBB5AF53F1D4F32E442E86432AACAC7 /* Pods_volunty.framework */,
 				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */,
 			);
 			name = Products;
@@ -3049,7 +3042,6 @@
 				25AAD6AFE33D552560A006585BA641BA /* SwiftyJSON.swift */,
 				D1476E6EB3BC0D41517237D1480B775B /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -3065,7 +3057,6 @@
 				79289B41253AE44E2563AF5DF050E708 /* Support Files */,
 				8FDDC79CB2EFB8CDAB0BF383EDFE73EF /* UI */,
 			);
-			name = Braintree;
 			path = Braintree;
 			sourceTree = "<group>";
 		};
@@ -3610,7 +3601,7 @@
 			);
 			name = "Braintree-Braintree-Drop-In-Localization";
 			productName = "Braintree-Drop-In-Localization";
-			productReference = 0669A4449A89D583C86BCD24D7CA75F7 /* Braintree-Braintree-Drop-In-Localization */;
+			productReference = 0669A4449A89D583C86BCD24D7CA75F7 /* Braintree-Drop-In-Localization.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		28907903AF6DD0AD321D92CD660E7E23 /* FBSDKCoreKit */ = {
@@ -3674,7 +3665,7 @@
 			);
 			name = "Pods-volunty";
 			productName = Pods_volunty;
-			productReference = 6FBB5AF53F1D4F32E442E86432AACAC7 /* Pods-volunty */;
+			productReference = 6FBB5AF53F1D4F32E442E86432AACAC7 /* Pods_volunty.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		56F4191D8CB8B4E6B4E5E4FA1A9F0F46 /* FBSDKShareKit */ = {
@@ -3710,7 +3701,7 @@
 			);
 			name = "Braintree-Braintree-UI-Localization";
 			productName = "Braintree-UI-Localization";
-			productReference = 850CC112A439D2467280787E32F17602 /* Braintree-Braintree-UI-Localization */;
+			productReference = 850CC112A439D2467280787E32F17602 /* Braintree-UI-Localization.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		BAE8F711B8B7870AC224B3B1C5FB6540 /* Braintree */ = {
@@ -3730,7 +3721,7 @@
 			);
 			name = Braintree;
 			productName = Braintree;
-			productReference = DCC59F6B7226FC9D0C772582FCD958DB /* Braintree */;
+			productReference = DCC59F6B7226FC9D0C772582FCD958DB /* Braintree.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CA09A2FD7A98221701B5DA2209B6EC97 /* FacebookShare */ = {
@@ -3868,8 +3859,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2E1CA4975059D9CE1F92E941A044097 /* Braintree-Braintree-Drop-In-Localization in Resources */,
-				D5DADA7FA0622FB78F688C0A26E8A20D /* Braintree-Braintree-UI-Localization in Resources */,
+				F2E1CA4975059D9CE1F92E941A044097 /* Braintree-Drop-In-Localization.bundle in Resources */,
+				D5DADA7FA0622FB78F688C0A26E8A20D /* Braintree-UI-Localization.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -74,7 +74,7 @@ class ALLdonationsViewController: UIViewController,UICollectionViewDelegate,UICo
                
                 ImageLoader.shared.loadImage(
                  identifier: img!,
-                    url: "http://localhost:3000/img/\(img!)",
+                    url: "http://localhost:8885/img/\(img!)",
                     completion: { image in
                         imageV.image = image!
                         

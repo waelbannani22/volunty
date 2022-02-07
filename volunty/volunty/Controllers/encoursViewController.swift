@@ -72,7 +72,7 @@ class encoursViewController: UIViewController ,UITableViewDelegate,UITableViewDa
                         if img != Optional(nil){
                             ImageLoader.shared.loadImage(
                              identifier: img!,
-                                url: "http://localhost:3000/img/\(img!)",
+                                url: "http://localhost:8885/img/\(img!)",
                                 completion: { image in
                                     imagetable?.image = image!
                                     

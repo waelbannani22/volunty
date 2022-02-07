@@ -37,8 +37,9 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
     
 
     override func viewDidLoad() {
-  
+        imageProfile.layer.cornerRadius = 20.0
         logout.layer.cornerRadius = 20.0
+        myview.layer.cornerRadius = 10.0
         self.navigationItem.setHidesBackButton(true, animated: true)
         super.viewDidLoad()
         let defaults = UserDefaults.standard
@@ -61,7 +62,7 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
                 if img != Optional(nil){
                     ImageLoader.shared.loadImage(
                      identifier: img!,
-                        url: "http://localhost:3000/img/\(img!)",
+                        url: "http://localhost:8885/img/\(img!)",
                         completion: { image in
                             self.imageProfile.image = image!
                             
@@ -118,7 +119,7 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
     
     @IBAction func resetpassword(_ sender: Any) {
         let email = user!["users"]["email"].string
-        print (email)
+       
         HomeVolunteer.instance.resetpassword(email: email!){
             result in
             switch result {
@@ -142,10 +143,25 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
     @IBAction func logout(_ sender: UIButton) {
         LoginManager().logOut()
         resetDefaults()
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+  
+      
+
+        
+        /*let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
         self.tabBarController?.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(objSomeViewController, animated: true)
+
+        self.navigationController?.present(objSomeViewController, animated: true)
+
+        let firstVC = storyBoard.instantiateViewController(withIdentifier: "LoginViewController")
+      
+                    DispatchQueue.main.async {
+                        self.present(firstVC, animated: false, completion: nil)
+                    }
+         */
+        
+  
+
         
     }
     
@@ -155,9 +171,9 @@ class VolunteerProfileViewController: UIViewController ,LoginButtonDelegate{
        // let id = (  user! as NSDictionary).value(forKey: "_id") as! String
        // let token = (  user! as NSDictionary).value(forKey: "token") as! String
         objSomeViewController.id = self.id
-        print(self.token)
+       
         objSomeViewController.token = self.token
-        print(self.id)
+        
 
         
         self.navigationController?.pushViewController(objSomeViewController, animated: true)

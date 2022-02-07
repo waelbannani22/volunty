@@ -30,8 +30,10 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
     
     
     override func viewDidLoad() {
-        
+
         super.viewDidLoad()
+
+
         resetDefaults()
         self.tabBarController?.hidesBottomBarWhenPushed = true
         if let token = AccessToken.current,
@@ -109,7 +111,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
         }
        
        
-        
+
        
     }
     
@@ -119,7 +121,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
             //, last_name ,age,about,picture"
         print("facebook buttoonn")
         let request = FBSDKLoginKit.GraphRequest(graphPath: "me",
-                                                 parameters: ["fields" : "email , name,picture,first_name,last_name",],
+                                                 parameters: ["fields" : "email , picture,first_name,last_name,birthday",],
                                                  tokenString: token,
                                                  version: nil,
                                                  httpMethod: .get)
@@ -137,7 +139,15 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
                 let last = info["last_name"] as? String
                 let fbid = info["id"] as? String
                 let picture = json2["picture"]["data"]["url"].string
-                HomeVolunteer.instance.addVB(name: first!, last: last!, email: email!, picture: picture!, fbid: fbid!,age : "undefined",phone : "undefined"){
+                let age = info["birthday"] as? String
+                var age1 = ""
+                if age == Optional(nil){
+                    var age1 = "0"
+                }else
+                {
+                    var age1 = age!
+                }
+                HomeVolunteer.instance.addVB(name: first!, last: last!, email: email!, picture: picture!, fbid: fbid!,age : age1,phone : "undefined"){
                     res in
                     switch res {
                     case .success(let json):

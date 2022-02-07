@@ -23,7 +23,10 @@ class HomeVolunteerViewController: UIViewController {
         
         myview.layer.cornerRadius = 10
         let defaults = UserDefaults.standard
-        imageProfile.layer.masksToBounds = false
+        
+        
+        imageProfile.clipsToBounds = true
+        //imageProfile.layer.masksToBounds = false
         imageProfile.layer.cornerRadius = imageProfile.frame.size.width/2
         imageProfile.layer.borderColor = UIColor.black.cgColor
         self.navigationItem.setHidesBackButton(true, animated: true)
@@ -42,7 +45,7 @@ class HomeVolunteerViewController: UIViewController {
                     if img != Optional(nil){
                         ImageLoader.shared.loadImage(
                          identifier: img!,
-                            url: "http://localhost:3000/img/\(img!)",
+                            url: "http://localhost:8885/img/\(img!)",
                             completion: { image in
                                 self.imagee.image = image!
                                 
@@ -88,7 +91,7 @@ class HomeVolunteerViewController: UIViewController {
                 if img != Optional(nil){
                     ImageLoader.shared.loadImage(
                      identifier: img!,
-                        url: "http://localhost:3000/img/\(img!)",
+                        url: "http://localhost:8885/img/\(img!)",
                         completion: { image in
                             self.imageProfile.image = image!
                             

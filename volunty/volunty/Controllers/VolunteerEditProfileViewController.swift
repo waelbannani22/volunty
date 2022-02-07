@@ -23,6 +23,7 @@ class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate,
     var tokenEdit :String?
     
     override func viewDidLoad() {
+        saveButton.layer.cornerRadius = 20.0
         super.viewDidLoad()
         let tapGR = UITapGestureRecognizer(target: self, action: #selector(showActionSheet))
         image.addGestureRecognizer(tapGR)

@@ -119,7 +119,7 @@ class PostDetailViewController: UIViewController ,UITableViewDelegate,UITableVie
     func waitForImage() {
            ImageLoader.shared.loadImage(
             identifier: self.img,
-               url: "http://localhost:3000/img/\(self.img)",
+               url: "http://localhost:8885/img/\(self.img)",
                completion: { [self]image in
                    self.image.image = image
                    

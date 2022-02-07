@@ -24,7 +24,7 @@ class donateViewController: UIViewController ,BTAppSwitchDelegate,BTViewControll
 
         //let defaults = UserDefaults.standard
       //  let id = defaults.value(forKey: "recruiterId") as! String
-        let amount = "20"
+       // let amount = "20"
         //api
         PostingViewModel.instance.fetchDonationAll{
             result in
@@ -37,7 +37,7 @@ class donateViewController: UIViewController ,BTAppSwitchDelegate,BTViewControll
                 //self.target.text = json1["donation"][self.index!]["montantTotal"].string
                  ImageLoader.shared.loadImage(
                   identifier: img!,
-                     url: "http://localhost:3000/img/\(img!)",
+                     url: "http://localhost:8885/img/\(img!)",
                      completion: { image in
                          self.image.image = image!
                          
@@ -90,11 +90,7 @@ class donateViewController: UIViewController ,BTAppSwitchDelegate,BTViewControll
                     
                                    
                     
-                } else if let error = error {
-                    
-                } else {
-                    // Buyer canceled payment approval
-                }
+                } 
             }
     }
     

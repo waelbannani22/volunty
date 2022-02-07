@@ -29,7 +29,7 @@ class LoginViewModel1 {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/login", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/login", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -72,7 +72,7 @@ class LoginViewModel1 {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/Signup", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/Signup", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
            // debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -113,7 +113,7 @@ class LoginViewModel1 {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/sendmail", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/sendmail", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
            // debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -154,7 +154,7 @@ class LoginViewModel1 {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/h/\(codePassed)/", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/h/\(codePassed)/", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
            // debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -193,7 +193,7 @@ class LoginViewModel1 {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/g/\(userId)/", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/g/\(userId)/", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
            // debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -232,7 +232,7 @@ class LoginViewModel1 {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/loginRecruiter", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/loginRecruiter", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -276,7 +276,7 @@ class LoginViewModel1 {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/SignupRecrruiter", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/SignupRecrruiter", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
            // debugPrint(response)
             if let status =  response.response?.statusCode{

@@ -17,6 +17,8 @@ class ExperiencesViewController: UIViewController ,UITableViewDelegate,UITableVi
     //widgets
     @IBOutlet weak var tv: UITableView!
     override func viewDidLoad() {
+        UITabBar.appearance().isTranslucent = true
+        UITabBar.appearance().backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
         super.viewDidLoad()
         print(categoryName!)
         let defaults = UserDefaults.standard
@@ -72,7 +74,7 @@ class ExperiencesViewController: UIViewController ,UITableViewDelegate,UITableVi
                 let img = json1["call"][indexPath.row]["photo"].string
                 ImageLoader.shared.loadImage(
                  identifier: img!,
-                    url: "http://localhost:3000/img/\(img!)",
+                    url: "http://localhost:8885/img/\(img!)",
                     completion: { image in
                         imageV.image = image!
                         

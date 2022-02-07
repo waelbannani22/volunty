@@ -45,7 +45,7 @@ class OpenedCallViewController: UIViewController {
         let img = json!["photo"].string!
         ImageLoader.shared.loadImage(
          identifier: img,
-            url: "http://localhost:3000/img/\(img)",
+            url: "http://localhost:8885/img/\(img)",
             completion: { image in
                 self.imageV.image = image!
                 

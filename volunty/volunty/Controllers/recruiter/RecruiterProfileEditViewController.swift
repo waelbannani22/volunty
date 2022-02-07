@@ -48,7 +48,7 @@ class RecruiterProfileEditViewController: UIViewController,UIImagePickerControll
                 if image != Optional(nil){
                     ImageLoader.shared.loadImage(
                      identifier: image!,
-                        url: "http://localhost:3000/img/\(image!)",
+                        url: "http://localhost:8885/img/\(image!)",
                         completion: { image in
                             self.IMAGE.image = image!
                             

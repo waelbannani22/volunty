@@ -33,7 +33,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/create_call", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/create_call", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
           //  debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -87,7 +87,7 @@ class PostingViewModel {
                     multipartFormData.append((value as AnyObject).data(using: String.Encoding.utf8.rawValue)!, withName: key)
                     } //Optional for extra parameters
             },
-                         to:"http://localhost:3000/create_call",method: .post,headers: headers )
+                         to:"http://localhost:8885/create_call",method: .post,headers: headers )
         { result in
           
             
@@ -136,7 +136,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/FetchPostsByRecruiter", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/FetchPostsByRecruiter", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             //debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -180,7 +180,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/FetchPostsById", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/FetchPostsById", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             //debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -222,7 +222,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/FetchPostsByIDVACCEPT", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/FetchPostsByIDVACCEPT", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             //debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -258,7 +258,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/FetchPostsByIDVDecline", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/FetchPostsByIDVDecline", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             //debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -294,7 +294,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/delete_call", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/delete_call", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             //debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -342,7 +342,7 @@ class PostingViewModel {
                     multipartFormData.append((value as AnyObject).data(using: String.Encoding.utf8.rawValue)!, withName: key)
                     } //Optional for extra parameters
             },
-                         to:"http://localhost:3000/addDonation",method: .post,headers: headers )
+                         to:"http://localhost:8885/addDonation",method: .post,headers: headers )
         { result in
           
             
@@ -385,7 +385,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/fetchDonationByRecruiter", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/fetchDonationByRecruiter", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             //debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -420,7 +420,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/getDonations", method: .get,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/getDonations", method: .get,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             //debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -467,7 +467,7 @@ class PostingViewModel {
                     multipartFormData.append((value as AnyObject).data(using: String.Encoding.utf8.rawValue)!, withName: key)
                     } //Optional for extra parameters
             },
-                         to:"http://localhost:3000/update_recruiter1",method: .post,headers: headers )
+                         to:"http://localhost:8885/update_recruiter1",method: .post,headers: headers )
         { result in
           
             
@@ -510,7 +510,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/fetchRecruiterById", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/fetchRecruiterById", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             //debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -547,7 +547,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/\(user)", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/\(user)", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -584,7 +584,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/verifmailRecruiter", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/verifmailRecruiter", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
            // debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -623,7 +623,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/a/\(codePassed)/", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/a/\(codePassed)/", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
            // debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -655,7 +655,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/b/\(userId)/", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/b/\(userId)/", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
            // debugPrint(response)
             if let status =  response.response?.statusCode{
@@ -693,7 +693,7 @@ class PostingViewModel {
         let headers :HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
-        Alamofire.request("http://localhost:3000/fetchbycall", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
+        Alamofire.request("http://localhost:8885/fetchbycall", method: .post,parameters: para,encoding: JSONEncoding.default,headers: headers).response {
             response  in
             //debugPrint(response)
             if let status =  response.response?.statusCode{

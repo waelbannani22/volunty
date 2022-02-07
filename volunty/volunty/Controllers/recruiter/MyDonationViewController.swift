@@ -17,6 +17,7 @@ class MyDonationViewController: UIViewController ,UICollectionViewDelegate,UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: true)
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
         let defaults = UserDefaults.standard
         let id = defaults.value(forKey: "recruiterId") as! String
@@ -80,7 +81,7 @@ class MyDonationViewController: UIViewController ,UICollectionViewDelegate,UICol
                
                 ImageLoader.shared.loadImage(
                  identifier: img!,
-                    url: "http://localhost:3000/img/\(img!)",
+                    url: "http://localhost:8885/img/\(img!)",
                     completion: { image in
                         imageV.image = image!
                         

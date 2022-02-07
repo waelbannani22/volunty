@@ -161,7 +161,7 @@ class SignUpVolunteerViewController: UIViewController,UITextFieldDelegate {
     
     //test
     func test(){
-        Alamofire.request("http://localhost:3000/Volunteers").responseJSON {
+        Alamofire.request("http://localhost:8885/Volunteers").responseJSON {
             response in
             
             switch response.result{

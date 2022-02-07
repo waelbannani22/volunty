@@ -66,7 +66,7 @@ class UserAuth {
     
     func login(email: String, password: String, completion: @escaping (Result<String, AuthenticationError>) -> Void) {
         
-        guard let url = URL(string: "http://localhost:3000/login") else {
+        guard let url = URL(string: "http://localhost:8885/login") else {
             completion(.failure(.custom(errorMessage: "URL is not correct")))
             return
         }

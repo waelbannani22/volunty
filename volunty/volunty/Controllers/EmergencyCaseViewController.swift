@@ -60,7 +60,7 @@ class EmergencyCaseViewController: UIViewController, BTAppSwitchDelegate , BTVie
                 //self.target.text = json1["donation"][self.index!]["montantTotal"].string
                  ImageLoader.shared.loadImage(
                   identifier: img!,
-                     url: "http://localhost:3000/img/\(img!)",
+                     url: "http://localhost:8885/img/\(img!)",
                      completion: { image in
                          self.imageV.image = image!
                          

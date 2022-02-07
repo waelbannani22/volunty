@@ -47,7 +47,7 @@ class RecruiterProfileViewController: UIViewController{
                 if image != Optional(nil){
                     ImageLoader.shared.loadImage(
                      identifier: image!,
-                        url: "http://localhost:3000/img/\(image!)",
+                        url: "http://localhost:8885/img/\(image!)",
                         completion: { image in
                             self.imageview.image = image!
                             
@@ -91,10 +91,7 @@ class RecruiterProfileViewController: UIViewController{
     
     @IBAction func logout(_ sender: Any) {
         resetDefaults()
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let objSomeViewController = storyBoard.instantiateViewController(withIdentifier: "LoginRecruiterViewController") as! LoginRecruiterViewController
-        self.tabBarController?.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(objSomeViewController, animated: true)
+        
     }
     
   
