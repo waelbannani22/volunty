@@ -24,6 +24,7 @@ class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate,
     
     override func viewDidLoad() {
         saveButton.layer.cornerRadius = 20.0
+        self.hideKeyboardWhenTappedAround()
         super.viewDidLoad()
         let tapGR = UITapGestureRecognizer(target: self, action: #selector(showActionSheet))
         image.addGestureRecognizer(tapGR)
@@ -79,7 +80,8 @@ class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate,
         }
         
     @objc  func showActionSheet(){
-            
+        self.hideKeyboard()
+        self.hideKeyboardWhenTappedAround()
             let actionSheetController: UIAlertController = UIAlertController(title: NSLocalizedString("Upload Image", comment: ""), message: nil, preferredStyle: .actionSheet)
             actionSheetController.view.tintColor = UIColor.black
             let cancelActionButton: UIAlertAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel) { action -> Void in
@@ -93,6 +95,12 @@ class VolunteerEditProfileViewController: UIViewController ,UITextFieldDelegate,
             { action -> Void in
                 self.gallery()
             }
+            
+            actionSheetController.popoverPresentationController?.sourceView = self.view
+        let xOrigin = self.view.center.x // Replace this with one of the lines at the end
+        let popoverRect = CGRect(x: xOrigin, y: self.image.frame.origin.y + 50, width: 1, height: 1)
+            actionSheetController.popoverPresentationController?.sourceRect = popoverRect
+            actionSheetController.popoverPresentationController?.permittedArrowDirections = .up
             
             actionSheetController.addAction(deleteActionButton)
             self.present(actionSheetController, animated: true, completion: nil)

@@ -17,6 +17,7 @@ class MyDonationViewController: UIViewController ,UICollectionViewDelegate,UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.navigationItem.hidesBackButton = true
         self.navigationItem.setHidesBackButton(true, animated: true)
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
         let defaults = UserDefaults.standard

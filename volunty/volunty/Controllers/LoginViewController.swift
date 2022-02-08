@@ -66,12 +66,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate ,LoginButtonDel
                         self.printContent(value.localizedDescription)
                     }
                 }
-               
             
-            
-                
-               
-                 
                 
                 //self.performSegue(withIdentifier: "HomeSegue", sender: id!)
                 

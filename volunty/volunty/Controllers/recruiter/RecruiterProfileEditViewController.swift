@@ -118,6 +118,12 @@ class RecruiterProfileEditViewController: UIViewController,UIImagePickerControll
                 self.gallery()
             }
             
+            actionSheetController.popoverPresentationController?.sourceView = self.view
+        let xOrigin = self.view.center.x // Replace this with one of the lines at the end
+        let popoverRect = CGRect(x: xOrigin, y: self.IMAGE.frame.origin.y + 50, width: 1, height: 1)
+            actionSheetController.popoverPresentationController?.sourceRect = popoverRect
+            actionSheetController.popoverPresentationController?.permittedArrowDirections = .up
+            
             actionSheetController.addAction(deleteActionButton)
             self.present(actionSheetController, animated: true, completion: nil)
         }

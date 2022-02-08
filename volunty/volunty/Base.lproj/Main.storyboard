@@ -94,7 +94,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Volunteer">
                                     <backgroundConfiguration key="background" cornerRadius="40">
-                                        <color key="backgroundColor" red="0.4352940917" green="0.6784313917" blue="0.68627452850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
@@ -110,7 +110,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Recruiter">
                                     <backgroundConfiguration key="background" cornerRadius="40">
-                                        <color key="backgroundColor" red="0.4352940917" green="0.6784313917" blue="0.68627452850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
@@ -288,7 +288,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l5T-Qr-lle"/>
-                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="N0b-J3-Urn" firstAttribute="top" secondItem="DSc-Xt-klY" secondAttribute="bottom" constant="61" id="0Sh-og-GGY"/>
                             <constraint firstItem="l5T-Qr-lle" firstAttribute="trailing" secondItem="ek6-4E-HcQ" secondAttribute="trailing" constant="20" id="10y-Zr-vvf"/>
@@ -462,14 +462,14 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70S-YF-QQo">
-                                <rect key="frame" x="20" y="605" width="374" height="188"/>
+                                <rect key="frame" x="20" y="605" width="374" height="237"/>
                             </view>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="PcJ-OZ-wRS">
                                 <rect key="frame" x="176" y="536" width="62" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vzl-2c-v9q"/>
-                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Vzl-2c-v9q" firstAttribute="trailing" secondItem="70S-YF-QQo" secondAttribute="trailing" constant="20" id="00m-9x-hWc"/>
                             <constraint firstItem="MnD-GO-BSZ" firstAttribute="top" secondItem="OEb-NW-dFU" secondAttribute="bottom" constant="10" id="0xg-jJ-XyA"/>
@@ -1375,7 +1375,7 @@ Please check your application status for updates. </string>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nQk-J5-QfY"/>
-                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ve4-Md-xK7" firstAttribute="centerX" secondItem="6UJ-st-EcC" secondAttribute="centerX" id="2Is-UL-2QS"/>
                             <constraint firstItem="nQk-J5-QfY" firstAttribute="bottom" secondItem="XH6-AZ-6Yw" secondAttribute="bottom" constant="20" id="QIa-SB-eua"/>
@@ -1593,7 +1593,7 @@ Please check your application status for updates. </string>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="rvl-KW-Wca" secondAttribute="trailing" constant="30" id="0C5-Yv-fgn"/>
                                             <constraint firstItem="mBd-CJ-i7Z" firstAttribute="top" secondItem="bDL-sQ-Y1t" secondAttribute="bottom" constant="48.5" id="2bM-bf-W9m"/>
@@ -1792,9 +1792,6 @@ Please check your application status for updates. </string>
                                                 <rect key="frame" x="192" y="0.0" width="97" height="90"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="high-score-png-icon-16"/>
-                                                <connections>
-                                                    <segue destination="X7C-zl-0QO" kind="showDetail" id="FMM-Ci-JH8"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pw0-rh-mop">
                                                 <rect key="frame" x="288" y="0.0" width="97" height="90"/>
@@ -2352,7 +2349,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
             <objects>
                 <viewController id="X7C-zl-0QO" customClass="LeaderBoardViewController" customModule="volunty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0aF-3V-igT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Backgrounds - Navigation Bar - Light" translatesAutoresizingMaskIntoConstraints="NO" id="bdj-Ps-W9T">
@@ -2479,7 +2476,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ql6-vu-L6S">
-                                <rect key="frame" x="0.0" y="75" width="414" height="708"/>
+                                <rect key="frame" x="0.0" y="75" width="414" height="757"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="82" id="tBI-fJ-ja8">
@@ -2650,7 +2647,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="kng-Aj-TV5"/>
-                                <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="kng-Aj-TV5" firstAttribute="trailing" secondItem="ZFi-wp-chh" secondAttribute="trailing" constant="50" id="0pH-CO-ce6"/>
                                     <constraint firstItem="g96-4o-Bl7" firstAttribute="leading" secondItem="7Jd-Az-g5g" secondAttribute="leadingMargin" constant="20" id="99y-xU-wSy"/>
@@ -2927,7 +2924,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KI1-9W-c7r"/>
-                        <color key="backgroundColor" red="0.4352940917" green="0.67450982329999998" blue="0.68627452850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="gh9-fG-b47" firstAttribute="top" secondItem="4JW-Tp-20d" secondAttribute="top" id="G2U-yb-tkB"/>
                             <constraint firstItem="gh9-fG-b47" firstAttribute="trailing" secondItem="KI1-9W-c7r" secondAttribute="trailing" id="T5B-Ac-8Ju"/>
@@ -2985,11 +2982,11 @@ mperdiet eros, in tempor nulla ipsum id . </string>
             <objects>
                 <viewController id="fBo-Sw-m01" customClass="RecruiterProfileEditViewController" customModule="volunty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lg6-h1-a2z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNz-KH-IF3">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b27-pk-TCM">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -3179,7 +3176,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oD8-jK-j3G"/>
-                        <color key="backgroundColor" red="0.4352940917" green="0.6784313917" blue="0.68627452850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="DNz-KH-IF3" firstAttribute="trailing" secondItem="oD8-jK-j3G" secondAttribute="trailing" id="HMW-sW-6ak"/>
                             <constraint firstAttribute="bottom" secondItem="DNz-KH-IF3" secondAttribute="bottom" id="JsU-9h-LxC"/>
@@ -3959,7 +3956,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="j5g-cX-7F8" firstAttribute="centerX" secondItem="bnT-hE-3v7" secondAttribute="centerX" id="18T-px-ibS"/>
                                             <constraint firstItem="Sdt-rA-iHE" firstAttribute="top" secondItem="bnT-hE-3v7" secondAttribute="top" constant="65" id="2IB-Fr-qII"/>
@@ -3982,7 +3979,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wv9-bl-OVQ"/>
-                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="8gq-W1-7OV" firstAttribute="leading" secondItem="wv9-bl-OVQ" secondAttribute="leading" id="AnS-J1-dgf"/>
                             <constraint firstAttribute="bottom" secondItem="8gq-W1-7OV" secondAttribute="bottom" id="Mkc-ce-BvC"/>
@@ -4174,7 +4171,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="trailingMargin" secondItem="ObI-9l-Oc0" secondAttribute="trailing" constant="50" id="01O-o5-kTH"/>
                                             <constraint firstItem="O4N-F6-yka" firstAttribute="top" secondItem="0rB-iB-02H" secondAttribute="bottom" constant="20" id="0CB-or-qkO"/>
@@ -4220,7 +4217,7 @@ mperdiet eros, in tempor nulla ipsum id . </string>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gq3-FW-rn0"/>
-                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="70V-rr-oR1" firstAttribute="top" secondItem="yVX-fA-3km" secondAttribute="top" id="Aoy-Wy-js0"/>
                             <constraint firstItem="70V-rr-oR1" firstAttribute="trailing" secondItem="Gq3-FW-rn0" secondAttribute="trailing" id="Rp8-8X-Reb"/>
@@ -4778,7 +4775,7 @@ loremloremloremloremloremloremloremlorem</string>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7k-Ub-RVL">
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7k-Ub-RVL">
                                                     <rect key="frame" x="40" y="22" width="294" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -4803,7 +4800,7 @@ loremloremloremloremloremloremloremlorem</string>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO NOTIFICATIONS YET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtG-0O-EGQ">
-                                <rect key="frame" x="44" y="438" width="314" height="20"/>
+                                <rect key="frame" x="44" y="438" width="326" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="8dA-9Q-Rle"/>
                                 </constraints>
@@ -4815,13 +4812,13 @@ loremloremloremloremloremloremloremlorem</string>
                         <viewLayoutGuide key="safeArea" id="cTG-gl-ZmX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="VtG-0O-EGQ" firstAttribute="centerX" secondItem="xOt-s1-vqG" secondAttribute="centerX" id="3Js-UI-p2E"/>
                             <constraint firstItem="aMt-mF-7uC" firstAttribute="centerX" secondItem="Szi-YM-9xR" secondAttribute="centerX" id="4Mj-my-NQl"/>
                             <constraint firstItem="cTG-gl-ZmX" firstAttribute="trailing" secondItem="Szi-YM-9xR" secondAttribute="trailing" constant="20" id="92U-QA-d26"/>
                             <constraint firstItem="Szi-YM-9xR" firstAttribute="leading" secondItem="cTG-gl-ZmX" secondAttribute="leading" constant="20" id="9rM-3q-Uf7"/>
                             <constraint firstItem="VtG-0O-EGQ" firstAttribute="centerY" secondItem="xOt-s1-vqG" secondAttribute="centerY" id="ILy-sK-Ewm"/>
                             <constraint firstItem="VtG-0O-EGQ" firstAttribute="leading" secondItem="cTG-gl-ZmX" secondAttribute="leading" constant="44" id="fwo-6K-UTQ"/>
                             <constraint firstItem="Szi-YM-9xR" firstAttribute="top" secondItem="cTG-gl-ZmX" secondAttribute="top" constant="50" id="pK7-gg-Bci"/>
-                            <constraint firstItem="cTG-gl-ZmX" firstAttribute="trailing" secondItem="VtG-0O-EGQ" secondAttribute="trailing" constant="56" id="qdu-9b-XUX"/>
                             <constraint firstItem="aMt-mF-7uC" firstAttribute="leading" secondItem="cTG-gl-ZmX" secondAttribute="leading" constant="40" id="r8Y-LJ-z3d"/>
                             <constraint firstItem="cTG-gl-ZmX" firstAttribute="bottom" secondItem="VtG-0O-EGQ" secondAttribute="bottom" constant="355" id="ujG-zy-NqR"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Szi-YM-9xR" secondAttribute="bottom" constant="52" id="vTe-Vl-IK2"/>
@@ -4996,11 +4993,11 @@ loremloremloremloremloremloremloremlorem</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ht-Og-AlG">
-                                <rect key="frame" x="20" y="564" width="374" height="229"/>
+                                <rect key="frame" x="20" y="564" width="374" height="278"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fna-ke-ap0"/>
-                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="df1-qP-aia" firstAttribute="top" secondItem="avi-HW-wmR" secondAttribute="bottom" constant="64" id="5Ce-ma-VIc"/>
                             <constraint firstItem="6Ht-Og-AlG" firstAttribute="leading" secondItem="Fna-ke-ap0" secondAttribute="leading" constant="20" id="6YB-H2-Pht"/>
@@ -5067,7 +5064,6 @@ loremloremloremloremloremloremloremlorem</string>
                         <segue destination="BDa-dM-G1g" kind="relationship" relationship="viewControllers" id="YRP-mT-sdi"/>
                         <segue destination="rKM-J8-n0C" kind="relationship" relationship="viewControllers" id="86V-tT-GA6"/>
                         <segue destination="4LB-0C-iie" kind="relationship" relationship="viewControllers" id="5OQ-Y2-iMs"/>
-                        <segue destination="8t8-w9-G4z" kind="relationship" relationship="viewControllers" id="KP0-6V-LFP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wi1-c5-6V5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -5077,7 +5073,6 @@ loremloremloremloremloremloremloremlorem</string>
         <!--Home-->
         <scene sceneID="6J8-kN-7zN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bgb-hH-x1p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Uv4-0S-N1i" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="Q8M-ff-Oxt"/>
                     <toolbarItems/>
@@ -5090,6 +5085,7 @@ loremloremloremloremloremloremloremlorem</string>
                         <segue destination="zqn-lD-vvz" kind="relationship" relationship="rootViewController" id="BtN-kz-MRc"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgb-hH-x1p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7556.521739130435" y="45.535714285714285"/>
         </scene>
@@ -5347,7 +5343,7 @@ loremloremloremloremloremloremloremlorem</string>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kat-Zy-P8d"/>
-                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="vVm-mm-06E" firstAttribute="leading" secondItem="kat-Zy-P8d" secondAttribute="leading" constant="20" id="7bs-7P-L4S"/>
                             <constraint firstItem="noe-pA-ME7" firstAttribute="top" secondItem="agb-9V-0Y5" secondAttribute="bottom" constant="56" id="Agp-37-N7m"/>
@@ -5466,7 +5462,7 @@ loremloremloremloremloremloremloremlorem</string>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Cr-ZI-r7l"/>
-                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Cr-ZI-r7l" firstAttribute="trailing" secondItem="fNc-eH-8kb" secondAttribute="trailing" constant="40" id="B8V-Rb-3HG"/>
                             <constraint firstItem="fNc-eH-8kb" firstAttribute="top" secondItem="6Cr-ZI-r7l" secondAttribute="top" constant="100" id="LAK-de-HSw"/>
@@ -5626,7 +5622,7 @@ loremloremloremloremloremloremloremlorem</string>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lOC-TH-sLT"/>
-                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="4yu-Gt-8Ig" firstAttribute="top" secondItem="lOC-TH-sLT" secondAttribute="top" constant="20" id="0M8-El-XEf"/>
                             <constraint firstItem="2dw-Mr-kfc" firstAttribute="top" secondItem="4yu-Gt-8Ig" secondAttribute="bottom" constant="49" id="5Wi-Bh-LMB"/>
@@ -5783,7 +5779,7 @@ loremloremloremloremloremloremloremlorem</string>
                                             <rect key="frame" x="0.0" y="0.0" width="175" height="186"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R1Z-b1-vq7">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R1Z-b1-vq7">
                                                     <rect key="frame" x="0.0" y="0.0" width="175" height="104"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OE5-0d-8fp">
@@ -5983,7 +5979,7 @@ loremloremloremloremloremloremloremlorem</string>
                                                 <rect key="frame" x="18" y="737" width="378" height="245"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.43921568989999998" green="0.68235301969999995" blue="0.69019609689999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.30980393290000002" green="0.60392159219999997" blue="0.61176472900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="trailingMargin" secondItem="LF0-oX-xZT" secondAttribute="trailing" constant="20" id="63A-pt-0ut"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="hSu-6o-H6N" secondAttribute="trailing" constant="20" id="Faw-TY-JRy"/>
@@ -6326,9 +6322,8 @@ loremloremloremloremloremloremloremlorem</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9QD-Tw-j7q"/>
         <segue reference="eGO-cJ-Wyc"/>
-        <segue reference="mVk-Md-UpJ"/>
+        <segue reference="SCs-5m-Jcu"/>
         <segue reference="PGt-Kr-fmB"/>
         <segue reference="iRx-xO-edb"/>
     </inferredMetricsTieBreakers>

@@ -29,7 +29,9 @@ class AddDonationViewController: UIViewController,  UIImagePickerControllerDeleg
     @IBOutlet weak var organisation: UITextField!
     @IBOutlet weak var location: UITextField!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        self.tabBarController?.navigationItem.hidesBackButton = true
         createDatePicker()
         let tapGR = UITapGestureRecognizer(target: self, action: #selector(showActionSheet))
         image.addGestureRecognizer(tapGR)
